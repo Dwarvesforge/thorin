@@ -9,3 +9,5 @@ Name  |  Type  |  Description  |  Status  |  Default
 $slug  |  **{ String }**  |  The asset slug to get  |  required  |
 
 Return **{ String }** The corresponding asset path like /dist/my-cool-file.jpg
+
+Author : Olivier Bossel <olivier.bossel@gmail.com>

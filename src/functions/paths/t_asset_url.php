@@ -6,6 +6,7 @@
  *
  * @param       {String}        $slug       The asset slug to get
  * @return      {String}                    The corresponding asset uri
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_asset_url($slug) {
     return t_tailslash(T_ROOT_URL) . t_tailslash(T_ASSETS_PATH) . ltrim($slug, '/');

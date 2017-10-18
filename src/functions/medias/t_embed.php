@@ -8,6 +8,7 @@ use Embed\Embed;
  *
  * @param   {String}        $url        The url of the video to embed
  * @return  {String}                    The embed code
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_embed($url) {
     $info = Embed::create($url);

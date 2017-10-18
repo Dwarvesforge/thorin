@@ -6,6 +6,7 @@
  *
  * @param       {String}        $slug       The asset slug to get
  * @return      {String}                    The corresponding asset path like /dist/my-cool-file.jpg
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_asset_path($slug) {
     return t_tailslash(T_ASSETS_PATH) . ltrim($slug, '/');

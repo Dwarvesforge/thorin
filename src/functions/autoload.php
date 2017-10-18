@@ -16,6 +16,9 @@ require_folder('html');
 // medias
 require_folder('medias');
 
+// objects
+require_folder('objects');
+
 // paths
 require_folder('paths');
 

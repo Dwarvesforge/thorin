@@ -9,3 +9,5 @@ Name  |  Type  |  Description  |  Status  |  Default
 $string  |  **{ String }**  |  The string to process  |  required  |
 
 Return **{ String }** The safe string to put inside any html attribute
+
+Author : Olivier Bossel <olivier.bossel@gmail.com>

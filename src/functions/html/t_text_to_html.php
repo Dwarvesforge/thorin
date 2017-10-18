@@ -7,6 +7,7 @@
  *
  * @param       {String}    $text       The text to format
  * @return      {String}                The newly formated html
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_text_to_html($text) {
     $text = trim($text);

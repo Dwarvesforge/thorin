@@ -9,3 +9,5 @@ Name  |  Type  |  Description  |  Status  |  Default
 $slug  |  **{ String }**  |  The asset slug to get  |  required  |
 
 Return **{ String }** The corresponding asset uri
+
+Author : Olivier Bossel <olivier.bossel@gmail.com>

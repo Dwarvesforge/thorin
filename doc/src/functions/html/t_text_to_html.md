@@ -10,3 +10,5 @@ Name  |  Type  |  Description  |  Status  |  Default
 $text  |  **{ String }**  |  The text to format  |  required  |
 
 Return **{ String }** The newly formated html
+
+Author : Olivier Bossel <olivier.bossel@gmail.com>

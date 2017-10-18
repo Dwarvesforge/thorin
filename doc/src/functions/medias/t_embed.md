@@ -1,12 +1,13 @@
-# t_define
+# Methods
 
-Define a constant if not already defined
+Get the embed code for the passed url
 
 
 
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$name  |  **{ String }**  |  The constant name  |  required  |
-$value  |  **{ Mixed }**  |  The value to set  |  required  |
+$url  |  **{ String }**  |  The url of the video to embed  |  required  |
+
+Return **{ String }** The embed code
 
 Author : Olivier Bossel <olivier.bossel@gmail.com>

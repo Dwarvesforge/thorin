@@ -1,4 +1,4 @@
-# t_render
+# t_render_blade
 
 Render a view with the data passed to it and return it
 

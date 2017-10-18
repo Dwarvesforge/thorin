@@ -7,6 +7,7 @@
  * @param       {String}        $slug       The view slug to render relative to the S_VIEW_PATH constant config
  * @param       {Array}         [$data=null]       The data array to pass as extracted variables to the view
  * @return      {String}                    The rendered view
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_render($slug, $data = []) {
     extract($data);
