@@ -9,8 +9,8 @@
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_define($name, $value) {
-    $name = strtoupper($name);
-    if ( ! defined($name)) {
+	$name = strtoupper($name);
+	if ( ! defined($name)) {
 		define($name, $value);
 	}
 }

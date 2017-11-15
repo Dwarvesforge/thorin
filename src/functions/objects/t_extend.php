@@ -9,6 +9,10 @@
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_extend($a, $b, $deep = true) {
+	
+	// ensure that we have a $b parameter
+	if ( ! $b) return $a;
+
 	// save if the $a item is an object
 	// to restore it as is after processing
 	$is_object = is_object($a);

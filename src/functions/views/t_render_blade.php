@@ -15,6 +15,6 @@ function t_render_blade($slug, $data = []) {
     // ensure we have an array and not an object
     if (is_object($data)) $data = get_object_vars($data);
     // generate blade
-    $blade = new Blade(t_tailslash(T_VIEWS_PATH), t_tailslash(T_CACHE_PATH));
+    $blade = new Blade(t_tailslash(T_VIEWS_PATH), t_tailslash(T_CACHE_PATH) . 'views/');
     return $blade->view()->make($slug, $data)->render();
 }
