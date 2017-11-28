@@ -4,7 +4,7 @@
 use Intervention\Image\ImageManager;
 
 
-function t_optimize_image($path, $settings = (object) [], $cache = true) {
+function t_optimize_image($path, $settings = [], $cache = true) {
 
 	$originalSettings = (object) [
 		'quality' => T_IMAGES_QUALITY,
@@ -42,7 +42,7 @@ function t_optimize_image($path, $settings = (object) [], $cache = true) {
 	$image = $manager->make($serverFilePath);
 
 	// resize image if needed
-	if ($settings->width || $settings->height) {
+	if ($settings->width || $settings->height) {
 		$image->resize($settings->width, $settings->height, function ($constraint) {
 			$constraint->aspectRatio();
 			$constraint->upsize();

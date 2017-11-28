@@ -10,5 +10,5 @@ t_define('T_ASSETS_PATH', '/dist');
 
 // default settings for images processing like t_optimize_image, etc...
 t_define('T_IMAGES_QUALITY', 60);
-t_define('T_IMAGES_MAX_WIDTH', null),
-t_define('T_IMAGES_MAX_HEIGHT', null),
+t_define('T_IMAGES_MAX_WIDTH', null);
+t_define('T_IMAGES_MAX_HEIGHT', null);
