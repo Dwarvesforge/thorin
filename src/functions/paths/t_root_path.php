@@ -9,5 +9,6 @@
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_root_path($slug = '') {
-    return t_tailslash(T_ROOT_PATH) . ltrim($slug, '/');
+	$slug = str_replace($_SERVER['DOCUMENT_ROOT'], '', $slug);
+	return t_tailslash(T_ROOT_PATH) . ltrim($slug, '/');
 }

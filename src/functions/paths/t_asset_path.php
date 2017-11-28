@@ -9,5 +9,6 @@
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_asset_path($slug) {
+	$slug = str_replace($_SERVER['DOCUMENT_ROOT'], '', $slug);
     return t_tailslash(T_ASSETS_PATH) . ltrim($slug, '/');
 }
