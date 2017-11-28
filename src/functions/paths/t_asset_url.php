@@ -9,5 +9,6 @@
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_asset_url($slug) {
-    return t_tailslash(T_ROOT_URL) . t_tailslash(T_ASSETS_PATH) . ltrim($slug, '/');
+	$path = t_tailslash(T_ROOT_URL) . t_tailslash(T_ASSETS_PATH) . ltrim($slug, '/');
+	return t_sanitize_url($path);
 }
