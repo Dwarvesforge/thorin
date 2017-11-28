@@ -4,7 +4,15 @@
 use Intervention\Image\ImageManager;
 
 
-function t_optimize_image($path, $quality = 60, $cache = true) {
+function t_optimize_image($path, $settings = (object) [], $cache = true) {
+
+	$originalSettings = (object) [
+		'quality' => T_IMAGES_QUALITY,
+		'width' => T_IMAGES_MAX_WIDTH,
+		'height' => T_IMAGES_MAX_HEIGHT
+	];
+
+	$settings = t_extend($originalSettings, $settings);
 
 	// process the $path argument
 	$serverFilePath = t_server_root_path($path);
@@ -22,24 +30,35 @@ function t_optimize_image($path, $quality = 60, $cache = true) {
 
 	// save the cache file path from the root of the server
 	$cacheFilePath = $cacheBasePath . basename($path);
-	// append the quality to the image name
+
+	// append settings object hash to the file name
+	$hash = hash('md5', serialize($settings));
 	$cacheFilePath = explode('.',$cacheFilePath);
-	array_splice($cacheFilePath, count($cacheFilePath)-1, 0, $quality);
+	array_splice($cacheFilePath, count($cacheFilePath)-1, 0, $hash);
 	$cacheFilePath = implode('.',$cacheFilePath);
 
 	// init manager
 	$manager = new ImageManager(array('driver' => 'gd'));
+	$image = $manager->make($serverFilePath);
+
+	// resize image if needed
+	if ($settings->width || $settings->height) {
+		$image->resize($settings->width, $settings->height, function ($constraint) {
+			$constraint->aspectRatio();
+			$constraint->upsize();
+		});
+	}
 
 	if ($cache) {
 		$serverCacheFilePath = $serverCachePath . basename($cacheFilePath);
 		$cacheTime = (file_exists($serverCacheFilePath)) ? filemtime($serverCacheFilePath) : null;
 		if (!$cacheTime || $cacheTime < $fileTime) {
 			// save the image in cache
-			$manager->make($serverFilePath)->save($serverCacheFilePath, $quality);
+			$image->save($serverCacheFilePath, $quality);
 		}
 		return $cacheFilePath;
 	} else {
 		// return the image as url encoded
-		return $manager->make($serverFilePath)->encode('data-url', $quality);
+		return $image->encode('data-url', $quality);
 	}
 }
