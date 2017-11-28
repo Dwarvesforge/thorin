@@ -13,6 +13,9 @@ function require_folder($folder) {
 // html
 require_folder('html');
 
+// images
+require_folder('images');
+
 // medias
 require_folder('medias');
 
