@@ -3,7 +3,7 @@
 /**
  * @name    t_sanitize_url
  * Return a sanitized version of the passed path. Here's the actions applied on the path:
- * - Ensure no double / in the path like http://my-domain.com/some//thing
+ * - Ensure no double "/" in the path like http://my-domain.com/some//thing
  * - Apply the filter_var function withe the FILTER_SANITIZE_URL flag
  * @param       {String}        $url       	The url to process
  * @return 		{String} 					The sanitized url

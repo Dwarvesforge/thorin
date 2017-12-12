@@ -12,8 +12,8 @@
 function t_text_to_html($text) {
     $text = trim($text);
 	$text = ltrim($text, '<p>');
-    $text = rtrim($text, '</p>');
-    $text = "<p>" . implode( "</p>\n\n<p>", preg_split( '/\n(?:\s*\n)+/', $text ) ) . "</p>";
-    $text = nl2br($text);
+	$text = rtrim($text, '</p>');
+    $text = "<p>" . implode( "</p><p>", preg_split( '/\n(?:\s*\n)+/', $text ) ) . "</p>";
+	$text = nl2br($text);
     return $text;
 }
