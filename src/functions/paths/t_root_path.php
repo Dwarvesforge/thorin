@@ -1,7 +1,6 @@
 <?php
 
 /**
- * @name    t_root_path
  * Return the root website url depending on the T_ROOT_PATH config
  *
  * @param       {String}        $slug       An optional slug to add to the root url

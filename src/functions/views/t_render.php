@@ -1,7 +1,6 @@
 <?php
 
 /**
- * @name    t_render
  * Render a view with the data passed to it and return it
  *
  * @param       {String}        $slug       The view slug to render relative to the S_VIEW_PATH constant config

@@ -1,7 +1,6 @@
 <?php
 
 /**
- * @name    t_define
  * Define a constant if not already defined
  *
  * @param      {String}         $name       The constant name

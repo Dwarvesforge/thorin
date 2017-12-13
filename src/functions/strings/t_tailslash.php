@@ -1,7 +1,6 @@
 <?php
 
 /**
- * @name    t_tailslash
  * Make sure the passed string has a slash at the end
  *
  * @param   {String}    $string     The string to process

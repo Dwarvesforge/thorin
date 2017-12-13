@@ -3,7 +3,6 @@
 use Philo\Blade\Blade;
 
 /**
- * @name    t_render_blade
  * Render a view with the data passed to it and return it
  *
  * @param       {String}        $slug       The view slug to render relative to the S_VIEW_PATH constant config

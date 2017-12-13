@@ -1,8 +1,7 @@
 <?php
 
 /**
- * @name    t_asset_path
- * Return a path relative to the S_ASSETS_PATH and constant config
+ * Return a path relative to the T_ASSETS_PATH and constant config
  *
  * @param       {String}        $slug       The asset slug to get
  * @return      {String}                    The corresponding asset path like /dist/my-cool-file.jpg

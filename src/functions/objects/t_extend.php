@@ -1,7 +1,6 @@
 <?php
 
 /**
- * @name 	t_extend
  * Extend an array or an object either deeply or not
  * @param 		{Array|Object} 		$a 				The source object to extend
  * @param 		{Array|Object} 		$b 				The object to extend the source one

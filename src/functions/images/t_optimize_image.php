@@ -4,7 +4,6 @@
 use Intervention\Image\ImageManager;
 
 /**
- * @name 	t_optimize_image
  * Optimize the passed image by compressing (resize and quality) it and save it to the {cache}/images folder
  * in order to avoid recreating it again and again
  *
