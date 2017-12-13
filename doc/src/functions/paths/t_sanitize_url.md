@@ -7,8 +7,8 @@ Return a sanitized version of the passed path. Here's the actions applied on the
 
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$url  |  **{ String }**  |  The url to process  |  required  |
+$url  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The url to process  |  required  |
 
-Return **{ String }** The sanitized url
+Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The sanitized url
 
 Author : Olivier Bossel <olivier.bossel@gmail.com>

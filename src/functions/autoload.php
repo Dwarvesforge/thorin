@@ -1,35 +1,36 @@
 <?php
 
 // quick function to require all files inside a specific folder
-function require_folder($folder) {
+function t_require_functions_folder($folder) {
     foreach (scandir(dirname(__FILE__) . '/' . $folder) as $filename) {
         $path = dirname(__FILE__) . '/' . $folder . '/' . $filename;
         if (is_file($path)) {
-            require $path;
+			// require the file
+			require $path;
         }
     }
 }
 
 // html
-require_folder('html');
+t_require_functions_folder('html');
 
 // images
-require_folder('images');
+t_require_functions_folder('images');
 
 // medias
-require_folder('medias');
+t_require_functions_folder('medias');
 
 // objects
-require_folder('objects');
+t_require_functions_folder('objects');
 
 // paths
-require_folder('paths');
+t_require_functions_folder('paths');
 
 // strings
-require_folder('strings');
+t_require_functions_folder('strings');
 
 // utils
-require_folder('utils');
+t_require_functions_folder('utils');
 
 // views
-require_folder('views');
+t_require_functions_folder('views');

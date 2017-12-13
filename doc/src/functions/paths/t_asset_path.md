@@ -6,8 +6,8 @@ Return a path relative to the S_ASSETS_PATH and constant config
 
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$slug  |  **{ String }**  |  The asset slug to get  |  required  |
+$slug  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The asset slug to get  |  required  |
 
-Return **{ String }** The corresponding asset path like /dist/my-cool-file.jpg
+Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The corresponding asset path like /dist/my-cool-file.jpg
 
 Author : Olivier Bossel <olivier.bossel@gmail.com>

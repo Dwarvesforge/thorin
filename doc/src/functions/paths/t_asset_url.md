@@ -6,8 +6,8 @@ Return a url relative to the T_ASSETS_PATH and the T_ROOT_URI constant config
 
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$slug  |  **{ String }**  |  The asset slug to get  |  required  |
+$slug  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The asset slug to get  |  required  |
 
-Return **{ String }** The corresponding asset uri
+Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The corresponding asset uri
 
 Author : Olivier Bossel <olivier.bossel@gmail.com>
