@@ -68,24 +68,8 @@ We will make this package grow every time we encounter and implement some nice f
 <a id="readme-install"></a>
 ## Install
 
-For now, the package is not published in the composer repository. You'll need to configure the repository first in your `composer.json` file like so:
-
 ```
-{
-	"repositories": [{
-		"type": "vcs",
-		"url" : "git@github.com:Dwarvesforge/thorin.git"
-	}],
-	"require": {
-		"dwarvesforge/thorin" : "dev-master#{version}"
-	}
-}
-```
-
-Then simply call your usual
-
-```
-composer install
+composer require dwarvesforge/thorin
 ```
 
 <a id="readme-contribute"></a>
