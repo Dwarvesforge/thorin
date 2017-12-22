@@ -11,6 +11,12 @@ function t_require_functions_folder($folder) {
     }
 }
 
+// array
+t_require_functions_folder('array');
+
+// cast
+t_require_functions_folder('cast');
+
 // html
 t_require_functions_folder('html');
 
@@ -28,6 +34,9 @@ t_require_functions_folder('paths');
 
 // strings
 t_require_functions_folder('strings');
+
+// time
+t_require_functions_folder('time');
 
 // utils
 t_require_functions_folder('utils');
