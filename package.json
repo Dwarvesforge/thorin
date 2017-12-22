@@ -1,13 +1,13 @@
 {
-  "name": "coco-sucrine",
+  "name": "dwarvesforge-thorin",
   "version": "1.0.0",
   "description": "PHP toolkit that offers you some nice helpers like missing functions etc...",
-  "homepage": "https://coco.io",
+  "homepage": "https://thorin.dwarvesforge.io",
   "repository": {
     "type": "git",
-    "url": "{project-url}"
+    "url": "https://github.com/Dwarvesforge/thorin"
   },
-  "main": "dist/index.js",
+  "main": "src/autoload.php",
   "watch": {
     "doc": {
       "patterns": [
@@ -18,24 +18,24 @@
   },
   "scripts": {
     "watch": "npm-watch",
-    "start": "concurrently --kill-others \"npm run watch\"",
+    "start": "npm run watch",
     "doc": "rm -rf doc/src && npm run doc.php",
     "doc.php": "coffeekraken-docblock-to-markdown -f 'src/**/*.php' -d doc",
     "changelog": "git-changelog --version_name $npm_package_version  --app_name $npm_package_name --intro \"$npm_package_description\" --logo \".resources/coffeekraken-logo.jpg\""
   },
   "keywords": [
-    "sucrine",
+    "dwarves",
+    "forge",
+    "thorin",
     "php",
     "toolkit"
   ],
-  "author": "Coffeekraken <hello@coffeekraken.io>",
+  "author": "Dwarvesforge <hello@dwarvesforge.io>",
   "license": "MIT",
   "dependencies": {
   },
   "devDependencies": {
-    "coffeekraken-carpenter": "^1.0.0",
     "coffeekraken-docblock-to-markdown": "^1.0.0",
-    "concurrently": "^3.1.0",
     "git-changelog": "^1.1.2",
     "npm-watch": "0.2.0"
   }
