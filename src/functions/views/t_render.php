@@ -12,6 +12,6 @@ function t_render($slug, $data = []) {
     extract($data);
 	$slug = rtrim($slug, '.php');
 	ob_start();
-	require t_tailslash(t_server_root_path(T_VIEWS_PATH)) . $slug . '.php';
+	require t_tailslash(T_VIEWS_PATH) . $slug . '.php';
 	return ob_get_clean();
 }
