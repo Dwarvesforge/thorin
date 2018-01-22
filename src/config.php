@@ -19,7 +19,7 @@ t_define('T_PROTOCOL',(!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']
  * @type 		{String}
  * @default 	$_SERVER['HTTP_HOST']
  */
-t_define('T_DOMAIN',$_SERVER['HTTP_HOST']);
+t_define('T_DOMAIN',@$_SERVER['HTTP_HOST']);
 
 /**
  * @name 	T_ROOT_URL
