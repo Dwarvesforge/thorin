@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return a url relative to the T_ASSETS_PATH and the T_ROOT_URI constant config
+ * Return a url relative to the T_ASSETS_PATH and the T_ROOT_URL constant config
  *
  * @param       {String}        $slug       The asset slug to get
  * @return      {String}                    The corresponding asset uri
