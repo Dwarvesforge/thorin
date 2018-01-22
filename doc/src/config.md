@@ -25,6 +25,17 @@ Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 Default : **$_SERVER['HTTP_HOST']**
 
 
+### T_ROOT_PATH
+
+Specify the root path where your app is stored absolute to the server root folder.
+This is usually automatically setting up using the $_SERVER['DOCUMENT_ROOT'] variable
+Need to end with a trailing /
+
+Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+
+Default : **rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/'**
+
+
 ### T_ROOT_URL
 
 Specify the root url under which the script has been requested. This is usually automatically setting up
@@ -34,45 +45,37 @@ Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 Default : **T_PROTOCOL . T_DOMAIN**
 
 
-### t_define
-
-T_ROOT_PATH
-Specify the root path to use across the toolkit. Usually, this is set to '/' but it can happen that you need to change this
-to reflect your server pathes structure
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-Default : **/**
-
-
 ### T_VIEWS_PATH
 
-Specify where the views are stored relative to the document root.
+Specify where the views are stored relative to the server root folder.
+Need to end with a trailing /
 This is bein used in functions like "t_render_blade", "t_render", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **/app/views**
+Default : **rtrim(T_ROOT_PATH, '/') . '/app/views/'**
 
 
 ### T_CACHE_PATH
 
-Specify where the cache are stored relative to the document root.
+Specify where the cache are stored relative to the server root folder
+Need to end with a trailing /
 This is bein used in functions like "t_render_blade", "t_optimize_image", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **/app/cache**
+Default : **rtrim(T_ROOT_PATH, '/') . '/app/cache/'**
 
 
 ### T_ASSETS_PATH
 
-Specify where the assets (images, etc...) are stored relative to the document root.
+Specify where the assets (images, etc...) are stored relative to the server root folder.
+Need to end with a trailing /
 This is bein used in functions like "t_asset_url", "t_asset_path", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **/dist**
+Default : **rtrim(T_ROOT_PATH, '/') . '/dist/'**
 
 
 ### T_IMAGES_QUALITY

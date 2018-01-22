@@ -3,16 +3,18 @@
 // import the Intervention Image Manager Class
 use Intervention\Image\ImageManager;
 
-/**
- * Optimize the passed image by compressing (resize and quality) it and save it to the {cache}/images folder
- * in order to avoid recreating it again and again
- *
- * @param 		{String} 		$path 				The image path to process relative to the document root
- * @param 		{Object} 		[$settings={}] 		The settings to tell how to compress the image
- * @param 		{Boolean} 		[$cache=true] 		true if want to save the optimized image in cache, false if not
- * @return 		{String} 							The optimized image path. If cache is not used, return the image in base64 format
- * @author 		Olivier Bossel <olivier.bossel@gmail.com>
- */
+// @TODO: Rebuild and make tests depending to the new paths strategies...
+
+//
+// Optimize the passed image by compressing (resize and quality) it and save it to the {cache}/images folder
+// in order to avoid recreating it again and again
+//
+// @param 		{String} 		$path 				The image path to process relative to the document root
+// @param 		{Object} 		[$settings={}] 		The settings to tell how to compress the image
+// @param 		{Boolean} 		[$cache=true] 		true if want to save the optimized image in cache, false if not
+// @return 		{String} 							The optimized image path. If cache is not used, return the image in base64 format
+// @author 		Olivier Bossel <olivier.bossel@gmail.com>
+//
 function t_optimize_image($path, $settings = [], $cache = true) {
 	$originalSettings = (object) [
 		'quality' => T_IMAGES_QUALITY,

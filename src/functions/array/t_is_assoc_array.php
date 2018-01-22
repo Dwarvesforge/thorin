@@ -8,5 +8,5 @@
  */
 function t_is_assoc_array($arr) {
 	if (array() === $arr) return false;
-	return array_keys($arr) !== range(0, count($arr) - 1);
+	return @array_keys($arr) !== range(0, count($arr) - 1);
 }
