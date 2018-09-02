@@ -13,7 +13,12 @@ use Philo\Blade\Blade;
 function t_render_blade($slug, $data = []) {
     // ensure we have an array and not an object
 	if (is_object($data)) $data = get_object_vars($data);
-    // generate blade
+	// allow render something like 'myview/myview' this way 'myview'
+	if (is_dir(t_sanitize_path(T_VIEWS_PATH) . $slug)) {
+		$parts = explode('/', $slug);
+		$slug = $slug . '/' . $parts[count($parts)-1];
+	}
+	// generate blade
     $blade = new Blade( t_sanitize_path(T_VIEWS_PATH), t_sanitize_path(T_CACHE_PATH) . 'views');
     return $blade->view()->make($slug, $data)->render();
 }
