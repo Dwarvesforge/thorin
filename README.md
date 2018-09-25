@@ -38,9 +38,6 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::asset_path`](doc/src/functions/paths/t_asset_path.md) : return an asset (image, video, etc...) path relative to the `T_ASSETS_PATH` constant
 	- [`Thorin::asset_url`](doc/src/functions/paths/t_asset_url.md) : return an asset (image, video, etc...) url absolute to the `T_DOMAIN` and `T_ASSETS_PATH` constant
 	- [Many more](doc/src/functions/paths)
-- Images
-	- [`Thorin::optimize_image`](doc/src/functions/images/t_optimize_image.md) : Resize and compress the passed image and return back the newly compressed image path
-	- [Many more](doc/src/functions/images) 
 - Strings
 	- [`Thorin::tailslash`](doc/src/functions/strings/t_tailslash.md) : Make sure the passed string has a `/` at the end
 	- [Many more](doc/src/functions/strings)
