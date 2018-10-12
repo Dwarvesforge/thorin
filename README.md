@@ -38,6 +38,9 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::asset_path`](doc/src/functions/paths/t_asset_path.md) : return an asset (image, video, etc...) path relative to the `T_ASSETS_PATH` constant
 	- [`Thorin::asset_url`](doc/src/functions/paths/t_asset_url.md) : return an asset (image, video, etc...) url absolute to the `T_DOMAIN` and `T_ASSETS_PATH` constant
 	- [Many more](doc/src/functions/paths)
+- i18n
+	- [`Thorin::lang`](doc/src/functions/i18n/t_lang.md) : Translation system using languages files
+	- [Many more](doc/src/functions/i18n)
 - Strings
 	- [`Thorin::tailslash`](doc/src/functions/strings/t_tailslash.md) : Make sure the passed string has a `/` at the end
 	- [Many more](doc/src/functions/strings)
