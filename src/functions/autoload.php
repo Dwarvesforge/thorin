@@ -20,6 +20,9 @@ t_require_functions_folder('cast');
 // html
 t_require_functions_folder('html');
 
+// i18n
+t_require_functions_folder('i18n');
+
 // images
 t_require_functions_folder('images');
 
