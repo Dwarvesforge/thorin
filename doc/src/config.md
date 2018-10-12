@@ -45,6 +45,37 @@ Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 Default : **T_PROTOCOL . T_DOMAIN**
 
 
+### T_LANG_PATH
+
+Specify where the lang files are stored relative to the server root folder.
+Need to end with a trailing /
+This is bein used in functions like "t_lang", etc...
+
+Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+
+Default : **rtrim(T_ROOT_PATH, '/') . '/app/lang/'**
+
+
+### T_AVAILABLE_LANGUAGES
+
+Specify the available languages in two characters format like "fr, en, etc..."
+Need to be an array of two characters language code
+
+Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
+
+Default : **['en','fr','de']**
+
+
+### T_DEFAULT_LANGUAGE
+
+Specify the default language in two characters format like "fr, en, etc..."
+Need to be a two characters language code
+
+Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+
+Default : **en**
+
+
 ### T_VIEWS_PATH
 
 Specify where the views are stored relative to the server root folder.
