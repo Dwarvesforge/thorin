@@ -7,8 +7,8 @@ a $_GET parameter using the $gerParam variable name.
 
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$available  |  **{ [Array](http://php.net/manual/en/language.types.array.php) }**  |  An array of available languages (ex: ['fr','en'])  |  required  |
-$default  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The default language if none is found  |  required  |
+$available  |  **{ [Array](http://php.net/manual/en/language.types.array.php) }**  |  An array of available languages (ex: ['fr','en'])  |  optional  |  T_AVAILABLE_LANGUAGES
+$default  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The default language if none is found  |  optional  |  T_DEFAULT_LANGUAGE
 $getParam  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The name of the $_GET parameter to check for the language  |  optional  |  "lang"
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The two character language code found
