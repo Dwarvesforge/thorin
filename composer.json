@@ -1,6 +1,6 @@
 {
   "name": "dwarvesforge/thorin",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "PHP toolkit that offers you some nice helpers like missing functions etc...",
   "keywords": [
     "dwarves",
@@ -26,7 +26,8 @@
     "php": ">=5.4",
     "intervention/image": "^2.4",
     "intervention/imagecache": "^2.3",
-    "jaybizzle/crawler-detect": "1.*"
+    "jaybizzle/crawler-detect": "1.*",
+    "fzaninotto/faker": "^1.8"
   },
 	"require-dev": {
     "phpunit/phpunit": "5.2.*"

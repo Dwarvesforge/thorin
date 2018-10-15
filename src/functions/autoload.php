@@ -44,5 +44,8 @@ t_require_functions_folder('time');
 // utils
 t_require_functions_folder('utils');
 
+// vendor
+t_require_functions_folder('vendor');
+
 // views
 t_require_functions_folder('views');
