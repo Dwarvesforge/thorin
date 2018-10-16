@@ -5,3 +5,4 @@ install: composer install
 branches:
   only:
   - master
+script: ./phpunit --bootstrap tests/bootstrap.php tests
