@@ -3,10 +3,10 @@
 # Thorin
 
 <p>
-	<!-- <a href="https://travis-ci.org/Coffeekraken/sugar">
-		<img src="https://img.shields.io/travis/Coffeekraken/sugar.svg?style=flat-square" />
+	<a href="https://travis-ci.org/Dwarvesforge/thorin">
+		<img src="https://img.shields.io/travis/Dwarvesforge/thorin.svg?style=flat-square" />
 	</a>
-	<a href="https://www.npmjs.com/package/coffeekraken-sugar">
+	<!-- <a href="https://www.npmjs.com/package/coffeekraken-sugar">
 		<img src="https://img.shields.io/npm/v/coffeekraken-sugar.svg?style=flat-square" />
 	</a>
 	<a href="https://github.com/Coffeekraken/sugar/blob/master/LICENSE.txt">
