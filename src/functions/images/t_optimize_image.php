@@ -3,8 +3,6 @@
 // import the Intervention Image Manager Class
 use Intervention\Image\ImageManager;
 
-// @TODO: Rebuild and make tests depending to the new paths strategies...
-
 //
 // Optimize the passed image by compressing (resize and quality) it and save it to the {cache}/images folder
 // in order to avoid recreating it again and again
@@ -25,26 +23,19 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 	$settings = t_extend($originalSettings, $settings);
 
 	// process the $path argument
-	$serverFilePath = t_server_root_path($path);
+	$serverFilePath = t_root_path($path, true);
 
-	// handle serverCacheBasePath depending on the $cache argument.
-	// if the argument is a string, take that as cache path
-	// otherwise, take the T_CACHE_PATH constant as base
-	$cacheBasePath = t_root_path(t_tailslash(T_CACHE_PATH) . 'images/');
-	if (is_string($cache)) {
-		$cacheBasePath = t_root_path(t_tailslash($cache));
-	}
-	// save the path of the cache folder from the server root
-	$serverCachePath = t_server_root_path($cacheBasePath);
+	// build the cache path from the T_CACHE_PATH constant
+	$serverCachePath = t_sanitize_path(T_CACHE_PATH) . 'images/';
 
 	// save the cache file path from the root of the server
-	$cacheFilePath = $cacheBasePath . basename($path);
+	$serverCacheFilePath = $serverCachePath . basename($path);
 
 	// append settings object hash to the file name
 	$hash = hash('md5', serialize($settings));
-	$cacheFilePath = explode('.',$cacheFilePath);
-	array_splice($cacheFilePath, count($cacheFilePath)-1, 0, $hash);
-	$cacheFilePath = implode('.',$cacheFilePath);
+	$serverCacheFilePath = explode('.',$serverCacheFilePath);
+	array_splice($serverCacheFilePath, count($serverCacheFilePath)-1, 0, $hash);
+	$serverCacheFilePath = implode('.',$serverCacheFilePath);
 
 	// init manager
 	$manager = new ImageManager(array('driver' => 'gd'));
@@ -59,15 +50,16 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 	}
 
 	if ($cache) {
-		$serverCacheFilePath = $serverCachePath . basename($cacheFilePath);
+		$fileTime = filemtime($serverFilePath);
 		$cacheTime = (file_exists($serverCacheFilePath)) ? filemtime($serverCacheFilePath) : null;
 		if (!$cacheTime || $cacheTime < $fileTime) {
+			print 'make image';
 			// save the image in cache
-			$image->save($serverCacheFilePath, $quality);
+			$image->save($serverCacheFilePath, $settings->quality);
 		}
-		return $cacheFilePath;
+		return t_root_path($serverCacheFilePath);
 	} else {
 		// return the image as url encoded
-		return $image->encode('data-url', $quality);
+		return $image->encode('data-url', $settings->quality);
 	}
 }

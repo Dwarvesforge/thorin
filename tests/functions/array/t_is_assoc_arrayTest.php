@@ -16,8 +16,4 @@ final class t_is_assoc_array extends TestCase
 			'hello', 'world'
 		]), false);
 	}
-
-	public function testPassingAString() {
-		$this->assertEquals(t_is_assoc_array('hello world'), true);
-	}
 }

@@ -10,6 +10,12 @@
  */
 function t_root_path($slug = '', $from_server_root = false) {
 
+	// remove the root path to be sure we don't sens back
+	// a path from the server root if it's not the wanted behavior
+	$slug = str_replace(t_sanitize_path(T_ROOT_PATH), '', $slug);
+
+	// if the path wanted is from the server root,
+	// append that to the begining of the passed slug
 	if ($from_server_root) {
 		return t_sanitize_path(T_ROOT_PATH) . ltrim($slug, '/');
 	} else {

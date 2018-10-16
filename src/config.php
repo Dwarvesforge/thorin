@@ -24,12 +24,12 @@ t_define('T_DOMAIN',@$_SERVER['HTTP_HOST']);
 /**
  * @name 	T_ROOT_PATH
  * Specify the root path where your app is stored absolute to the server root folder.
- * This is usually automatically setting up using the $_SERVER['DOCUMENT_ROOT'] variable
+ * This is usually automatically setting up using the $_SERVER['DOCUMENT_ROOT']|$_SERVER['PWD'] variable
  * Need to end with a trailing /
  * @type 		{String}
- * @default 	rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/'
+ * @default 	rtrim((isset($_SERVER['PWD'])) ? $_SERVER['PWD'] : $_SERVER['DOCUMENT_ROOT'], '/') . '/'
  */
-t_define('T_ROOT_PATH', rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/');
+t_define('T_ROOT_PATH', rtrim((isset($_SERVER['PWD'])) ? $_SERVER['PWD'] : $_SERVER['DOCUMENT_ROOT'], '/') . '/');
 
 /**
  * @name 	T_ROOT_URL
@@ -111,15 +111,15 @@ t_define('T_IMAGES_QUALITY', 60);
  * Specify the default max image width to use across the toolkit.
  * This is bein used in functions like "t_optimize_image", etc...
  * @type 		{Integer}
- * @default 	null
+ * @default 	2048
  */
-t_define('T_IMAGES_MAX_WIDTH', null);
+t_define('T_IMAGES_MAX_WIDTH', 2048);
 
 /**
  * @name 	T_IMAGES_MAX_HEIGHT
  * Specify the default max image height to use across the toolkit.
  * This is bein used in functions like "t_optimize_image", etc...
  * @type 		{Integer}
- * @default 	null
+ * @default 	2048
  */
-t_define('T_IMAGES_MAX_HEIGHT', null);
+t_define('T_IMAGES_MAX_HEIGHT', 2048);
