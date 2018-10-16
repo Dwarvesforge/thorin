@@ -35,6 +35,9 @@ t_require_functions_folder('objects');
 // paths
 t_require_functions_folder('paths');
 
+// random
+t_require_functions_folder('random');
+
 // strings
 t_require_functions_folder('strings');
 
