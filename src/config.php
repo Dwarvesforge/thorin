@@ -68,6 +68,14 @@ t_define('T_AVAILABLE_LANGUAGES', ['en','fr','de']);
 t_define('T_DEFAULT_LANGUAGE', 'en');
 
 /**
+ * @name    	T_ENVIRONMENT
+ * Specify the environment to return in function like `t_get_environment`, `t_is_environment`, etc...
+ * @type  		{String}
+ * @default 	(getenv('ENVIRONMENT')) ? getenv('ENVIRONMENT') : 'production'
+ */
+t_define('T_ENVIRONMENT', (getenv('ENVIRONMENT')) ? getenv('ENVIRONMENT') : 'production');
+
+/**
  * @name 		T_VIEWS_PATH
  * Specify where the views are stored relative to the server root folder.
  * Need to end with a trailing /
