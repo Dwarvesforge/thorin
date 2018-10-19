@@ -15,9 +15,9 @@ use Intervention\Image\ImageManager;
 //
 function t_optimize_image($path, $settings = [], $cache = true) {
 	$originalSettings = (object) [
-		'quality' => T_IMAGES_QUALITY,
-		'width' => T_IMAGES_MAX_WIDTH,
-		'height' => T_IMAGES_MAX_HEIGHT
+		'quality' => Thorin::config('images.QUALITY'),
+		'width' => Thorin::config('images.MAX_WIDTH'),
+		'height' => Thorin::config('images.MAX_HEIGHT')
 	];
 
 	$settings = t_extend($originalSettings, $settings);
@@ -26,7 +26,7 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 	$serverFilePath = t_root_path($path, true);
 
 	// build the cache path from the T_CACHE_PATH constant
-	$serverCachePath = t_sanitize_path(T_CACHE_PATH) . 'images/';
+	$serverCachePath = t_sanitize_path(Thorin::config('paths.IMAGES_CACHE'));
 
 	// save the cache file path from the root of the server
 	$serverCacheFilePath = $serverCachePath . basename($path);

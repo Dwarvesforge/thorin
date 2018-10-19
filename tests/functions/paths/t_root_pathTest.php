@@ -15,10 +15,12 @@ final class t_root_path_test extends TestCase
 	}
 
 	public function testRootPathFromServerRoot() {
-		$this->assertEquals('/data/web/', t_root_path('', true));
+		$root = Thorin::root_path(null, true);
+		$this->assertEquals(Thorin::tailslash($root), t_root_path('', true));
 	}
 
 	public function testRootPathFromServerRootWithSlug() {
-		$this->assertEquals('/data/web/coco.jpg', t_root_path('coco.jpg', true));
+		$root = Thorin::root_path(null, true);
+		$this->assertEquals($root . 'coco.jpg', t_root_path('coco.jpg', true));
 	}
 }

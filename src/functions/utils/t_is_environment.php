@@ -13,7 +13,7 @@
  */
 function t_is_environment() {
 	$args = func_get_args();
-	$environment = t_get_environment();
+	$environment = Thorin::environment();
 	foreach($args as $env) {
 		if ($environment == $env) return true;
 	}

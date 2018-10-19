@@ -1,6 +1,6 @@
 # t_asset_url
 
-Return a url relative to the T_ASSETS_PATH and the T_ROOT_URL constant config
+Return a url relative to the `app.ASSETS_PATH` and the `app.ROOT_URL` config
 
 
 

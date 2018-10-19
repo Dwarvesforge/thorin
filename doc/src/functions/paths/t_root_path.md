@@ -1,6 +1,6 @@
 # t_root_path
 
-Return the root website url depending on the T_ROOT_PATH config
+Return the root website url depending on the `app.ROOT_PATH` config
 
 
 

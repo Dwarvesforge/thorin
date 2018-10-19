@@ -17,6 +17,9 @@ t_require_functions_folder('array');
 // cast
 t_require_functions_folder('cast');
 
+// config
+t_require_functions_folder('config');
+
 // html
 t_require_functions_folder('html');
 

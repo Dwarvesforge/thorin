@@ -1,4 +1,4 @@
-# t_get_browser_language
+# t_browser_language
 
 Return the browser language if exist, otherwise, return false
 
@@ -7,6 +7,6 @@ Return **{ [String](http://php.net/manual/en/language.types.string.php) , [Boole
 
 ### Example
 ```php
-	$lang = Thorin::get_browser_language();
+	$lang = Thorin::browser_language();
 ```
 Author : Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)

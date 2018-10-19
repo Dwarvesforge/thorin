@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_is_environment extends TestCase
 {
     public function testIsEnvironment() {
-		$env = t_is_environment('testing','production');
+		$env = t_is_environment('development','testing','production');
 		$this->assertEquals($env, true);
 	}
 }

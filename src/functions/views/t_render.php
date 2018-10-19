@@ -12,6 +12,6 @@ function t_render($slug, $data = []) {
     extract($data);
 	$slug = rtrim($slug, '.php');
 	ob_start();
-	require t_tailslash(T_VIEWS_PATH) . $slug . '.php';
+	require t_tailslash(Thorin::config('paths.VIEWS')) . $slug . '.php';
 	return ob_get_clean();
 }

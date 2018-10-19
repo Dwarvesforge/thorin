@@ -1,6 +1,6 @@
 # t_root_url
 
-Return the root website url depending on the T_ROOT_URL
+Return the root website url depending on the `app.ROOT_URL` config
 
 
 
