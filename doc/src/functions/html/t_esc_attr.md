@@ -4,11 +4,10 @@ Escape the passed string to ensure it will not break any html when printed insid
 
 
 
-### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $string  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The string to process  |  required  |
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The safe string to put inside any html attribute
 
-Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com)
+Author : Olivier Bossel <olivier.bossel@gmail.com>

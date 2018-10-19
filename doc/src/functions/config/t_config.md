@@ -1,9 +1,8 @@
-# t_config
+# $t_configs
 
 Get or set a configuration depending on the arguments passed
 
 
-### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $path  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The configuration path to get  |  required  |
@@ -13,4 +12,6 @@ $value  |  **{ [Mixed](http://php.net/manual/en/language.pseudo-types.php#langua
 ```php
 	print Thorin::config('app.environment');
 ```
-Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
+Author : Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+
+Default : **[]**
