@@ -3,6 +3,7 @@
 Return a value from the lang files.
 
 
+### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $path  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The doted path relative to the root of the lang file to get the value from  |  required  |
@@ -13,4 +14,4 @@ $lang  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  
 ```php
 	$myCoolString = Thorin::lang('newsletter.title');
 ```
-Author : Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)

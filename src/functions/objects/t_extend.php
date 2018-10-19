@@ -25,7 +25,9 @@ function t_extend($a, $b, $deep = true) {
 		if( is_array($v) || is_object($v) ) {
             if( ! isset($a[$k])) {
 				$a[$k] = $v;
-            } else {
+            } else if (is_array($v) && ! t_is_assoc_array($v)) {
+				$a[$k] = $v;
+			} else {
 
 				$is_v_object = is_object($v);
 				$is_ak_object = is_object($a[$k]);

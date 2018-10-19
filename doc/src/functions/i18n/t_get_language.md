@@ -5,6 +5,7 @@ a $_GET parameter using the $gerParam variable name.
 
 
 
+### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $available  |  **{ [Array](http://php.net/manual/en/language.types.array.php) }**  |  An array of available languages (ex: ['fr','en'])  |  optional  |  T_AVAILABLE_LANGUAGES
@@ -17,4 +18,4 @@ Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The 
 ```php
 	$lang = Thorin::get_language(['en','fr'], 'en');
 ```
-Author : Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)

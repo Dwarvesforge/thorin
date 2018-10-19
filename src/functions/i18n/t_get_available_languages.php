@@ -8,5 +8,5 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
 function t_get_available_languages() {
-	return T_AVAILABLE_LANGUAGES;
+	return Thorin::config('i18n.AVAILABLE_LANGUAGES');
 }

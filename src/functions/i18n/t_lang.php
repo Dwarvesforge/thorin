@@ -15,10 +15,10 @@ function t_lang($path, $file = 'default', $lang = null) {
 	// get it with the t_get_language function using
 	// the config constants
 	if ($lang == null) {
-		$lang = Thorin::get_language(T_AVAILABLE_LANGUAGES, T_DEFAULT_LANGUAGE);
+		$lang = Thorin::get_language();
 	}
 	// build the language file path
-	$langFilePath = Thorin::sanitize_path(T_LANG_PATH) . $lang . '/' . $file . '.php';
+	$langFilePath = Thorin::sanitize_path(Thorin::config('i18n.LANG_PATH')) . $lang . '/' . $file . '.php';
 	// check if this file does not exist to throw an exception
 	if (!file_exists($langFilePath)) {
 		throw new Exception('The language file "' . $langFilePath . '" does not exist...');

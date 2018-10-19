@@ -3,8 +3,8 @@
  * Return the two character language code found in the browser language or in
  * a $_GET parameter using the $gerParam variable name.
  *
- * @param    {Array}    [$available=T_AVAILABLE_LANGUAGES]    An array of available languages (ex: ['fr','en'])
- * @param    {String}    [$default=T_DEFAULT_LANGUAGE]    The default language if none is found
+ * @param    {Array}    [$available=Thorin::config('app.available_languages')]    An array of available languages (ex: ['fr','en'])
+ * @param    {String}    [$default=Thorin::config('app.default_language')]    The default language if none is found
  * @param    {String}    [$getParam="lang"]    The name of the $_GET parameter to check for the language
  * @return    {String}    The two character language code found
  *
@@ -13,7 +13,10 @@
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function t_get_language($available = T_AVAILABLE_LANGUAGES, $default = T_DEFAULT_LANGUAGE, $getParam = 'lang') {
+function t_get_language($available = null, $default = null, $getParam = 'lang') {
+	// default parameters
+	if ($available == null) $available = Thorin::config('i18n.AVAILABLE_LANGUAGES');
+	if ($default == null) $default = Thorin::config('i18n.DEFAULT_LANGUAGE');
 	// get the browser language:
 	$browserLanguage = Thorin::get_browser_language();
 	// check if a language is passed in the url

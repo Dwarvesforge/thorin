@@ -40,6 +40,17 @@ t_define('T_ROOT_PATH', rtrim((isset($_SERVER['PWD'])) ? $_SERVER['PWD'] : $_SER
 t_define('T_ROOT_URL', T_PROTOCOL . T_DOMAIN);
 
 /**
+ * @name 		T_CONFIG_PATH
+ * Specify where the lang files are stored relative to the server root folder.
+ * Need to end with a trailing /
+ * This is bein used in functions like "t_lang", etc...
+ * @type 		{String}
+ * @default 	rtrim(T_ROOT_PATH, '/') . '/app/lang/'
+ */
+t_define('T_CONFIG_PATH', rtrim(T_ROOT_PATH, '/') . '/app/config/');
+
+
+/**
  * @name 		T_LANG_PATH
  * Specify where the lang files are stored relative to the server root folder.
  * Need to end with a trailing /
