@@ -10,6 +10,6 @@ Return **{ Faker }** A faker instance
 	$faker = Thorin::faker()
 // use faker here...
 ```
-Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
+Author : Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
 
 Default : **null**
