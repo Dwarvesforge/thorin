@@ -20,13 +20,13 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 		'height' => Thorin::config('images.MAX_HEIGHT')
 	];
 
-	$settings = t_extend($originalSettings, $settings);
+	$settings = Thorin::extend($originalSettings, $settings);
 
 	// process the $path argument
-	$serverFilePath = t_root_path($path, true);
+	$serverFilePath = Thorin::root_path($path, true);
 
 	// build the cache path from the T_CACHE_PATH constant
-	$serverCachePath = t_sanitize_path(Thorin::config('paths.IMAGES_CACHE'));
+	$serverCachePath = Thorin::sanitize_path(Thorin::config('paths.IMAGES_CACHE'));
 
 	// save the cache file path from the root of the server
 	$serverCacheFilePath = $serverCachePath . basename($path);
@@ -57,7 +57,7 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 			// save the image in cache
 			$image->save($serverCacheFilePath, $settings->quality);
 		}
-		return t_root_path($serverCacheFilePath);
+		return Thorin::root_path($serverCacheFilePath);
 	} else {
 		// return the image as url encoded
 		return $image->encode('data-url', $settings->quality);
