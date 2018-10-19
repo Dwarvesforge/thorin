@@ -12,9 +12,6 @@ function t_extend($a, $b, $deep = true) {
 	// ensure that we have a $b parameter
 	if ( ! $b) return $a;
 
-	// print '<pre>';
-	// print_r($b);
-
 	// save if the $a item is an object
 	// to restore it as is after processing
 	$is_object = is_object($a);
@@ -25,9 +22,11 @@ function t_extend($a, $b, $deep = true) {
 		if( is_array($v) || is_object($v) ) {
             if( ! isset($a[$k])) {
 				$a[$k] = $v;
-            } else if (is_array($v) && ! t_is_assoc_array($v)) {
-				$a[$k] = $v;
-			} else {
+			}
+			// else if (is_array($v) && ! t_is_assoc_array($v)) {
+			// 	$a[$k] = $v;
+			// }
+			else {
 
 				$is_v_object = is_object($v);
 				$is_ak_object = is_object($a[$k]);
