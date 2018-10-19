@@ -10,11 +10,11 @@
  */
 function t_asset_path($slug, $from_server_root = false) {
 	if ($from_server_root) {
-		return  t_sanitize_path(Thorin::config('assets.ASSETS_PATH')) . ltrim($slug, '/');
+		return  t_sanitize_path(Thorin::config('paths.ASSETS')) . ltrim($slug, '/');
 	} else {
 		// need to strip the Thorin::config('app.ROOT_PATH') part from the Thorin::config('app.ASSETS_PATH') to get the
 		// wanted path relative to the Thorin::config('app.ROOT_PATH') one
-		$pathRelativeToTDocumentRoot = str_replace(t_sanitize_path(Thorin::config('app.ROOT_PATH')), '', t_sanitize_path(Thorin::config('assets.ASSETS_PATH')));
+		$pathRelativeToTDocumentRoot = str_replace(t_sanitize_path(Thorin::config('app.ROOT_PATH')), '', t_sanitize_path(Thorin::config('paths.ASSETS')));
 		return '/' . ltrim(t_tailslash($pathRelativeToTDocumentRoot), '/') . ltrim($slug, '/');
 	}
 }

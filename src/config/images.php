@@ -26,15 +26,5 @@ return [
 	 * @type 		{Integer}
 	 * @default 	2048
 	 */
-	'MAX_HEIGHT' =>  2048,
-
-	/**
-	 * @name 		CACHE_PATH
-	 * Specify where the cache are stored relative to the server root folder
-	 * Need to end with a trailing /
-	 * This is bein used in functions like "t_optimize_image", etc...
-	 * @type 		{String}
-	 * @default 	${app.ROOT_PATH}app/cache/views/images/
-	 */
-	'CACHE_PATH' =>  '${app.ROOT_PATH}app/cache/views/images/'
+	'MAX_HEIGHT' =>  2048
 ];

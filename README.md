@@ -41,11 +41,18 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 - i18n
 	- [`Thorin::lang`](doc/src/functions/i18n/t_lang.md) : Translation system using languages files
 	- [Many more](doc/src/functions/i18n)
+- Config
+	- [`Thorin::config`](doc/src/functions/config/t_config.md) : Access values in a configuration file
+- Objects
+	- [`Thorin::extend`](doc/src/functions/objects/t_extend.md) : Extend an object/array with another recursively
 - Strings
 	- [`Thorin::tailslash`](doc/src/functions/strings/t_tailslash.md) : Make sure the passed string has a `/` at the end
+	- [`Thorin::headslash`](doc/src/functions/strings/t_headslash.md) : Make sure the passed string has a `/` at the begining
 	- [Many more](doc/src/functions/strings)
 - Utils
+	- [`Thorin::env`](doc/src/functions/utils/t_env.md) : Access environment variables with a fallback
 	- [`Thorin::is_ajax_request`](doc/src/functions/utils/t_is_ajax_request.md) : Return if the script has been called using ajax or not
+	- [`Thorin::is_environment`](doc/src/functions/utils/t_is_environment.md) : Check if the actual environment match one of the ones passed as parameter
 	- [`Thorin::is_crawler`](doc/src/functions/utils/t_is_crawler.md) : Return if the script has been called by a web crawler like the google bot, etc...
 	- [Many more](doc/src/functions/utils)
 - [Many more](doc/src)
@@ -70,6 +77,64 @@ We will make this package grow every time we encounter and implement some nice f
 
 ```
 composer require dwarvesforge/thorin
+```
+
+<a id="readme-get-started"></a>
+## Get Started
+
+To start using Thorin you have two choices. The first is the simplier the second the harder.
+
+### First solution
+
+Create the files/folders structure described bellow and start using Thorin with his full power right now:
+
+- | .env
+- | app
+- |--- cache
+- |------- views
+- |------- images 
+- |--- config
+- |------- your configuration files here
+- |--- lang
+- |------- en
+- |----------- your lang files here
+- |--- views
+- |------- your views files here
+
+### Second solution
+
+The second solution require that you set the various configurations by yourself if you need another folders structure.
+To do so, you'll need first:
+
+#### Specify where your config files are
+
+First choice, using the .env file at the root of your project
+
+```
+T_CONFIG_PATH=something/relative/to/the/document/root/
+```
+
+Or by defining a constant like so:
+
+```php
+define('T_CONFIG_PATH', 'something/relative/to/the/document/root/');
+```
+
+The default value for this config is `app/config/`
+
+#### Changing the path of each modules individually
+
+To do so, you'll need to create some config files to override the default configs like so:
+
+`my/config/path/paths.php`
+```php
+return [
+	'ASSETS' => '${app.ROOT_PATH}dist/',
+	'LANG' => '${app.ROOT_PATH}app/lang/',
+	'IMAGES_CACHE' => '${app.ROOT_PATH}app/cache/images/',
+	'VIEWS' => '${app.ROOT_PATH}app/views/',
+	'VIEWS_CACHE' => '${app.ROOT_PATH}app/cache/views/'
+]
 ```
 
 <a id="readme-contribute"></a>

@@ -26,7 +26,7 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 	$serverFilePath = t_root_path($path, true);
 
 	// build the cache path from the T_CACHE_PATH constant
-	$serverCachePath = t_sanitize_path(Thorin::config('app.CACHE_PATH')) . 'images/';
+	$serverCachePath = t_sanitize_path(Thorin::config('paths.IMAGES_CACHE'));
 
 	// save the cache file path from the root of the server
 	$serverCacheFilePath = $serverCachePath . basename($path);

@@ -9,16 +9,16 @@
  * @return    {String}    The two character language code found
  *
  * @example    php
- * $lang = Thorin::get_language(['en','fr'], 'en');
+ * $lang = Thorin::language(['en','fr'], 'en');
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function t_get_language($available = null, $default = null, $getParam = 'lang') {
+function t_language($available = null, $default = null, $getParam = 'lang') {
 	// default parameters
 	if ($available == null) $available = Thorin::config('i18n.AVAILABLE_LANGUAGES');
 	if ($default == null) $default = Thorin::config('i18n.DEFAULT_LANGUAGE');
 	// get the browser language:
-	$browserLanguage = Thorin::get_browser_language();
+	$browserLanguage = Thorin::browser_language();
 	// check if a language is passed in the url
 	// through $_GET parameter
 	if (isset($_GET[$getParam])) {
