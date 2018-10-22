@@ -14,6 +14,9 @@ function t_require_functions_folder($folder) {
 // array
 t_require_functions_folder('array');
 
+// cache
+t_require_functions_folder('cache');
+
 // cast
 t_require_functions_folder('cast');
 

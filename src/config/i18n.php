@@ -6,9 +6,9 @@ return [
 	 * Specify the available languages in two characters format like "fr, en, etc..."
 	 * Need to be an array of two characters language code
 	 * @type 		{Array}
-	 * @default 	[]
+	 * @default 	['en']
 	 */
-	'AVAILABLE_LANGUAGES' =>  [],
+	'AVAILABLE_LANGUAGES' =>  ['en'],
 
 	/**
 	 * @name 		DEFAULT_LANGUAGE

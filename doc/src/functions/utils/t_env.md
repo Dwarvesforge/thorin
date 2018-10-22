@@ -3,6 +3,7 @@
 Return the environment variable that correspond to the requested one or a default value passed as a second parameter
 
 
+### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $name  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The name of the environment variable to get  |  required  |
@@ -12,4 +13,4 @@ $default  |  **{ [Mixed](http://php.net/manual/en/language.pseudo-types.php#lang
 ```php
 	$myValue = Thorin::env('MY_VARIABLE', false);
 ```
-Author : Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)

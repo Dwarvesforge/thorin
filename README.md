@@ -41,6 +41,9 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 - i18n
 	- [`Thorin::lang`](doc/src/functions/i18n/t_lang.md) : Translation system using languages files
 	- [Many more](doc/src/functions/i18n)
+- Cache
+	- [`Thorin::cache`](doc/src/functions/cache/t_cache.md) : Store/get/delete item from a chosen cache (apc, memcache, filesystem, etc...)
+	- [`Thorin::cache_factory`](doc/src/functions/cache/t_cache_factory.md) : Return a cache pool using the requested driver
 - Config
 	- [`Thorin::config`](doc/src/functions/config/t_config.md) : Access values in a configuration file
 - Objects

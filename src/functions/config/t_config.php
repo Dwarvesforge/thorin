@@ -32,7 +32,7 @@ function t_config($path) {
 		if (file_exists($basefilepath)) {
 			$baseConfig = require($basefilepath);
 			// merge the configs
-			$config = Thorin::extend($baseConfig, $config);
+			$config = Thorin::extend($baseConfig, $config, true, false);
 		}
 		// cache config
 		$t_configs[$filepath] = $config;

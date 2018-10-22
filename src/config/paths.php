@@ -12,6 +12,16 @@ return [
 	'ASSETS' => '${app.ROOT_PATH}dist/',
 
 	/**
+	 * @name 		CACHE
+	 * Specify where to store the filesystem cache
+	 * Need to end with a trailing /
+	 * This is bein used in functions like "t_cache", etc...
+	 * @type 		{String}
+	 * default 		${appROOT_PATH}app/cache/filesystem/
+	 */
+	'CACHE' => '${app.ROOT_PATH}app/cache/filesystem/',
+
+	/**
 	 * @name 		LANG
 	 * Specify where the lang files are stored relative to the server root folder.
 	 * Need to end with a trailing /
