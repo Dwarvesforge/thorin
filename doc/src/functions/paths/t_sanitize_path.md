@@ -8,10 +8,11 @@ It will do these actions:
 
 
 
+### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $path  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The path to sanitize  |  required  |
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The sanitize path
 
-Author : Olivier Bossel <olivier.bossel@gmail.com>
+Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com)

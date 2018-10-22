@@ -5,9 +5,10 @@
  * @param 		{Array|Object} 		$a 				The source object to extend
  * @param 		{Array|Object} 		$b 				The object to extend the source one
  * @param 		{Boolean} 			[$deep=true]	If want to extend the source recursively
+ * @param    	{Boolean} 			[$extendNonAssociativeArrays=true]    If we want to extend non associative arrays in place of replace it
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
-function t_extend($a, $b, $deep = true) {
+function t_extend($a, $b, $deep = true, $extendNonAssociativeArrays = true) {
 
 	// ensure that we have a $b parameter
 	if ( ! $b) return $a;
@@ -23,9 +24,9 @@ function t_extend($a, $b, $deep = true) {
             if( ! isset($a[$k])) {
 				$a[$k] = $v;
 			}
-			// else if (is_array($v) && ! t_is_assoc_array($v)) {
-			// 	$a[$k] = $v;
-			// }
+			else if ( ! $extendNonAssociativeArrays && is_array($v) && ! t_is_assoc_array($v)) {
+				$a[$k] = $v;
+			}
 			else {
 
 				$is_v_object = is_object($v);

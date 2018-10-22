@@ -6,6 +6,7 @@ Return a normalized version of the passed path.
 3. Combine multiple slashes into a single slash
 
 
+### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $path  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The path to process  |  required  |

@@ -4,6 +4,7 @@ Return a path relative to the `app.ASSETS_PATH` and `app.ROOT_PATH` config
 
 
 
+### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $slug  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The asset slug to get  |  required  |
@@ -11,4 +12,4 @@ $from_server_root  |  **{ [Boolean](http://php.net/manual/en/language.types.bool
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The corresponding asset path like /dist/my-cool-file.jpg
 
-Author : Olivier Bossel <olivier.bossel@gmail.com>
+Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com)
