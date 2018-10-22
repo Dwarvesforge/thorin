@@ -6,9 +6,9 @@ return [
 	 * @name    DEFAULT_DRIVER
 	 * Specify the default cache driver to use
 	 * @type    {String}
-	 * @default    apc
+	 * @default    filesystem
 	 */
-	'DEFAULT_DRIVER' => 'apc',
+	'DEFAULT_DRIVER' => 'filesystem',
 
 	/**
 	 * @name    MEMCACHE

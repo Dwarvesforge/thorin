@@ -13,6 +13,15 @@ Default : **${app.ROOT_PATH}dist/**
 ## Public properties
 
 
+### CACHE
+
+Specify where to store the filesystem cache
+Need to end with a trailing /
+This is bein used in functions like "t_cache", etc...
+
+Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+
+
 ### LANG
 
 Specify where the lang files are stored relative to the server root folder.

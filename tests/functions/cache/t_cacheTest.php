@@ -16,4 +16,10 @@ final class t_cache extends TestCase
 		$value = Thorin::cache('cache_item');
 		$this->assertEquals($value, null);
 	}
+	public function testExpireCacheItem() {
+		Thorin::cache('cache_item', 'hello world', 1);
+		sleep(2);
+		$value = Thorin::cache('cache_item');
+		$this->assertEquals($value, null);
+	}
 }

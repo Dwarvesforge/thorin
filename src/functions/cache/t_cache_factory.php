@@ -20,7 +20,7 @@ use Cache\Adapter\Redis\RedisCachePool;
  * $apcPool = Thorin::cache_factory('apc');
  * $item = $apcPool->getItem('my_item');
  * $item->set('hello world');
- * $apcPool->store($item);
+ * $apcPool->save($item);
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
@@ -34,7 +34,6 @@ function t_cache_factory($driver = null, $forceNewPool = false) {
 		// return the cached pool
 		return $t_pools[$driver];
 	}
-
 	// switch on the requested driver to create a new pool
 	switch($driver) {
 		case 'filesystem':
