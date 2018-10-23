@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_current_url extends TestCase
 {
     public function testCurrentUrl() {
-		$url = Thorin::current_url();
+		$url = T::current_url();
 		$this->assertEquals($url, 'http://thorin.io/');
 	}
 }

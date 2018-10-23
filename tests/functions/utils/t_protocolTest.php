@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_protocol extends TestCase
 {
     public function testGetProtocol() {
-		$protocol = Thorin::protocol();
+		$protocol = T::protocol();
 		$this->assertEquals($protocol, 'http://');
 	}
 }

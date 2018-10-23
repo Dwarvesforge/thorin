@@ -7,11 +7,11 @@ use PHPUnit\Framework\TestCase;
 final class t_config extends TestCase
 {
     public function testGetASimpleConfig() {
-		$value = Thorin::config('app.DOMAIN');
+		$value = T::config('app.DOMAIN');
 		$this->assertEquals($value, 'thorin.io');
 	}
 	public function testGetAComplexeConfig() {
-		$value = Thorin::config('app.ROOT_URL');
+		$value = T::config('app.ROOT_URL');
 		$this->assertEquals($value, 'http://thorin.io');
 	}
 }

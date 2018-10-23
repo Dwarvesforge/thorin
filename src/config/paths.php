@@ -12,14 +12,14 @@ return [
 	'ASSETS' => '${app.ROOT_PATH}dist/',
 
 	/**
-	 * @name 		CACHE
+	 * @name 		FILESYSTEM_CACHE
 	 * Specify where to store the filesystem cache
 	 * Need to end with a trailing /
 	 * This is bein used in functions like "t_cache", etc...
 	 * @type 		{String}
-	 * default 		${appROOT_PATH}app/cache/filesystem/
+	 * default 		${app.ROOT_PATH}app/cache/filesystem/
 	 */
-	'CACHE' => '${app.ROOT_PATH}app/cache/filesystem/',
+	'FILESYSTEM_CACHE' => '${app.ROOT_PATH}app/cache/filesystem/',
 
 	/**
 	 * @name 		LANG
