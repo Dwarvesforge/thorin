@@ -15,9 +15,7 @@ function t_config_path() {
 		$path = getenv('T_CONFIG_PATH');
 	}
 	if (!$path) {
-		$path = 'app/config/';
+		$path = Thorin::app_path('config/');
 	}
-	$envPath = rtrim((isset($_SERVER['PWD'])) ? $_SERVER['PWD'] : $_SERVER['DOCUMENT_ROOT'], '/') . '/';
-	$path = str_replace($envPath, '', $path);
-	return $envPath . ltrim(rtrim($path, '/'), '/') . '/';
+	return rtrim($path, '/') . '/';
 }

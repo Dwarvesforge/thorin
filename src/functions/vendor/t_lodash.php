@@ -12,5 +12,5 @@
  */
 function t_lodash() {
 	// return the lodash class
-	return _;
+	return new _();
 }
