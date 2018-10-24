@@ -8,9 +8,6 @@
  * @return      {String}                    The corresponding root url
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
-function t_root_path($slug = '') {
-	// remove the root path to be sure we don't sens back
-	// a path from the server root if it's not the wanted behavior
-	$slug = str_replace(t_sanitize_path(Thorin::config('paths.DOCUMENT_ROOT')), '', $slug);
-	return t_sanitize_path(Thorin::config('paths.DOCUMENT_ROOT')) . ltrim($slug, '/');
+function t_document_root_path($slug = '') {
+	return Thorin::root_path($slug);
 }

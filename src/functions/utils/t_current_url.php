@@ -9,5 +9,5 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
 function t_current_url() {
-	return Thorin::root_url(@$_SERVER['REQUEST_URI']);
+	return Thorin::root_url(@$_SERVER['REQUEST_URI'], true);
 }

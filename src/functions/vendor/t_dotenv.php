@@ -4,9 +4,10 @@
  * @return    {DotEnv}    The dotenv instance
  *
  * @example    php
- * Thorin::dotenv()->require('MYVAR');
+ * Thorin::dotenv()->required('MYVAR');
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+ * @see    https://github.com/vlucas/phpdotenv
  */
 function t_dotenv() {
 	global $t_dotenv;

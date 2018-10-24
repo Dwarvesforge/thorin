@@ -6,6 +6,8 @@ Return **{ DotEnv }** The dotenv instance
 
 ### Example
 ```php
-	Thorin::dotenv()->require('MYVAR');
+	Thorin::dotenv()->required('MYVAR');
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
+
+See : **See more** : [https://github.com/vlucas/phpdotenv](https://github.com/vlucas/phpdotenv)
