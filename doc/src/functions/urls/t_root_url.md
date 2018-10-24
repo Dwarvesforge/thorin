@@ -1,6 +1,6 @@
-# t_root_path
+# t_root_url
 
-Return the root website url depending on the `paths.DOCUMENT_ROOT` config
+Return the root website url depending on the `app.ROOT_URL` config
 
 
 
@@ -8,7 +8,7 @@ Return the root website url depending on the `paths.DOCUMENT_ROOT` config
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $slug  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  An optional slug to add to the root url  |  required  |
-$from_server_root  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  If returned path need to be relative to the server root or to the `paths.DOCUMENT_ROOT` config  |  optional  |  false
+$include_domain  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  If want the fully qualified domain in the url  |  optional  |  false
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The corresponding root url
 

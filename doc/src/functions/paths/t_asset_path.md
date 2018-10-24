@@ -1,6 +1,6 @@
 # t_asset_path
 
-Return a path relative to the `app.ASSETS_PATH` and `app.ROOT_PATH` config
+Return a path relative to the `paths.ASSETS` and `paths.DOCUMENT_ROOT` config
 
 
 
@@ -8,7 +8,7 @@ Return a path relative to the `app.ASSETS_PATH` and `app.ROOT_PATH` config
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
 $slug  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The asset slug to get  |  required  |
-$from_server_root  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  If returned path need to be relative to the server root or to the 'app.ROOT_PATH' config  |  optional  |  false
+$from_server_root  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  If returned path need to be relative to the server root or to the 'paths.DOCUMENT_ROOT' config  |  optional  |  false
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The corresponding asset path like /dist/my-cool-file.jpg
 

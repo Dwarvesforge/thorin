@@ -8,11 +8,11 @@ final class t_env extends TestCase
 {
     public function testGatherAnEnvironmentVariableThatExist() {
 		putenv('MYVAR=Hello');
-		$env = T::env('MYVAR');
+		$env = Thorin::env('MYVAR');
 		$this->assertEquals($env, 'Hello');
 	}
 	public function testGatherAnEnvironmentVariableThatDoesNotExist() {
-		$env = T::env('MYOTHERVAR', 'world');
+		$env = Thorin::env('MYOTHERVAR', 'world');
 		$this->assertEquals($env, 'world');
 	}
 }

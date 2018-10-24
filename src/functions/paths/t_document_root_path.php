@@ -8,6 +8,6 @@
  * @return      {String}                    The corresponding root url
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
-function t_document_root_path($slug = '', $from_server_root = false) {
-	return Thorin::root_path($slug, $from_server_root);
+function t_document_root_path($slug = '') {
+	return Thorin::root_path($slug);
 }

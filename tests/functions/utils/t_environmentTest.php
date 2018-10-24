@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_environment extends TestCase
 {
     public function testDefaultEnvironment() {
-		$env = T::environment();
+		$env = Thorin::environment();
 		$this->assertEquals($env, 'development');
 	}
 }

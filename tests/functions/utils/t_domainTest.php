@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_domain extends TestCase
 {
     public function testDomain() {
-		$domain = T::domain();
+		$domain = Thorin::domain();
 		$this->assertEquals($domain, 'thorin.io');
 	}
 }

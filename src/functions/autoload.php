@@ -50,6 +50,9 @@ t_require_functions_folder('strings');
 // time
 t_require_functions_folder('time');
 
+// urls
+t_require_functions_folder('urls');
+
 // utils
 t_require_functions_folder('utils');
 

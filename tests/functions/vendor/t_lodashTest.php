@@ -8,7 +8,7 @@ final class t_lodash extends TestCase
 {
     public function testIfGetALodashInstance() {
 		$array = [1];
-		$newArray = T::lodash()::concat($array, [2]);
+		$newArray = Thorin::lodash()::concat($array, [2]);
 		$this->assertEquals($newArray, [1,2]);
 	}
 }
