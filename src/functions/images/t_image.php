@@ -5,11 +5,11 @@ use Intervention\Image\ImageManager;
 
 /**
  * Return an Intervention Image instance to work with
- * @param    {String}     $path    The path to the image to work with
+ * @param    {String}     $path    The path to the image to work with absolute to the server root folder
  * @return    {Intervention\Image\Image}    The Intervention Image instance
  *
  * @example    php
- * $image = Thorin::image('my-cool-image.png');
+ * $image = Thorin::image('/my/cool/project/path/my-cool-image.png');
  * $image->resize(200,300);
  * $image->save('my-cool-image.png');
  *
