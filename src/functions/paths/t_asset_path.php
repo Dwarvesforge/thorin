@@ -9,5 +9,5 @@
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_asset_path($slug) {
-	return  Thorin::sanitize_path(Thorin::config('paths.ASSETS')) . ltrim($slug, '/');
+	return  Thorin::sanitize_path(Thorin::config('paths.assets')) . ltrim($slug, '/');
 }

@@ -8,7 +8,7 @@ return [
 	 * @type 		{Array}
 	 * @default 	['en']
 	 */
-	'AVAILABLE_LANGUAGES' =>  ['en'],
+	'available_languages' =>  ['en'],
 
 	/**
 	 * @name 		DEFAULT_LANGUAGE
@@ -17,5 +17,5 @@ return [
 	 * @type 		{String}
 	 * @default 	en
 	 */
-	'DEFAULT_LANGUAGE' =>  'en'
+	'default_language' =>  'en'
 ];

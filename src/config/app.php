@@ -7,7 +7,7 @@ return [
 	 * @type 		{String}
 	 * @default 	http:// | https://
 	 */
-	'PROTOCOL' => (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS'] == 'on')) ? 'https://' : 'http://',
+	'protocol' => (!empty($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS'] == 'on')) ? 'https://' : 'http://',
 
 	/**
 	 * @name 	DOMAIN
@@ -15,7 +15,7 @@ return [
 	 * @type 		{String}
 	 * @default 	$_SERVER['HTTP_HOST']
 	 */
-	'DOMAIN' => @$_SERVER['HTTP_HOST'],
+	'domain' => @$_SERVER['HTTP_HOST'],
 
 	/**
 	 * @name 	ROOT_URL
@@ -23,7 +23,7 @@ return [
 	 * @type 		{String}
 	 * @default 	${app.PROTOCOL}${app.DOMAIN}
 	 */
-	'ROOT_URL' =>  '${app.PROTOCOL}${app.DOMAIN}',
+	'root_url' =>  '${app.PROTOCOL}${app.DOMAIN}',
 
 	/**
 	 * @name    	ENVIRONMENT
@@ -31,5 +31,5 @@ return [
 	 * @type  		{String}
 	 * @default 	(getenv('ENVIRONMENT')) ? getenv('ENVIRONMENT') : 'production'
 	 */
-	'ENVIRONMENT' =>  (getenv('ENVIRONMENT')) ? getenv('ENVIRONMENT') : 'production'
+	'environment' =>  (getenv('ENVIRONMENT')) ? getenv('ENVIRONMENT') : 'production'
 ];

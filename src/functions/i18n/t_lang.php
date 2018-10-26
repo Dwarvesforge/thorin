@@ -22,7 +22,7 @@ function t_lang($path, $lang = null) {
 	// file to load is the first value in the splits stack
 	$filename = array_shift($splits);
 	// build the language file path
-	$langFilePath = Thorin::sanitize_path(Thorin::config('paths.LANG')) . $lang . '/' . $filename . '.php';
+	$langFilePath = Thorin::sanitize_path(Thorin::config('paths.lang')) . $lang . '/' . $filename . '.php';
 	// check if this file does not exist to throw an exception
 	if (!file_exists($langFilePath)) {
 		throw new Exception('The language file "' . $langFilePath . '" does not exist...');

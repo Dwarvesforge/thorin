@@ -10,5 +10,5 @@
  */
 function t_environment() {
 	// return the environment from the config
-	return Thorin::config('app.ENVIRONMENT');
+	return Thorin::config('app.environment');
 }

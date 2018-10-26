@@ -23,6 +23,9 @@ t_require_functions_folder('cast');
 // config
 t_require_functions_folder('config');
 
+// filesystem
+t_require_functions_folder('filesystem');
+
 // html
 t_require_functions_folder('html');
 

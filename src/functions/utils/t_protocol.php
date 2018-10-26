@@ -11,5 +11,5 @@
  */
 function t_protocol() {
 	// return the protocol from the config
-	return Thorin::config('app.PROTOCOL');
+	return Thorin::config('app.protocol');
 }

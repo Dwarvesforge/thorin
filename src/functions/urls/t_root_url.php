@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return the root website url depending on the `app.ROOT_URL` config
+ * Return the root website url depending on the `app.root_url` config
  *
  * @param       {String}        $slug       An optional slug to add to the root url
  * @param  		{Boolean} 		[$include_domain=false] 	If want the fully qualified domain in the url
@@ -10,7 +10,7 @@
  */
 function t_root_url($slug = '', $include_domain = false) {
 	if ($include_domain) {
-		$url = Thorin::tailslash(rtrim(Thorin::config('app.ROOT_URL'),'/')) . ltrim($slug, '/');
+		$url = Thorin::tailslash(rtrim(Thorin::config('app.root_url'),'/')) . ltrim($slug, '/');
 	} else {
 		$url = Thorin::headslash($slug);
 	}

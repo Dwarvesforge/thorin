@@ -14,7 +14,7 @@ function t_render_twig($slug, $data = []) {
     // ensure we have an array and not an object
 	if (is_object($data)) $data = get_object_vars($data);
 	// allow render something like 'myview/myview' this way 'myview'
-	if (is_dir(Thorin::sanitize_path(Thorin::config('paths.VIEWS')) . $slug)) {
+	if (is_dir(Thorin::sanitize_path(Thorin::config('paths.views')) . $slug)) {
 		$parts = explode('/', $slug);
 		$slug = $slug . '/' . $parts[count($parts)-1];
 	}
@@ -23,9 +23,9 @@ function t_render_twig($slug, $data = []) {
 		$slug = $slug . '.twig';
 	}
 	// load twig
-	$loader = new Twig_Loader_Filesystem(Thorin::sanitize_path(Thorin::config('paths.VIEWS')));
+	$loader = new Twig_Loader_Filesystem(Thorin::sanitize_path(Thorin::config('paths.views')));
 	$twig = new Twig_Environment($loader, array(
-		'cache' => Thorin::sanitize_path(Thorin::config('paths.VIEWS_CACHE')),
+		'cache' => Thorin::sanitize_path(Thorin::config('paths.views_cache')),
 	));
 	// render view
 	return $twig->render($slug, $data);

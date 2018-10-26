@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'AVAILABLE_LANGUAGES' => ['en','fr'],
-	'DEFAULT_LANGUAGE' => 'en'
+	'available_languages' => ['en','fr'],
+	'default_language' => 'en'
 ];

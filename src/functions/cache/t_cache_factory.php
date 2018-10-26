@@ -37,7 +37,7 @@ function t_cache_factory($driver = null, $forceNewPool = false) {
 	// switch on the requested driver to create a new pool
 	switch($driver) {
 		case 'filesystem':
-			$filesystemAdapter = new Local(Thorin::sanitize_path(Thorin::config('paths.FILESYSTEM_CACHE')));
+			$filesystemAdapter = new Local(Thorin::sanitize_path(Thorin::config('paths.filesystem_cache')));
 			$filesystem        = new Filesystem($filesystemAdapter);
 			$pool = new FilesystemCachePool($filesystem);
 		break;
@@ -52,21 +52,21 @@ function t_cache_factory($driver = null, $forceNewPool = false) {
 		break;
 		case 'memcache':
 			$client = new Memcache();
-			$client->connect(Thorin::config('cache.MEMCACHE.HOST'), Thorin::config('cache.MEMCACHE.PORT'));
+			$client->connect(Thorin::config('cache.memcache.host'), Thorin::config('cache.memcache.port'));
 			$pool = new MemcacheCachePool($client);
 		break;
 		case 'memcached':
 			$client = new \Memcached();
-			$client->addServer(Thorin::config('cache.MEMCACHED.HOST'), Thorin::config('cache.MEMCACHED.PORT'));
+			$client->addServer(Thorin::config('cache.memcached.host'), Thorin::config('cache.memcached.port'));
 			$pool = new MemcachedCachePool($client);
 		break;
 		case 'redis':
 			$client = new \Redis();
-			$client->connect(Thorin::config('cache.REDIS.HOST'), Thorin::config('cache.REDIS.PORT'));
+			$client->connect(Thorin::config('cache.redis.host'), Thorin::config('cache.redis.port'));
 			$pool = new RedisCachePool($client);
 		break;
 		default:
-			$pool = Thorin::cache_factory(Thorin::config('cache.DEFAULT_DRIVER'));
+			return Thorin::cache_factory(Thorin::config('cache.default_driver'));
 		break;
 	}
 	// save pool in stack to avoid creating multiple pool of the same driver
