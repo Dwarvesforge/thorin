@@ -8,5 +8,5 @@
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_base_path($slug = '') {
-	return Thorin::sanitize_path(Thorin::config('paths.BASE')) . '/' . ltrim($slug, '/');
+	return Thorin::sanitize_path(Thorin::config('paths.BASE')) . ltrim($slug, '/');
 }

@@ -11,6 +11,6 @@
 function t_root_path($slug = '') {
 	// remove the root path to be sure we don't sens back
 	// a path from the server root if it's not the wanted behavior
-	$slug = str_replace(t_sanitize_path(Thorin::config('paths.DOCUMENT_ROOT')), '', $slug);
-	return t_sanitize_path(Thorin::config('paths.DOCUMENT_ROOT')) . ltrim($slug, '/');
+	$slug = str_replace(Thorin::sanitize_path(Thorin::config('paths.DOCUMENT_ROOT')), '', $slug);
+	return Thorin::sanitize_path(Thorin::config('paths.DOCUMENT_ROOT')) . ltrim($slug, '/');
 }
