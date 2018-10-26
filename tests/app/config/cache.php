@@ -1,5 +1,5 @@
 <?php
 
 return [
-	'DEFAULT_DRIVER' => 'filesystem'
+	'default_driver' => 'filesystem'
 ];

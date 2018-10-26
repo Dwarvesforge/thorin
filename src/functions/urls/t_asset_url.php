@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return a url relative to the `app.ASSETS_PATH` and the `app.ROOT_URL` config
+ * Return a url relative to the `paths.assets` and the `app.root_url` config
  *
  * @param       {String}        $slug       The asset slug to get
  * @param  		{Boolean} 		[$include_domain=false] 	If want the fully qualified domain in the url
@@ -10,11 +10,11 @@
  */
 function t_asset_url($slug, $include_domain = false) {
 
-	// need to strip the `paths.DOCUMENT_ROOT` part from the `app.ASSET_PATH` to get the
-	// wanted path relative to the `paths.DOCUMENT_ROOT` one
-	$pathRelativeToTDocumentRoot = str_replace(Thorin::sanitize_path(Thorin::config('paths.DOCUMENT_ROOT')), '', Thorin::sanitize_path(Thorin::config('paths.ASSETS')));
+	// need to strip the `paths.document_root` part from the `app.ASSET_PATH` to get the
+	// wanted path relative to the `paths.document_root` one
+	$pathRelativeToTDocumentRoot = str_replace(Thorin::sanitize_path(Thorin::config('paths.document_root')), '', Thorin::sanitize_path(Thorin::config('paths.assets')));
 	if ($include_domain) {
-		$path = Thorin::tailslash(Thorin::config('app.ROOT_URL')) . ltrim(Thorin::tailslash($pathRelativeToTDocumentRoot), '/') . ltrim($slug, '/');
+		$path = Thorin::tailslash(Thorin::config('app.root_url')) . ltrim(Thorin::tailslash($pathRelativeToTDocumentRoot), '/') . ltrim($slug, '/');
 	} else {
 		$path = Thorin::headslash(Thorin::tailslash($pathRelativeToTDocumentRoot)) . ltrim($slug, '/');
 	}

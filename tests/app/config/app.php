@@ -1,6 +1,6 @@
 <?php
 
 return [
-	'PROTOCOL' => 'http://',
-	'DOMAIN' => 'thorin.io'
+	'protocol' => 'http://',
+	'domain' => 'thorin.io'
 ];

@@ -15,8 +15,8 @@
  */
 function t_language($available = null, $default = null, $getParam = 'lang') {
 	// default parameters
-	if ($available == null) $available = Thorin::config('i18n.AVAILABLE_LANGUAGES');
-	if ($default == null) $default = Thorin::config('i18n.DEFAULT_LANGUAGE');
+	if ($available == null) $available = Thorin::config('i18n.available_languages');
+	if ($default == null) $default = Thorin::config('i18n.default_language');
 	// get the browser language:
 	$browserLanguage = Thorin::browser_language();
 	// check if a language is passed in the url

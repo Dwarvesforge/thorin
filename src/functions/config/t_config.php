@@ -42,19 +42,30 @@ function t_config($path) {
 	// transform the dot path to an array like one
 	$path = implode("']['", $splits);
 	$path = "['".$path."']";
-	$path = strtoupper($path);
+	$path = strtolower($path);
 	// return the value from the languages stack
-	$value = eval('return $config'.$path.';');
-	// process tokens
-	if (is_string($value)) {
-		preg_match_all('#\$\{[a-zA-Z0-9._-]+\}#', $value, $matches);
-		foreach($matches[0] as $token) {
-			$tokenPath = str_replace('${','',$token);
-			$tokenPath = str_replace('}','',$tokenPath);
-			$tokenValue = Thorin::config($tokenPath);
-			$value = str_replace($token, $tokenValue, $value);
-		}
+	$value = @eval('return $config'.$path.';');
+	// process value :
+	if (is_array($value)) {
+		array_walk_recursive($value, function(&$item) {
+			if (is_string($item)) {
+				$item = Thorin::config_replace_tokens($item);
+			}
+		});
+	} else if (is_string($value)) {
+		$value = Thorin::config_replace_tokens($value);
 	}
 	// return the value
+	return $value;
+}
+
+function t_config_replace_tokens($value) {
+	preg_match_all('#\$\{[a-zA-Z0-9._-]+\}#', $value, $matches);
+	foreach($matches[0] as $token) {
+		$tokenPath = str_replace('${','',$token);
+		$tokenPath = str_replace('}','',$tokenPath);
+		$tokenValue = Thorin::config($tokenPath);
+		$value = str_replace($token, $tokenValue, $value);
+	}
 	return $value;
 }

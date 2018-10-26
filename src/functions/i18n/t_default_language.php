@@ -8,5 +8,5 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
 function t_default_language() {
-	return Thorin::config('i18n.DEFAULT_LANGUAGE');
+	return Thorin::config('i18n.default_language');
 }

@@ -11,5 +11,5 @@
  */
 function t_domain() {
 	// return the protocol from the config
-	return Thorin::config('app.DOMAIN');
+	return Thorin::config('app.domain');
 }

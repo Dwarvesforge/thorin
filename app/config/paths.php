@@ -19,7 +19,7 @@ return [
 	 * @type  		{String}
 	 * @default 	${app.ROOT_PATH}../
 	 */
-	'base' => '${paths.document_root}../',
+	'base' => '${paths.document_root}',
 
 	/**
 	 * @name 		app
