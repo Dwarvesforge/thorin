@@ -15,7 +15,7 @@ function t_config_path() {
 		$path = getenv('T_CONFIG_PATH');
 	}
 	if (!$path) {
-		$path = Thorin::app_path('config/');
+		$path = 'app/config/';
 	}
 	return rtrim($path, '/') . '/';
 }
