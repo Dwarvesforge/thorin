@@ -12,8 +12,8 @@
  */
 function t_lang($path, $lang = null) {
 	// if no lang is passed as parameter,
-	// get it with the t_get_language function using
-	// the config constants
+	// get it with the t_language function using
+	// the config
 	if ($lang == null) {
 		$lang = Thorin::language();
 	}
