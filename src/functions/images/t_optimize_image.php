@@ -7,13 +7,13 @@ use Intervention\Image\ImageManager;
  * Optimize the passed image by compressing (resize and quality) it and save it to the paths.IMAGES_CACHE folder
  * in order to avoid recreating it again and again.
  * The $path argument is relative to the paths.BASE path
- * @param 		{String} 		$path 				The image path to process relative to the document root
+ * @param 		{String} 		$path 				The image path to process absolute to the server root folder
+ * @param  		{String}  		[$saveTo=null] 		Where to store the optimized image absolute to the server root folder
  * @param 		{Object} 		[$settings={}] 		The settings to tell how to compress the image
- * @param 		{Boolean} 		[$cache=true] 		true if want to save the optimized image in cache, false if not
  * @return 		{String} 							The optimized image path. If cache is not used, return the image in base64 format
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
-function t_optimize_image($path, $settings = [], $cache = true) {
+function t_optimize_image($path, $saveTo = null, $settings = []) {
 	$originalSettings = (object) [
 		'quality' => Thorin::config('images.QUALITY'),
 		'width' => Thorin::config('images.MAX_WIDTH'),
@@ -23,19 +23,7 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 	$settings = Thorin::extend($originalSettings, $settings);
 
 	// process the $path argument
-	$serverFilePath = Thorin::sanitize_path(Thorin::base_path($path));
-
-	// build the cache path from the paths.IMAGES_CACHE config
-	$serverCachePath = Thorin::sanitize_path(Thorin::config('paths.IMAGES_CACHE'));
-
-	// save the cache file path from the root of the server
-	$serverCacheFilePath = $serverCachePath . basename($path);
-
-	// append settings object hash to the file name
-	$hash = hash('md5', serialize($settings));
-	$serverCacheFilePath = explode('.',$serverCacheFilePath);
-	array_splice($serverCacheFilePath, count($serverCacheFilePath)-1, 0, $hash);
-	$serverCacheFilePath = implode('.',$serverCacheFilePath);
+	$serverFilePath = Thorin::sanitize_path($path);
 
 	// init manager
 	$manager = new ImageManager(array('driver' => 'gd'));
@@ -49,15 +37,10 @@ function t_optimize_image($path, $settings = [], $cache = true) {
 		});
 	}
 
-	if ($cache) {
-		$fileTime = filemtime($serverFilePath);
-		$cacheTime = (file_exists($serverCacheFilePath)) ? filemtime($serverCacheFilePath) : null;
-		if (!$cacheTime || $cacheTime < $fileTime) {
-			print 'make image';
-			// save the image in cache
-			$image->save($serverCacheFilePath, $settings->quality);
-		}
-		return Thorin::root_path($serverCacheFilePath);
+	if ($saveTo) {
+		// save the image in cache
+		$image->save($saveTo, $settings->quality);
+		return $saveTo;
 	} else {
 		// return the image as url encoded
 		return $image->encode('data-url', $settings->quality);

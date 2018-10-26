@@ -8,9 +8,9 @@ The $path argument is relative to the paths.BASE path
 ### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$path  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The image path to process relative to the document root  |  required  |
+$path  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The image path to process absolute to the server root folder  |  required  |
+$saveTo  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  Where to store the optimized image absolute to the server root folder  |  optional  |  null
 $settings  |  **{ [Object](http://php.net/manual/en/language.types.object.php) }**  |  The settings to tell how to compress the image  |  optional  |  {}
-$cache  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  true if want to save the optimized image in cache, false if not  |  optional  |  true
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The optimized image path. If cache is not used, return the image in base64 format
 
