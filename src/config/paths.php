@@ -17,7 +17,7 @@ return [
 	 * This is not the DOCUMENT_ROOT. It represent the root of the files. The DOCUMENT_ROOT can be a subfolder of this one.
 	 * Need to end with a trailing /
 	 * @type  		{String}
-	 * @default 	${app.ROOT_PATH}../
+	 * @default 	${paths.document_root}../
 	 */
 	'base' => '${paths.document_root}../',
 
@@ -26,7 +26,7 @@ return [
 	 * Specify where the app files are stored absolute to the server root folder.
 	 * Need to end with a trailing /
 	 * @type 		{String}
-	 * @default		${paths.BASE}app/
+	 * @default		${paths.base}app/
 	 */
 	'app' => '${paths.base}app/',
 
@@ -37,19 +37,19 @@ return [
 	 * This path MUST be inside of the DOCUMENT_ROOT path
 	 * This is bein used in functions like "t_asset_url", "t_asset_path", etc...
 	 * @type 		{String}
-	 * @default 	${app.ROOT_PATH}dist/
+	 * @default 	${paths.document_root}dist/
 	 */
 	'assets' => '${paths.document_root}dist/',
 
 	/**
-	 * @name 		filesystem_cache
+	 * @name 		cache_filesystem
 	 * Specify where to store the filesystem cache
 	 * Need to end with a trailing /
 	 * This is bein used in functions like "t_cache", etc...
 	 * @type 		{String}
-	 * default 		${app.ROOT_PATH}app/cache/filesystem/
+	 * default 		${paths.app}cache/filesystem/
 	 */
-	'filesystem_cache' => '${paths.app}cache/filesystem/',
+	'cache_filesystem' => '${paths.app}cache/filesystem/',
 
 	/**
 	 * @name 		lang
@@ -57,7 +57,7 @@ return [
 	 * Need to end with a trailing /
 	 * This is bein used in functions like "t_lang", etc...
 	 * @type 		{String}
-	 * @default 	${app.ROOT_PATH}app/lang/
+	 * @default 	${paths.app}lang/
 	 */
 	'lang' => '${paths.app}lang/',
 
@@ -67,7 +67,7 @@ return [
 	 * Need to end with a trailing /
 	 * This is bein used in functions like "t_optimize_image", etc...
 	 * @type 		{String}
-	 * @default 	${app.ROOT_PATH}app/cache/views/images/
+	 * @default 	${paths.app}cache/images/
 	 */
 	'images_cache' => '${paths.app}cache/images/',
 
@@ -77,7 +77,7 @@ return [
 	 * Need to end with a trailing /
 	 * This is bein used in functions like "t_render_blade", "t_render", etc...
 	 * @type 		{String}
-	 * @default 	${app.ROOT_PATH}app/views/
+	 * @default 	${paths.app}views/
 	 */
 	'views' => '${paths.app}views/',
 
@@ -87,7 +87,7 @@ return [
 	 * Need to end with a trailing /
 	 * This is bein used in functions like "t_render_blade", etc...
 	 * @type 		{String}
-	 * @default 	${app.ROOT_PATH}app/cache/views/
+	 * @default 	${paths.app}cache/views/
 	 */
 	'views_cache' => '${paths.app}cache/views/'
 ];

@@ -21,7 +21,7 @@ return [
 	 * @name 	ROOT_URL
 	 * Specify the root url under which the script has been requested. This is usually automatically setting up
 	 * @type 		{String}
-	 * @default 	${app.PROTOCOL}${app.DOMAIN}
+	 * @default 	${app.protocol}${app.domain}
 	 */
 	'root_url' =>  '${app.PROTOCOL}${app.DOMAIN}',
 
