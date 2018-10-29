@@ -1,6 +1,6 @@
 # t_disk
 
-Return a filesystem [Flysystem]() instance of the requested disk
+Return a filesystem [Flysystem](http://flysystem.thephpleague.com/docs/) instance of the requested disk
 
 
 ### Parameters

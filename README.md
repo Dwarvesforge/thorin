@@ -116,7 +116,7 @@ Create the files/folders structure described bellow and start using Thorin with 
 - |------- en
 - |----------- your lang files here
 - |--- views
-- |------- your views files here
+- |------- your views files/folders here
 
 ### Second solution
 
@@ -128,31 +128,29 @@ To do so, you'll need first:
 First choice, using the .env file at the root of your project
 
 ```
-T_CONFIG_PATH=something/relative/to/the/document/root/
+T_CONFIG_PATH=something/absolute/to/the/server/root/
 ```
 
 Or by defining a constant like so:
 
 ```php
-define('T_CONFIG_PATH', 'something/relative/to/the/document/root/');
+define('T_CONFIG_PATH', 'something/absolute/to/the/server/root/');
 ```
 
 The default value for this config is `app/config/`
 
 #### Changing the path of each modules individually
 
-To do so, you'll need to create some config files to override the default configs like so:
+To do so, you'll need to create some config files to override the default configs that you can find here:
 
-`my/config/path/paths.php`
-```php
-return [
-	'ASSETS' => '${app.ROOT_PATH}dist/',
-	'LANG' => '${app.ROOT_PATH}app/lang/',
-	'IMAGES_CACHE' => '${app.ROOT_PATH}app/cache/images/',
-	'VIEWS' => '${app.ROOT_PATH}app/views/',
-	'VIEWS_CACHE' => '${app.ROOT_PATH}app/cache/views/'
-]
-```
+- **Application config** : [`app/config/app.php`](doc/config/app.md)
+- **Cache config** : [`app/config/cache.php`](doc/config/cache.md)
+- **Filesystem config** : [`app/config/filesystem.php`](doc/config/filesystem.md)
+- **i18n config** : [`app/config/i18n.php`](doc/config/i18n.md)
+- **Images config** : [`app/config/images.php`](doc/config/images.md)
+- **Paths config** : [`app/config/paths.php`](doc/config/paths.md)
+
+To override some config, simply create a file with the same name in your config folder and override it inside this file.
 
 <a id="readme-contribute"></a>
 ## Contribute
