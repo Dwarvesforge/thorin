@@ -1,4 +1,4 @@
-# DEFAULT_DRIVER
+# default_driver
 
 Specify the default cache driver to use
 
@@ -11,14 +11,14 @@ Default : **filesystem**
 ## Public properties
 
 
-### MEMCACHE
+### memcache
 
 Memcache connexion settings
 
 Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### MEMCACHE.HOST
+### memcache.host
 
 Memcache host
 
@@ -27,7 +27,7 @@ Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 Default : **localhost**
 
 
-### MEMCACHE.PORT
+### memcache.port
 
 Memcache port
 
@@ -36,14 +36,14 @@ Type : **{ [Integer](http://php.net/manual/en/language.types.integer.php) }**
 Default : **11211**
 
 
-### MEMCACHED
+### memcached
 
 Memcached connexion settings
 
 Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### MEMCACHED.HOST
+### memcached.host
 
 Memcached host
 
@@ -52,7 +52,7 @@ Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 Default : **localhost**
 
 
-### MEMCACHED.PORT
+### memcached.port
 
 Memcached port
 
@@ -61,14 +61,14 @@ Type : **{ [Integer](http://php.net/manual/en/language.types.integer.php) }**
 Default : **11211**
 
 
-### REDIS
+### redis
 
 Redis connexion settings
 
 Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### REDIS.HOST
+### redis.host
 
 Redis host
 
@@ -77,7 +77,7 @@ Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 Default : **127.0.0.1**
 
 
-### REDIS.PORT
+### redis.port
 
 Redis port
 

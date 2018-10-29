@@ -1,4 +1,4 @@
-# DOCUMENT_ROOT
+# document_root
 
 Specify the root path where your app is stored absolute to the server root folder.
 This is usually automatically setting up using the $_SERVER['DOCUMENT_ROOT']|$_SERVER['PWD'] variable
@@ -13,7 +13,7 @@ Default : **rtrim((isset($_SERVER['PWD'])) ? $_SERVER['PWD'] : $_SERVER['DOCUMEN
 ## Public properties
 
 
-### BASE
+### base
 
 Specify where the base folder of the project is stored absolute to the server root folder.
 This is not the DOCUMENT_ROOT. It represent the root of the files. The DOCUMENT_ROOT can be a subfolder of this one.
@@ -21,20 +21,20 @@ Need to end with a trailing /
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${app.ROOT_PATH}../**
+Default : **${paths.document_root}../**
 
 
-### APP
+### app
 
 Specify where the app files are stored absolute to the server root folder.
 Need to end with a trailing /
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${paths.BASE}app/**
+Default : **${paths.base}app/**
 
 
-### ASSETS
+### assets
 
 Specify where the assets (images, etc...) are stored absolute to the server root folder.
 Need to end with a trailing /
@@ -43,10 +43,10 @@ This is bein used in functions like "t_asset_url", "t_asset_path", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${app.ROOT_PATH}dist/**
+Default : **${paths.document_root}dist/**
 
 
-### FILESYSTEM_CACHE
+### cache_filesystem
 
 Specify where to store the filesystem cache
 Need to end with a trailing /
@@ -55,7 +55,7 @@ This is bein used in functions like "t_cache", etc...
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
 
-### LANG
+### lang
 
 Specify where the lang files are stored absolute to the server root folder.
 Need to end with a trailing /
@@ -63,10 +63,10 @@ This is bein used in functions like "t_lang", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${app.ROOT_PATH}app/lang/**
+Default : **${paths.app}lang/**
 
 
-### IMAGES_CACHE
+### images_cache
 
 Specify where the cache are stored absolute to the server root folder
 Need to end with a trailing /
@@ -74,10 +74,10 @@ This is bein used in functions like "t_optimize_image", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${app.ROOT_PATH}app/cache/views/images/**
+Default : **${paths.app}cache/images/**
 
 
-### VIEWS
+### views
 
 Specify where the views are stored absolute to the server root folder.
 Need to end with a trailing /
@@ -85,10 +85,10 @@ This is bein used in functions like "t_render_blade", "t_render", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${app.ROOT_PATH}app/views/**
+Default : **${paths.app}views/**
 
 
-### CACHE_PATH
+### cache_path
 
 Specify where the cache are stored absolute to the server root folder
 Need to end with a trailing /
@@ -96,4 +96,4 @@ This is bein used in functions like "t_render_blade", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${app.ROOT_PATH}app/cache/views/**
+Default : **${paths.app}cache/views/**
