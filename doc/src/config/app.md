@@ -26,7 +26,7 @@ Specify the root url under which the script has been requested. This is usually 
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${app.PROTOCOL}${app.DOMAIN}**
+Default : **${app.protocol}${app.domain}**
 
 
 ### ENVIRONMENT

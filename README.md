@@ -33,19 +33,28 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 
 - Views
 	- [`Thorin::render_blade`](doc/src/functions/views/t_render_blade.md) : let you quickly render some blade templates
+	- [`Thorin::render_twig`](doc/src/functions/views/t_render_twig.md) : let you quickly render some twig templates
 	- [Many more](doc/src/functions/views) 
 - Paths
-	- [`Thorin::asset_path`](doc/src/functions/paths/t_asset_path.md) : return an asset (image, video, etc...) path relative to the `T_ASSETS_PATH` constant
-	- [`Thorin::asset_url`](doc/src/functions/paths/t_asset_url.md) : return an asset (image, video, etc...) url absolute to the `T_DOMAIN` and `T_ASSETS_PATH` constant
+	- [`Thorin::asset_path`](doc/src/functions/paths/t_asset_path.md) : return an asset (image, video, etc...) path absolute to the server root
+	- [`Thorin::sanitize_path`](doc/src/functions/paths/t_sanitize_path.md) : Sanitize the passed path by normalize it, removing the last "." and add a slash at the end if needed
+	- [`Thorin::normalize_path`](doc/src/functions/paths/t_normalize_path.md) : Normalize the passed path by resolving all the "../"
+- Urls
+	- [`Thorin::asset_url`](doc/src/functions/paths/t_asset_url.md) : return an asset (image, video, etc...) url relative to the paths.assets config
+	- [`Thorin::sanitize_url`](doc/src/functions/urls/t_sanitize_url.md) : Sanitize the passed url by removing all double "//" and passing through the `filter_var` function
 	- [Many more](doc/src/functions/paths)
 - i18n
 	- [`Thorin::lang`](doc/src/functions/i18n/t_lang.md) : Translation system using languages files
+	- [`Thorin::browser_language`](doc/src/functions/i18n/t_browser_language.md) : Return the browser language
 	- [Many more](doc/src/functions/i18n)
 - Cache
 	- [`Thorin::cache`](doc/src/functions/cache/t_cache.md) : Store/get/delete item from a chosen cache (apc, memcache, filesystem, etc...)
 	- [`Thorin::cache_factory`](doc/src/functions/cache/t_cache_factory.md) : Return a cache pool using the requested driver
 - Config
 	- [`Thorin::config`](doc/src/functions/config/t_config.md) : Access values in a configuration file
+- Filesystem
+	- [`Thorin::disk`](doc/src/functions/filesystem/t_disk.md) : Return a [Flysystem](http://flysystem.thephpleague.com/docs/) instance of the requested disk registered in config
+	- [`Thorin::disks`](doc/src/functions/filesystem/t_disks.md) : Return a [Flysystem](http://flysystem.thephpleague.com/docs/) manager instance of the requested disks registered in config
 - Objects
 	- [`Thorin::extend`](doc/src/functions/objects/t_extend.md) : Extend an object/array with another recursively
 - Strings
@@ -58,6 +67,11 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::is_environment`](doc/src/functions/utils/t_is_environment.md) : Check if the actual environment match one of the ones passed as parameter
 	- [`Thorin::is_crawler`](doc/src/functions/utils/t_is_crawler.md) : Return if the script has been called by a web crawler like the google bot, etc...
 	- [Many more](doc/src/functions/utils)
+- Vendors
+	- [`Thorin::faker`](doc/src/functions/vendor/t_faker.md) : Access the full power of the nice [Faker](https://github.com/fzaninotto/Faker) library
+	- [`Thorin::lodash`](doc/src/functions/vendor/t_lodash.md) : Access the full power of the nice [Lodash](https://github.com/lodash-php/lodash-php) library
+	- [`Thorin::sh`](doc/src/functions/vendor/t_sh.md) : Call some shell functions with ease using the nice [ShellWrapp](https://github.com/MrRio/shellwrap) library
+	- [`Thorin::validator`](doc/src/functions/vendor/t_validator.md) : Return a [Respect Validation](https://github.com/Respect/Validation) class instance to work with
 - [Many more](doc/src)
 
 ## Table of content

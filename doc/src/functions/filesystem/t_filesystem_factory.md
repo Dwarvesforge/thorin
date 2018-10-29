@@ -1,14 +1,13 @@
 # $t_filesystems
 
-Create a filesystem instance with the driver requested. Return a [Flysystem](https://flysystem.thephpleague.com/docs/usage/filesystem-api/) instance to work with.
-If no driver is passed, the default one in the config filsystem.DEFAULT_DRIVER will be used.
+Create a filesystem instance with the disk requested. Return a [Flysystem](https://flysystem.thephpleague.com/docs/usage/filesystem-api/) instance to work with.
+If no disk is passed, the default one in the config filsystem.default_disk will be used.
 
 
 ### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$driver  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The driver wanted. can be local, ftp, sftp, s3 or memory  |  optional  |  null
-$forceNewFilesystem  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  If want a new filesystem instead of the  |  optional  |  false
+$disk  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The disk wanted. can be any disk configured in your filesystem config file.  |  optional  |  null
 
 ### Example
 ```php

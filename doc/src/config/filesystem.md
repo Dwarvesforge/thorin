@@ -1,7 +1,7 @@
-# DEFAULT_DRIVER
+# default_disk
 
-Specify the default adapter to use when using the filesystem factory with no arguments
-Can be local, ftp, sftp, s3 or memory
+Specify the default disk to use when using the filesystem factory with no arguments
+Can be base, document_root, assets or any disk that you have in your config
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
@@ -10,176 +10,50 @@ Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 ## Public properties
 
 
-### LOCAL
+### base
 
-Local filesystem configuration
-
-Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
-
-
-### LOCAL.PATH
-
-Path to the filesystem root
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP
-
-FTP filesystem configuration
+Project root folder
 
 Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### FTP.HOST
+### document_root
 
-Server host
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.USERNAME
-
-Username to connect to FTP with
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.PASSWORD
-
-Password to connect to FTP with
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.PORT
-
-Port on which to connect
-
-Type : **{ [Integer](http://php.net/manual/en/language.types.integer.php) }**
-
-
-### FTP.ROOT
-
-Root folder on the ftp server
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.PASSIVE
-
-Enable or not the passive mode
-
-Type : **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**
-
-
-### FTP.SSL
-
-Enable or not the ssl mode
-
-Type : **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**
-
-
-### FTP.TIMEOUT
-
-Specify the timeout to use in seconds
-
-Type : **{ [Integer](http://php.net/manual/en/language.types.integer.php) }**
-
-
-### SFTP
-
-SFTP filesystem configuration
+Document root folder
 
 Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### FTP.HOST
+### assets
 
-Server host
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.USERNAME
-
-Username to connect to FTP with
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.PASSWORD
-
-Password to connect to FTP with
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### PRIVATEKEY
-
-Specify a private key to connect with
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.PORT
-
-Port on which to connect
-
-Type : **{ [Integer](http://php.net/manual/en/language.types.integer.php) }**
-
-
-### FTP.ROOT
-
-Root folder on the ftp server
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### FTP.TIMEOUT
-
-Specify the timeout to use in seconds
-
-Type : **{ [Integer](http://php.net/manual/en/language.types.integer.php) }**
-
-
-### S3
-
-Amazon s3 adapter configuration
+Assets folder
 
 Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### KEY
+### s3
 
-The key connexion
+S3 bucket
 
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### SECRET
-
-The secret connexion
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### REGION
+### ftp
 
-The region to connect to
+Ftp disk
 
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-
-### BUCKET
-
-The bucket name to connect to
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
 
 
-### ROOT
+### sftp
 
-The root folder in the bucket
+SFTP disk
 
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**
+
+
+### memory
+
+Memory disk
+
+Type : **{ [Array](http://php.net/manual/en/language.types.array.php) }**

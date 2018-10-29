@@ -23,7 +23,7 @@ return [
 	 * @type 		{String}
 	 * @default 	${app.protocol}${app.domain}
 	 */
-	'root_url' =>  '${app.PROTOCOL}${app.DOMAIN}',
+	'root_url' =>  '${app.protocol}${app.domain}',
 
 	/**
 	 * @name    	ENVIRONMENT
