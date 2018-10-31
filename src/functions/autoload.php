@@ -47,6 +47,9 @@ t_require_functions_folder('paths');
 // random
 t_require_functions_folder('random');
 
+// session
+t_require_functions_folder('session');
+
 // strings
 t_require_functions_folder('strings');
 
