@@ -23,6 +23,9 @@ t_require_functions_folder('cast');
 // config
 t_require_functions_folder('config');
 
+// email
+t_require_functions_folder('email');
+
 // filesystem
 t_require_functions_folder('filesystem');
 
@@ -46,6 +49,9 @@ t_require_functions_folder('paths');
 
 // random
 t_require_functions_folder('random');
+
+// security
+t_require_functions_folder('security');
 
 // session
 t_require_functions_folder('session');
