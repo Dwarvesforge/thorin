@@ -1,8 +1,6 @@
 <?php
 
-define('T_CONFIG_PATH', __DIR__ . '/../app/config/');
-require_once '../vendor/autoload.php';
-require_once '../src/bootstrap.php';
+require_once 'bootstrap.php';
 
 $mailer = Thorin::mailer('mailgun');
 $mailer->addAddress('olivier.bossel@gmail.com', 'Olivier Bossel');
