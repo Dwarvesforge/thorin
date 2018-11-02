@@ -1,7 +1,7 @@
-# t_session
+# t_session_flash
 
-Get or set a value in session
-To delete the value, pass -1 as $value parameter
+Get or set a value in session flash.
+Flash mean that the value will live until the value is accessed. Then the value is killed.
 
 
 ### Parameters
@@ -14,6 +14,8 @@ Return **{ [Mixed](http://php.net/manual/en/language.pseudo-types.php#language.t
 
 ### Example
 ```php
-	Thorin::session('my-key', 'my value');
+	Thorin::session_flash('my-key', 'my value');
+print Thorin::session_flash('my-key'); // my value
+print Thorin::session_flash('my-key'); // null
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)

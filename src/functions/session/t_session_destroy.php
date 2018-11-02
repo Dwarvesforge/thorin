@@ -3,7 +3,7 @@
 use duncan3dc\Sessions\Session;
 
 /**
- * Destroy the while session
+ * Destroy the whole session
  * @example    php
  * Thorin::session_destroy();
  *
