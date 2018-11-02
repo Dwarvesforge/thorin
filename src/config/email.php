@@ -11,6 +11,34 @@ return [
 	'default_mailer' => 'mail',
 
 	/**
+	 * @name    from
+	 * Specify the from address to use if none is specified at mailer level
+	 * @type    {String}
+	 * @default    Thorin::env('EMAIL_FROM', 'postmaster@${app.domain},${app.name}')
+	 */
+	'from' => Thorin::env('EMAIL_FROM', 'postmaster@${app.domain},${app.name}'),
+
+	/**
+	 * @name    reply
+	 * Specify the reply address to use if none is specified at mailer level
+	 * @type    {String}
+	 * @default    Thorin::env('EMAIL_REPLY', 'no-reply@${app.domain},No reply')
+	 */
+	'reply' => Thorin::env('EMAIL_REPLY', 'no-reply@${app.domain},No reply'),
+
+	/**
+	 * @name    smtp_debug
+	 * Specify the debug level to set to phpmailer SMTPDebug property.
+	 * Can be:
+	 * 0: no debug at all
+	 * 1: Output messages sent by the client
+	 * 2: as 1, plus responses received from the server (this is the most useful setting).
+	 * @type    {Integer}
+	 * @default   0
+	 */
+	'smtp_debug' => 0,
+
+	/**
 	 * @name    mailers
 	 * Register some mailers to be used by the `t_mailer` function.
 	 * @type    {Array}
@@ -30,8 +58,8 @@ return [
 			'username' => Thorin::env('GMAIL_USERNAME', 'username@gmail.com'),
 			'password' => Thorin::env('GMAIL_PASSWORD', 'yourpassword'),
 			// 'smtp_options' => [],
-			// 'from' => ['sender@domain.com','Your name'],
-			// 'reply' => ['replyto@domain.com','Your name']
+			// 'from' => Thorin::env('GMAIL_FROM', 'postmaster@${app.domain},${app.name}'),
+			// 'reply' => Thorin::env('GMAIL_REPLY', 'no-reply@${app.domain},No reply')
 		],
 		/**
 		 * @name    mailgun
@@ -45,10 +73,10 @@ return [
 			'smtp_secure' => Thorin::env('MAILGUN_SMTP_SECURE', 'tls'),
 			'smtp_auth' => Thorin::env('MAILGUN_SMTP_AUTH', true),
 			'username' => Thorin::env('MAILGUN_USERNAME', 'username@yourdomain.com'),
-			'password' => Thorin::env('MAILGUN_PASSWORD', 'yourpassword',
+			'password' => Thorin::env('MAILGUN_PASSWORD', 'yourpassword'),
 			// 'smtp_options' => [],
-			// 'from' => ['sender@domain.com','Your name'],
-			// 'reply' => ['replyto@domain.com','Your name']
+			// 'from' => Thorin::env('MAILGUN_FROM', 'postmaster@${app.domain},${app.name}'),
+			// 'reply' => Thorin::env('MAILGUN_REPLY', 'no-reply@${app.domain},No reply')
 		],
 		/**
 		 * @name    mail
@@ -57,8 +85,8 @@ return [
 		 */
 		'mail' => [
 			'driver' => 'mail',
-			// 'from' => ['sender@domain.com','Your name'],
-			// 'reply' => ['replyto@domain.com','Your name']
+			// 'from' => Thorin::env('MAIL_FROM', 'postmaster@${app.domain},${app.name}'),
+			// 'reply' => Thorin::env('MAIL_REPLY', 'no-reply@${app.domain},No reply')
 		],
 		/**
 		 * @name    sendmail
@@ -67,8 +95,8 @@ return [
 		 */
 		'sendmail' => [
 			'driver' => 'sendmail',
-			// 'from' => ['sender@domain.com','Your name'],
-			// 'reply' => ['replyto@domain.com','Your name']
+			// 'from' => Thorin::env('SENDMAIL_FROM', 'postmaster@${app.domain},${app.name}'),
+			// 'reply' => Thorin::env('SENDMAIL_REPLY', 'no-reply@${app.domain},No reply')
 		]
 	]
 

@@ -6,7 +6,6 @@ require_once '../src/bootstrap.php';
 
 $mailer = Thorin::mailer('mailgun');
 $mailer->addAddress('olivier.bossel@gmail.com', 'Olivier Bossel');
-$mailer->setFrom('olivier.bossel@gmail.com', 'Olivier Bossel');
 $mailer->Subject = 'Dwarvesforge Thorin Unit Test - Mailgun';
 $mailer->Body = 'Hello World';
 $mailer->AltBody = 'Hello World Alt';

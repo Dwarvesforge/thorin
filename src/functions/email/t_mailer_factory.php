@@ -17,7 +17,7 @@ function t_mailer_factory($mailer = null) {
 	// driver
 	switch(strtolower($config['driver'])) {
 		case 'smtp':
-			$mail->SMTPDebug = 2;
+			$mail->SMTPDebug = 0;
 			$mail->isSMTP();
 		break;
 		case 'sendmail':
@@ -47,11 +47,21 @@ function t_mailer_factory($mailer = null) {
 	if (isset($config['smtp_options'])) {
 		$mail->SMTPOptions = $config['smtp_options'];
 	}
-	if (isset($config['from']) && is_array($config['from']) && count($config['from']) == 2) {
-		$mail->setFrom($config['from'][0], $config['from'][1]);
+	if (isset($config['from'])) {
+		$from = explode(',', $config['from']);
+	} else {
+		$from = explode(',', Thorin::config('email.from'));
 	}
-	if (isset($config['reply']) && is_array($config['reply']) && count($config['reply']) == 2) {
-		$mail->addReplyTo($config['reply'][0], $config['reply'][1]);
+	if (count($from) == 2) {
+		$mail->setFrom(trim($from[0]), trim($from[1]));
+	}
+	if (isset($config['reply'])) {
+		$reply = explode(',', $config['reply']);
+	} else {
+		$reply = explode(',', Thorin::config('email.reply'));
+	}
+	if (count($reply) == 2) {
+		$mail->addReplyTo(trim($reply[0]), trim($reply[1]));
 	}
 	// return the new php mailer instance
 	return $mail;

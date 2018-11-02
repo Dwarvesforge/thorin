@@ -8,7 +8,7 @@ return [
 	 * @type 		{Array}
 	 * @default 	['en']
 	 */
-	'available_languages' =>  ['en'],
+	'available_languages' => Thorin::env('AVAILABLE_LANGUAGES', ['en']),
 
 	/**
 	 * @name 		DEFAULT_LANGUAGE
@@ -17,5 +17,5 @@ return [
 	 * @type 		{String}
 	 * @default 	en
 	 */
-	'default_language' =>  'en'
+	'default_language' => Thorin::env('DEFAULT_LANGUAGE', 'en')
 ];
