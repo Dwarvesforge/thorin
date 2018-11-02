@@ -23,6 +23,9 @@ t_require_functions_folder('cast');
 // config
 t_require_functions_folder('config');
 
+// db
+t_require_functions_folder('db');
+
 // email
 t_require_functions_folder('email');
 
