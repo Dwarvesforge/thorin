@@ -36,7 +36,7 @@ return [
 	 * @type    {Integer}
 	 * @default   0
 	 */
-	'smtp_debug' => 0,
+	'smtp_debug' => Thorin::env('EMAIL_SMTP_DEBUG', 0),
 
 	/**
 	 * @name    mailers
