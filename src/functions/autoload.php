@@ -20,6 +20,9 @@ t_require_functions_folder('cache');
 // cast
 t_require_functions_folder('cast');
 
+// collections
+t_require_functions_folder('collections');
+
 // config
 t_require_functions_folder('config');
 
