@@ -1,4 +1,4 @@
-# t_db
+# t_db_connection_factory
 
 Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/api/5.3/Illuminate/Database/Connection.html) instance of the requested connection
 
@@ -12,7 +12,7 @@ Return **{ Illuminate\Database\Connection }** An eloquent connection instance to
 
 ### Example
 ```php
-	$db = Thorin::db('mysql');
+	$db = Thorin::db_connection_factory('mysql');
 $users = $db->table('users')->get();
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com)

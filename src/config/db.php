@@ -7,7 +7,7 @@ return [
 	 * @type    {String}
 	 * @default    sqlite
 	 */
-	'default' => Thorin::env('DB_CONNECTION', 'sqlite'),
+	'default' => Thorin::env('DB_CONNECTION', 'mysql'),
 
 	/**
 	 * @name    connections
@@ -36,7 +36,7 @@ return [
             'host' => Thorin::env('DB_HOST', '127.0.0.1'),
             'port' => Thorin::env('DB_PORT', 3306),
             'database' => Thorin::env('DB_DATABASE', 'forge'),
-            'username' => Thorin::env('DB_USERNAME', 'forge'),
+            'username' => Thorin::env('DB_USERNAME', 'root'),
             'password' => Thorin::env('DB_PASSWORD', ''),
             'unix_socket' => Thorin::env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
@@ -50,32 +50,32 @@ return [
 		 * PostgreSql db sample
 		 * @type    {Array}
 		 */
-		'pgsql' => [
-			'driver' => 'pgsql',
-            'host' => Thorin::env('DB_HOST', '127.0.0.1'),
-            'port' => Thorin::env('DB_PORT', 5432),
-            'database' => Thorin::env('DB_DATABASE', 'forge'),
-            'username' => Thorin::env('DB_USERNAME', 'forge'),
-            'password' => Thorin::env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
-            'prefix' => Thorin::env('DB_PREFIX', ''),
-            'schema' => 'public',
-            'sslmode' => 'prefer',
-		],
+		// 'pgsql' => [
+		// 	'driver' => 'pgsql',
+        //     'host' => Thorin::env('DB_HOST', '127.0.0.1'),
+        //     'port' => Thorin::env('DB_PORT', 5432),
+        //     'database' => Thorin::env('DB_DATABASE', 'forge'),
+        //     'username' => Thorin::env('DB_USERNAME', 'root'),
+        //     'password' => Thorin::env('DB_PASSWORD', ''),
+        //     'charset' => 'utf8',
+        //     'prefix' => Thorin::env('DB_PREFIX', ''),
+        //     'schema' => 'public',
+        //     'sslmode' => 'prefer',
+		// ],
 		/**
 		 * @name    sqlsrv
 		 * SQLServer db sample
 		 * @type    {Array}
 		 */
-		'sqlsrv' => [
-			'driver' => 'sqlsrv',
-            'host' => Thorin::env('DB_HOST', 'localhost'),
-            'port' => Thorin::env('DB_PORT', 1433),
-            'database' => Thorin::env('DB_DATABASE', 'forge'),
-            'username' => Thorin::env('DB_USERNAME', 'forge'),
-            'password' => Thorin::env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
-            'prefix' => Thorin::env('DB_PREFIX', ''),
-		]
+		// 'sqlsrv' => [
+		// 	'driver' => 'sqlsrv',
+        //     'host' => Thorin::env('DB_HOST', 'localhost'),
+        //     'port' => Thorin::env('DB_PORT', 1433),
+        //     'database' => Thorin::env('DB_DATABASE', 'forge'),
+        //     'username' => Thorin::env('DB_USERNAME', 'root'),
+        //     'password' => Thorin::env('DB_PASSWORD', ''),
+        //     'charset' => 'utf8',
+        //     'prefix' => Thorin::env('DB_PREFIX', ''),
+		// ]
 	]
 ];

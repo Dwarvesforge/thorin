@@ -1,8 +1,8 @@
 <?php
 /**
- * Return eloquent capsule manager [Illuminate\Database\Capsule\Manager](https://laravel.com/api/5.6/Illuminate/Database/Capsule/Manager.html) instance of the requested connection
+ * Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/api/5.3/Illuminate/Database/Connection.html) instance of the requested connection
  * @param    {String}    [$connection=null]    The connection name requested. If not passed, will take the db.default config.
- * @return    {Illuminate\Database\Capsule\Manager}    An eloquent capsule manager instance to work with
+ * @return    Illuminate\Database\Connection    An eloquent connection instance to work with
  *
  * @example    php
  * $db = Thorin::db('mysql');
@@ -11,5 +11,5 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com>
  */
 function t_db($connection = null) {
-	return Thorin::db_factory($connection);
+	return Thorin::db_connection_factory($connection);
 }
