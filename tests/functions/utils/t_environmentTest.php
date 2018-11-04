@@ -8,6 +8,6 @@ final class t_environment extends TestCase
 {
     public function testDefaultEnvironment() {
 		$env = Thorin::environment();
-		$this->assertEquals($env, 'development');
+		$this->assertEquals($env, 'production');
 	}
 }
