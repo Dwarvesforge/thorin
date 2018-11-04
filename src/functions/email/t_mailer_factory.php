@@ -17,7 +17,7 @@ function t_mailer_factory($mailer = null) {
 	// driver
 	switch(strtolower($config['driver'])) {
 		case 'smtp':
-			$mail->SMTPDebug = 0;
+			$mail->SMTPDebug = Thorin::config('email.smtp_debug');
 			$mail->isSMTP();
 		break;
 		case 'sendmail':
