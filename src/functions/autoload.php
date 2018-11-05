@@ -32,6 +32,9 @@ t_require_functions_folder('db');
 // email
 t_require_functions_folder('email');
 
+// events
+t_require_functions_folder('events');
+
 // filesystem
 t_require_functions_folder('filesystem');
 
