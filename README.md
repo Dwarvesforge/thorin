@@ -47,7 +47,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 - i18n
 	- [`Thorin::lang`](doc/src/functions/i18n/t_lang.md) : Translation system using languages files
 	- [`Thorin::browser_language`](doc/src/functions/i18n/t_browser_language.md) : Return the browser language
-	- [Many more](doc/src/functions/i18n
+	- [Many more](doc/src/functions/i18n)
 - Collections
 	- [`Thorin::collect`](doc/src/functions/collections/t_collect.md) : Manipulate array data with ease using the [laravel collections](https://laravel.com/docs/5.7/collections) module
 - Cache
@@ -134,12 +134,11 @@ Create the files/folders structure described bellow and start using Thorin with 
 - |------- views
 - |------- images 
 - |--- config
-- |------- your configuration files here
 - |--- lang
 - |------- en
-- |----------- your lang files here
 - |--- views
-- |------- your views files/folders here
+- | public (document root)
+- |--- dist
 
 ### Second solution
 
