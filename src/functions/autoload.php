@@ -38,6 +38,9 @@ t_require_functions_folder('events');
 // filesystem
 t_require_functions_folder('filesystem');
 
+// hooks
+t_require_functions_folder('hooks');
+
 // html
 t_require_functions_folder('html');
 
