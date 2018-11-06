@@ -22,3 +22,5 @@ Return **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }** tr
 }
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
+
+See : **See more** : [https://packagist.org/packages/volnix/csrf](https://packagist.org/packages/volnix/csrf)

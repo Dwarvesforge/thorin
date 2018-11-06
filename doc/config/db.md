@@ -1,5 +1,6 @@
-<?php
+# `app/config/db.php`
 
+```php
 return [
 	/**
 	 * @name    default_connection
@@ -79,3 +80,4 @@ return [
 		// ]
 	]
 ];
+```

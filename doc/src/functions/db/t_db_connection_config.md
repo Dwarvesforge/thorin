@@ -6,7 +6,7 @@ Return a db connection configuration array
 ### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$name  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The name of the db connection wanted. If not specified will take the db.default config  |  optional  |  null
+$name  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The name of the db connection wanted. If not specified will take the db.default_connection config  |  optional  |  null
 
 Return **{ [Array](http://php.net/manual/en/language.types.array.php) }** The db connection configuration
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer
+ * Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer registered in the `email` config file
  * @param    {String}    [$name=null]    The mailer name requested. If not passed, will take the email.default_mailer config.
  * @return    {PHPMailer\PHPMailer\PHPMailer}    A phpmailer instance to work with
  *

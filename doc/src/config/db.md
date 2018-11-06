@@ -1,4 +1,4 @@
-# default
+# default_connection
 
 Specify the default connection to use when requesting a db instance without any name
 

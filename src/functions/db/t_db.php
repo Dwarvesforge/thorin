@@ -1,7 +1,7 @@
 <?php
 /**
  * Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/api/5.3/Illuminate/Database/Connection.html) instance of the requested connection
- * @param    {String}    [$connection=null]    The connection name requested. If not passed, will take the db.default config.
+ * @param    {String}    [$connection=null]    The connection name requested. If not passed, will take the db.default_connection config.
  * @return    Illuminate\Database\Connection    An eloquent connection instance to work with
  *
  * @example    php

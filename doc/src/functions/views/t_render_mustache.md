@@ -1,6 +1,6 @@
-# t_render_twig
+# t_render_mustache
 
-Render a view with the data passed to it and return it
+Render a view using mustache with the data passed to it and return the result
 
 
 

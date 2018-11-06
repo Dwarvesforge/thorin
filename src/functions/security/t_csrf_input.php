@@ -11,6 +11,7 @@ use \Volnix\CSRF\CSRF;
  * $myInput = Thorin::csrf_input();
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+ * @see    https://packagist.org/packages/volnix/csrf
  */
 function t_csrf_input($name = CSRF::TOKEN_NAME) {
 	return CSRF::getHiddenInputString($name);

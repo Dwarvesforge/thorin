@@ -3,7 +3,7 @@ $t_db_connections = [];
 
 /**
  * Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/api/5.3/Illuminate/Database/Connection.html) instance of the requested connection
- * @param    {String}    [$connection=null]    The connection name requested. If not passed, will take the db.default config.
+ * @param    {String}    [$connection=null]    The connection name requested. If not passed, will take the db.default_connection config.
  * @return    Illuminate\Database\Connection    An eloquent connection instance to work with
  *
  * @example    php
@@ -16,7 +16,7 @@ function t_db_connection_factory($connection = null) {
 	global $t_db_connections;
 	// get the default db if not passed
 	if ( ! $connection) {
-		return Thorin::db_factory(Thorin::config('db.default'));
+		return Thorin::db_factory(Thorin::config('db.default_connection'));
 	}
 	// handle no config
 	$config = Thorin::db_connection_config($connection);

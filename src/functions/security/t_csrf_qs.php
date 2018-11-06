@@ -10,6 +10,7 @@ use \Volnix\CSRF\CSRF;
  * $myQueryString = Thorin::csrf_qs();
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+ * @see    https://packagist.org/packages/volnix/csrf
  */
 function t_csrf_qs($name = CSRF::TOKEN_NAME) {
 	return CSRF::getQueryString($name);

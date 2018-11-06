@@ -1,5 +1,6 @@
-<?php
+# `app/config/email.php`
 
+```php
 return [
 
 	/**
@@ -100,3 +101,4 @@ return [
 		]
 	]
 ];
+```

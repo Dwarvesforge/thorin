@@ -1,6 +1,6 @@
 # t_mailer
 
-Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer
+Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer registered in the `email` config file
 
 
 ### Parameters

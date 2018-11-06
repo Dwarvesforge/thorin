@@ -15,3 +15,5 @@ Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The 
 	$token = Thorin::csrf_token();
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
+
+See : **See more** : [https://packagist.org/packages/volnix/csrf](https://packagist.org/packages/volnix/csrf)

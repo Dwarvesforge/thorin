@@ -6,7 +6,7 @@ Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/
 ### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$connection  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The connection name requested. If not passed, will take the db.default config.  |  optional  |  null
+$connection  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The connection name requested. If not passed, will take the db.default_connection config.  |  optional  |  null
 
 Return **{ Illuminate\Database\Connection }** An eloquent connection instance to work with
 

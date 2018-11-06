@@ -11,6 +11,7 @@ use \Volnix\CSRF\CSRF;
  * $token = Thorin::csrf_token();
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
+ * @see    https://packagist.org/packages/volnix/csrf
  */
 function t_csrf_token($name = CSRF::TOKEN_NAME) {
 	return CSRF::getToken($name);
