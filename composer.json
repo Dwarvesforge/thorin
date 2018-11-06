@@ -1,7 +1,7 @@
 {
   "name": "dwarvesforge/thorin",
-  "version": "1.1.7",
-  "description": "PHP toolkit that offers you some nice helpers like missing functions etc...",
+  "version": "1.1.8",
+  "description": "PHP toolkit that offers you some nice helpers, missing functions, advances capabilities through vendors, etc...",
   "keywords": [
     "dwarves",
     "forge",
@@ -42,10 +42,20 @@
     "league/flysystem-sftp": "^1.0",
     "league/flysystem-aws-s3-v3": "^1.0",
     "league/flysystem-memory": "^1.0",
-    "mrrio/shellwrap": "^0.4.1"
+    "mrrio/shellwrap": "^0.4.1",
+    "duncan3dc/sessions": "^2.0",
+    "volnix/csrf": "^1.2",
+    "phpmailer/phpmailer": "^6.0",
+    "illuminate/database": "^5.7",
+    "illuminate/events": "^5.7",
+    "tightenco/collect": "v5.6.27",
+    "league/event": "^2.1",
+    "voku/php-hooks": "^0.2.11",
+    "mustache/mustache": "^2.12"
   },
 	"require-dev": {
-    "phpunit/phpunit": "5.2.*"
+    "matthiasnoback/phpunit-asynchronicity": "^2.0",
+    "phpunit/phpunit": "7.1.*"
   },
 	"autoload": {
     "files": [

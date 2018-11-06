@@ -12,3 +12,10 @@ if ($envFilePath) {
 
 // autoload
 require_once 'autoload.php';
+
+// start new session
+use duncan3dc\Sessions\Session;
+Session::name(Thorin::config('session.name'));
+
+// Boot eloquent
+Thorin::db_boot_eloquent();

@@ -20,11 +20,26 @@ t_require_functions_folder('cache');
 // cast
 t_require_functions_folder('cast');
 
+// collections
+t_require_functions_folder('collections');
+
 // config
 t_require_functions_folder('config');
 
+// db
+t_require_functions_folder('db');
+
+// email
+t_require_functions_folder('email');
+
+// events
+t_require_functions_folder('events');
+
 // filesystem
 t_require_functions_folder('filesystem');
+
+// hooks
+t_require_functions_folder('hooks');
 
 // html
 t_require_functions_folder('html');
@@ -46,6 +61,12 @@ t_require_functions_folder('paths');
 
 // random
 t_require_functions_folder('random');
+
+// security
+t_require_functions_folder('security');
+
+// session
+t_require_functions_folder('session');
 
 // strings
 t_require_functions_folder('strings');

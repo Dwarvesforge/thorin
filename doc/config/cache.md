@@ -23,7 +23,7 @@ return [
 		 * @type    {String}
 		 * @default    localhost
 		 */
-		'host' => 'localhost',
+		'host' => Thorin::env('MEMCACHE_HOST', 'localhost'),
 
 		/**
 		 * @name    memcache.port
@@ -31,7 +31,7 @@ return [
 		 * @type    {Integer}
 		 * @default    11211
 		 */
-		'port' => 11211
+		'port' => Thorin::env('MEMCACHE_PORT', 11211)
 	],
 
 	/**
@@ -46,7 +46,7 @@ return [
 		 * @type    {String}
 		 * @default    localhost
 		 */
-		'host' => 'localhost',
+		'host' => Thorin::env('MEMCACHED_HOST', 'localhost'),
 
 		/**
 		 * @name    memcached.port
@@ -54,7 +54,7 @@ return [
 		 * @type    {Integer}
 		 * @default    11211
 		 */
-		'port' => 11211
+		'port' => Thorin::env('MEMCACHED_PORT', 11211)
 	],
 
 	/**
@@ -69,7 +69,7 @@ return [
 		 * @type    {String}
 		 * @default    127.0.0.1
 		 */
-		'host' => '127.0.0.1',
+		'host' => Thorin::env('REDIS_HOST', '127.0.0.1'),
 
 		/**
 		 * @name    redis.port
@@ -77,7 +77,7 @@ return [
 		 * @type    {Integer}
 		 * @default    6379
 		 */
-		'port' => 6379
+		'port' => Thorin::env('REDIS_PORT', 6379)
 	]
 ];
 ```
