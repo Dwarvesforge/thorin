@@ -11,7 +11,7 @@ use voku\helper\Hooks;
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://packagist.org/packages/voku/php-hooks
  */
-function t_do_action($name) {
+function t_do_action() {
 	$hooks = Hooks::getInstance();
-	$hooks->do_action($name);
+	call_user_func_array([$hooks, 'do_action'], func_get_args());
 }
