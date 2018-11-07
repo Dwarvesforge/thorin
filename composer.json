@@ -51,7 +51,8 @@
     "tightenco/collect": "v5.6.27",
     "league/event": "^2.1",
     "voku/php-hooks": "^0.2.11",
-    "mustache/mustache": "^2.12"
+    "mustache/mustache": "^2.12",
+    "mobiledetect/mobiledetectlib": "^2.8"
   },
 	"require-dev": {
     "matthiasnoback/phpunit-asynchronicity": "^2.0",
