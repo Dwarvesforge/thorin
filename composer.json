@@ -52,7 +52,9 @@
     "league/event": "^2.1",
     "voku/php-hooks": "^0.2.11",
     "mustache/mustache": "^2.12",
-    "mobiledetect/mobiledetectlib": "^2.8"
+    "mobiledetect/mobiledetectlib": "^2.8",
+    "wapmorgan/unified-archive": "^0.1.1",
+    "arcanedev/no-captcha": "^7.0"
   },
 	"require-dev": {
     "matthiasnoback/phpunit-asynchronicity": "^2.0",
