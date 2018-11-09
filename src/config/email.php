@@ -8,7 +8,7 @@ return [
 	 * @type    {String}
 	 * @default    mail
 	 */
-	'default_mailer' => 'mail',
+	'default_mailer' => Thorin::env('EMAIL_DEFAULT_MAILER', 'mail'),
 
 	/**
 	 * @name    from

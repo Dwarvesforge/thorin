@@ -2,8 +2,10 @@
 use Arcanedev\NoCaptcha\NoCaptcha;
 /**
  * Create a Arcanedev\NoCaptcha\NoCaptcha nocaptcha instance to work with.
- * @param    {String}    [$secret=null]    The secret key of your recaptcha instance
- * @param    {String}    [$sitekey=null]    The site key of your recaptcha instance
+ * @param    {String}    [$secret=null]    The recaptcha secret. Taken from config if null
+ * @param    {String}    [$sitekey=null]    The recaptcha sitekey. Taken from config if null
+ * @param    {String}    [$lang=null]    The language wanted for the recaptcha. Taken from config if null
+ * @param    {Array}    [$attributes=null]    An attribute array with data-theme, data-type and data-size attibutes. Taken from config if null
  * @return    {Arcanedev\NoCaptcha\NoCaptcha}    A nocaptcha instance to work with
  *
  * @example    php
