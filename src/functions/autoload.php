@@ -11,6 +11,9 @@ function t_require_functions_folder($folder) {
     }
 }
 
+// archives
+t_require_functions_folder('archives');
+
 // array
 t_require_functions_folder('array');
 
@@ -61,6 +64,9 @@ t_require_functions_folder('paths');
 
 // random
 t_require_functions_folder('random');
+
+// recaptcha
+t_require_functions_folder('recaptcha');
 
 // security
 t_require_functions_folder('security');
