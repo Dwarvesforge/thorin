@@ -12,7 +12,7 @@ Name  |  Type  |  Description  |  Status  |  Default
 $key  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The cache item key to work with  |  required  |
 $value  |  **{ [Mixed](http://php.net/manual/en/language.pseudo-types.php#language.types.mixed) }**  |  The value to save  |  optional  |  null
 $expiresAfter  |  **{ [Integer](http://php.net/manual/en/language.types.integer.php) }**  |  The lifetime of the item in the cache in seconds  |  optional  |  null
-$driver  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The driver to use for caching the value. If not set, will use the default driver set in config cache.DEFAULT_DRIVER  |  optional  |  null
+$driver  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The driver to use for caching the value. If not set, will use the default driver set in config cache.default_driver  |  optional  |  null
 
 ### Example
 ```php

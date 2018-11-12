@@ -6,16 +6,25 @@
  * @example    php
  * $ip = Thorin::ip_address();
  *
- * @author    Paul Balanche <pb@buzzbrothers.ch>
+ * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
 function t_ip_address() {
-	$ip = null;
-	if( isset($_SERVER['HTTP_X_FORWARDED_FOR']) ){
-		$ipAddresses = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
-		$ip = trim(end($ipAddresses));
-	}
-	elseif( isset($_SERVER['REMOTE_ADDR']) ){
-		$ip = $_SERVER['REMOTE_ADDR'];
-	}
-	return filter_var($ip, FILTER_VALIDATE_IP) ?: false;
+	$ipaddress = '';
+    if (isset($_SERVER['HTTP_CLIENT_IP']))
+        $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+    else if(isset($_SERVER['HTTP_X_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    else if(isset($_SERVER['HTTP_X_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+    else if(isset($_SERVER['HTTP_X_CLUSTER_CLIENT_IP']))
+        $ipaddress = $_SERVER['HTTP_X_CLUSTER_CLIENT_IP'];
+    else if(isset($_SERVER['HTTP_FORWARDED_FOR']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+    else if(isset($_SERVER['HTTP_FORWARDED']))
+        $ipaddress = $_SERVER['HTTP_FORWARDED'];
+    else if(isset($_SERVER['REMOTE_ADDR']))
+        $ipaddress = $_SERVER['REMOTE_ADDR'];
+    else
+        $ipaddress = '127.0.0.1';
+	return filter_var($ipaddress, FILTER_VALIDATE_IP) ?: false;
 }
