@@ -1,6 +1,6 @@
 {
   "name": "dwarvesforge/thorin",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "PHP toolkit that offers you some nice helpers, missing functions, advances capabilities through vendors, etc...",
   "keywords": [
     "dwarves",
@@ -54,7 +54,9 @@
     "mustache/mustache": "^2.12",
     "mobiledetect/mobiledetectlib": "^2.8",
     "wapmorgan/unified-archive": "^0.1.1",
-    "arcanedev/no-captcha": "^7.0"
+    "arcanedev/no-captcha": "^7.0",
+    "asika/autolink": "^1.0",
+    "ksubileau/color-thief-php": "^1.4"
   },
 	"require-dev": {
     "matthiasnoback/phpunit-asynchronicity": "^2.0",

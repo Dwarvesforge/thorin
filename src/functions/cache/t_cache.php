@@ -7,7 +7,7 @@
  * @param    {String}    $key    The cache item key to work with
  * @param    {Mixed}    [$value=null]    The value to save
  * @param    {Integer}    [$expiresAfter=null]    The lifetime of the item in the cache in seconds
- * @param    {String}    [$driver=null]    The driver to use for caching the value. If not set, will use the default driver set in config cache.DEFAULT_DRIVER
+ * @param    {String}    [$driver=null]    The driver to use for caching the value. If not set, will use the default driver set in config cache.default_driver
  *
  * @example    php
  * Thorin::cache('my_item', 'hello world', 60);

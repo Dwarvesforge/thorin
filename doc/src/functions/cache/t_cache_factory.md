@@ -7,8 +7,10 @@ If no driver is passed, the default one in the config cache.DEFAULT_DRIVER will 
 ### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$driver  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The driver wanted. can be filesystem, apc, apcu, array, memcache, memcached or redis  |  optional  |  null
-$forceNewPool  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  If want a new pool instead of the  |  optional  |  false
+$driver  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The driver wanted. can be filesystem, apc, apcu, array, memcache, memcached or redis. If not specified, will take the cache.default_driver config  |  optional  |  null
+$forceNewPool  |  **{ [Boolean](http://php.net/manual/en/language.types.boolean.php) }**  |  If want a new pool instead of the default one  |  optional  |  false
+
+Return **{ [Object](http://php.net/manual/en/language.types.object.php) }** Return a cache pool object to work with. See [PHP-Cache](http://www.php-cache.com/en/latest/introduction/) for more info
 
 ### Example
 ```php
