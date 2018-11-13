@@ -134,7 +134,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::is_ip_match`](doc/src/functions/utils/t_is_ip_match.md) : check if the user ip match some passed ones like `['234.34.*.*']`
 	- [`Thorin::is_mobile`](doc/src/functions/utils/t_is_mobile.md) : check if the user is on a mobile device (tablet and phone)
 	- [`Thorin::is_phone`](doc/src/functions/utils/t_is_phone.md) : check if the user is on a phone device
-	- [`Thorin::is_tablet](doc/src/functions/utils/t_is_tablet.md) : check if the user is on a tablet device
+	- [`Thorin::is_tablet`](doc/src/functions/utils/t_is_tablet.md) : check if the user is on a tablet device
 	- [`Thorin::location`](doc/src/functions/utils/t_location.md) : get some location info about the user (uses ipinfo.io)
 	- [`Thorin::pre`](doc/src/functions/utils/t_pre.md) : debug some variables/object/etc... inside a `<pre>` tag
 	- [`Thorin::protocol`](doc/src/functions/utils/t_protocol.md) : return the protocol from the config app.protocol
