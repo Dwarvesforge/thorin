@@ -81,6 +81,8 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::average_color`](doc/src/functions/images/t_average_color.md) : return the average color for the passed image
 	- [`Thorin::image`](doc/src/functions/images/t_image.md) : return an [Intervention](http://image.intervention.io/) image instance to work with
 	- [`Thorin::optimize_image`](doc/src/functions/images/t_optimize_image.md) : easily resize and compress an image
+- Is
+	- [`Thorin::is_email`](doc/src/functions/is/t_is_email.md) : check if the passed string is a valid email
 - Medias
 	- [`Thorin::embed`](doc/src/functions/medias/e_embed.md) : get the embed code for a passed video url like youtube, vimeo, etc...
 - Objects
@@ -111,6 +113,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::is_start_with`](doc/src/functions/strings/t_is_start_with.md) : check if a string start with another one
 	- [`Thorin::random_string`](doc/src/functions/strings/t_random_string.md) : generate a random string with a specific length
 	- [`Thorin::remove_whitespace`](doc/src/functions/strings/t_remove_whitespace.md) : remove all whitespace in a string
+	- [`Thorin::slug`](doc/src/functions/strings/t_slug.md) : generate a slug from a string
 	- [`Thorin::tailslash`](doc/src/functions/strings/t_tailslash.md) : make sure the passed string has a `/` at the end
 - Time
 	- [`Thorin::is_timestamp_valid`](doc/src/time/t_is_timestamp_valid.md) : check if the passed timestamp is a valid one

@@ -56,6 +56,9 @@ t_require_functions_folder('i18n');
 // images
 t_require_functions_folder('images');
 
+// is
+t_require_functions_folder('is');
+
 // medias
 t_require_functions_folder('medias');
 
