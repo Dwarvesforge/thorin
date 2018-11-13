@@ -26,6 +26,9 @@ t_require_functions_folder('cast');
 // collections
 t_require_functions_folder('collections');
 
+// colors
+t_require_functions_folder('colors');
+
 // config
 t_require_functions_folder('config');
 
