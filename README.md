@@ -47,12 +47,16 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_flatten`](doc/src/functions/array/t_array_flatten.md) : Flattens an array up to the one level depth.
 	- [`Thorin::array_group_by`](doc/src/functions/array/t_array_group_by.md) : Groups the elements of an array based on the given function.
 	- [`Thorin::array_has_duplicates`](doc/src/functions/array/t_array_has_duplicates.md) : Checks a flat list for duplicate values. Returns true if duplicate values exists and false if values are all unique.
+	- [`Thorin::array_head`](doc/src/functions/array/t_array_head.md) : Returns all elements in an array except for the last one
 	- [`Thorin::array_last`](doc/src/functions/array/t_array_last.md) : Returns the last element in an array
+	- [`Thorin::array_order_by`](doc/src/functions/array/t_array_order_by.md) : Sorts a collection of arrays or objects by key
 	- [`Thorin::array_pluck`](doc/src/functions/array/t_array_pluck.md) : Retrieves all of the values for a given key
 	- [`Thorin::array_range`](doc/src/functions/array/t_array_range.md) : create an array with a from, to range
 	- [`Thorin::array_reject`](doc/src/functions/array/t_array_reject.md) : Filters the collection using the given callback
 	- [`Thorin::array_remove_empty`](doc/src/functions/array/t_array_remove_empty.md) : remove empty items in the passed array
 	- [`Thorin::array_tail`](doc/src/functions/array/t_array_tail.md) : Returns all elements in an array except for the first one
+	- [`Thorin::array_take`](doc/src/functions/array/t_array_take.md) : Returns an array with n elements taken from the beginning
+	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
 	- [`Thorin::is_assoc_array`](doc/src/functions/array/t_is_assoc_array.md) : check if is an associative array
 - Cache
 	- [`Thorin::cache`](doc/src/functions/cache/t_cache.md) : Store/get/delete item from a chosen cache (apc, memcache, filesystem, etc...)
