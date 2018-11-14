@@ -47,6 +47,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_flatten`](doc/src/functions/array/t_array_flatten.md) : Flattens an array up to the one level depth.
 	- [`Thorin::array_group_by`](doc/src/functions/array/t_array_group_by.md) : Groups the elements of an array based on the given function.
 	- [`Thorin::array_has_duplicates`](doc/src/functions/array/t_array_has_duplicates.md) : Checks a flat list for duplicate values. Returns true if duplicate values exists and false if values are all unique.
+	- [`Thorin::array_last`](doc/src/functions/array/t_array_last.md) : Returns the last element in an array
 	- [`Thorin::array_range`](doc/src/functions/array/t_array_range.md) : create an array with a from, to range
 	- [`Thorin::array_remove_empty`](doc/src/functions/array/t_array_remove_empty.md) : remove empty items in the passed array
 	- [`Thorin::is_assoc_array`](doc/src/functions/array/t_is_assoc_array.md) : check if is an associative array
