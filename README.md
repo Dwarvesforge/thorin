@@ -52,6 +52,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_range`](doc/src/functions/array/t_array_range.md) : create an array with a from, to range
 	- [`Thorin::array_reject`](doc/src/functions/array/t_array_reject.md) : Filters the collection using the given callback
 	- [`Thorin::array_remove_empty`](doc/src/functions/array/t_array_remove_empty.md) : remove empty items in the passed array
+	- [`Thorin::array_tail`](doc/src/functions/array/t_array_tail.md) : Returns all elements in an array except for the first one
 	- [`Thorin::is_assoc_array`](doc/src/functions/array/t_is_assoc_array.md) : check if is an associative array
 - Cache
 	- [`Thorin::cache`](doc/src/functions/cache/t_cache.md) : Store/get/delete item from a chosen cache (apc, memcache, filesystem, etc...)
