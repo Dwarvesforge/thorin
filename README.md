@@ -35,6 +35,12 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::archive_files`](doc/src/functions/archives/t_archive_files.md) : create an archive with some files
 	- [`Thorin::extract_files`](doc/src/functions/archives/t_extract_files.md) : extract some files from an archive
 - Array
+	- [`Thorin::array_all`](doc/src/functions/array/t_array_all.md) : return true if all the array items pass the test function, false otherwise
+	- [`Thorin::array_any`](doc/src/functions/array/t_array_any.md) : return true if at least one of the array items pass the test function, false otherwise
+	- [`Thorin::array_chunk`](doc/src/functions/array/t_array_chunk.md) : Chunks an array into smaller arrays of a specified size
+	- [`Thorin::array_deep_flatten`](doc/src/functions/array/t_array_deep_flatten.md) : Deep flattens an array
+	- [`Thorin::array_drop`](doc/src/functions/array/t_array_drop.md) : Returns a new array with n elements removed from the left
+	- [`Thorin::array_find_last`](doc/src/functions/array/t_array_find_last.md) : Returns the last element for which the provided function returns a truthy value.
 	- [`Thorin::array_range`](doc/src/functions/array/t_array_range.md) : create an array with a from, to range
 	- [`Thorin::array_remove_empty`](doc/src/functions/array/t_array_remove_empty.md) : remove empty items in the passed array
 	- [`Thorin::is_assoc_array`](doc/src/functions/array/t_is_assoc_array.md) : check if is an associative array
