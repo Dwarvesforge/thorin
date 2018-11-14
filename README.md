@@ -84,6 +84,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin:human_filesize`](doc/src/functions/filesystem/t_human_filesize.md) : convert a filesize into a human readable one like "10 MB"
 - Functions
 	- [`Thorin::compose`](doc/src/functions/functions/t_compose.md) : Return a new function that composes multiple functions into a single callable
+	- [`Thorin::curry`](doc/src/functions/functions/t_curry.md) : Curries a function to take arguments in multiple calls
 	- [`Thorin::memoize`](doc/src/functions/functions/t_memoize.md) : Memoization of a function results in memory
 - Hooks
 	- [`Thorin::add_filter`](doc/src/functions/hooks/t_add_filter.md) : a wordpress style filter
