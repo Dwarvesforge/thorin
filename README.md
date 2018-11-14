@@ -82,6 +82,8 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::disks`](doc/src/functions/filesystem/t_disks.md) : return a [Flysystem](http://flysystem.thephpleague.com/docs/) manager instance of the requested disks registered in config
 	- [`Thorin::force_download`](doc/src/functions/filesystem/t_force_download.md) : force download a file
 	- [`Thorin:human_filesize`](doc/src/functions/filesystem/t_human_filesize.md) : convert a filesize into a human readable one like "10 MB"
+- Functions
+	- [`Thorin::compose`](doc/src/functions/functions/t_compose.md) : Return a new function that composes multiple functions into a single callable.
 - Hooks
 	- [`Thorin::add_filter`](doc/src/functions/hooks/t_add_filter.md) : a wordpress style filter
 	- [`Thorin::apply_filters`](doc/src/functions/hooks/t_apply_filters.md) : apply the requested filters on the passed value
@@ -103,6 +105,8 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::optimize_image`](doc/src/functions/images/t_optimize_image.md) : easily resize and compress an image
 - Is
 	- [`Thorin::is_email`](doc/src/functions/is/t_is_email.md) : check if the passed string is a valid email
+	- [`Thorin::is_even`](doc/src/function/is/t_is_even.md) : Returns true if the given number is even, false otherwise.
+	- [`Thorin::is_odd`](doc/src/function/is/t_is_odd.md) : Returns true if the given number is odd, false otherwise.
 - Medias
 	- [`Thorin::embed`](doc/src/functions/medias/e_embed.md) : get the embed code for a passed video url like youtube, vimeo, etc...
 - Objects
@@ -130,7 +134,9 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::clean_cut`](doc/src/functions/strings/t_clean_cut.md) : return a clean string with a max length and an end character like "..."
 	- [`Thorin::headslash`](doc/src/functions/strings/t_headslash.md) : make sure the passed string has a `/` at the begining
 	- [`Thorin::is_end_with`](doc/src/functions/strings/t_is_end_with.md) : check if a string end with another one
+	- [`Thorin::is_lower_case`](doc/src/functions/strings/t_is_lower_case.md) : Check if the passed string is lower case
 	- [`Thorin::is_start_with`](doc/src/functions/strings/t_is_start_with.md) : check if a string start with another one
+	- [`Thorin::is_upper_case`](doc/src/functions/strings/t_is_upper_case.md) : Check if the passed string is upper case
 	- [`Thorin::random_string`](doc/src/functions/strings/t_random_string.md) : generate a random string with a specific length
 	- [`Thorin::remove_whitespace`](doc/src/functions/strings/t_remove_whitespace.md) : remove all whitespace in a string
 	- [`Thorin::slug`](doc/src/functions/strings/t_slug.md) : generate a slug from a string

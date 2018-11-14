@@ -44,6 +44,9 @@ t_require_functions_folder('events');
 // filesystem
 t_require_functions_folder('filesystem');
 
+// functions
+t_require_functions_folder('functions');
+
 // hooks
 t_require_functions_folder('hooks');
 
