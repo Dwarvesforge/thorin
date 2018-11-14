@@ -43,6 +43,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_drop_right`](doc/src/functions/array/t_array_drop_right.md) : Returns a new array with n elements removed from the right
 	- [`Thorin::array_find_last`](doc/src/functions/array/t_array_find_last.md) : Returns the last element for which the provided function returns a truthy value.
 	- [`Thorin::array_find_last_index`](doc/src/functions/array/t_array_find_last_index.md) : Returns the index of the last element for which the provided function returns a truthy value.
+	- [`Thorin::array_flatten`](doc/src/functions/array/t_array_flatten.md) : Flattens an array up to the one level depth.
 	- [`Thorin::array_range`](doc/src/functions/array/t_array_range.md) : create an array with a from, to range
 	- [`Thorin::array_remove_empty`](doc/src/functions/array/t_array_remove_empty.md) : remove empty items in the passed array
 	- [`Thorin::is_assoc_array`](doc/src/functions/array/t_is_assoc_array.md) : check if is an associative array
