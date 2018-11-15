@@ -1,0 +1,21 @@
+{
+    "name": "dwarvesforge-thorin-snippets",
+    "displayName": "Dwarvesforge Thorin Snippets",
+    "description": "Dwarvesforge Thorin package snippets",
+    "version": "0.0.1",
+    "publisher": "Olivier Bossel",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
