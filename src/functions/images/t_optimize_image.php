@@ -4,9 +4,7 @@
 use Intervention\Image\ImageManager;
 
 /**
- * Optimize the passed image by compressing (resize and quality) it and save it to the paths.IMAGES_CACHE folder
- * in order to avoid recreating it again and again.
- * The $path argument is relative to the paths.BASE path
+ * Optimize the passed image by compressing (resize and quality) it.
  * @param 		{String} 		$path 				The image path to process absolute to the server root folder
  * @param  		{String}  		[$saveTo=null] 		Where to store the optimized image absolute to the server root folder
  * @param 		{Object} 		[$settings={}] 		The settings to tell how to compress the image

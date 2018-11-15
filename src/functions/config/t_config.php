@@ -1,8 +1,7 @@
 <?php
 /**
- * Get or set a configuration depending on the arguments passed
+ * Get a configuration depending on the path passed
  * @param    {String}    $path    The configuration path to get
- * @param    {Mixed}    $value    The value to set
  *
  * @example    php
  * print Thorin::config('app.environment');
