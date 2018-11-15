@@ -9,7 +9,7 @@
  * @return  {String}                	The cutted string
  * @author 		Paul Balanche <pb@buzzbrothers.ch>
  */
-function t_clean_cut($string, $length, $cutString = '...') {
+function t_str_clean_cut($string, $length, $cutString = '...') {
     $string = strip_tags($string);
 
 	if(strlen($string) <= $length){

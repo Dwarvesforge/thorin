@@ -4,7 +4,7 @@
 function t_require_functions_folder($folder) {
     foreach (scandir(dirname(__FILE__) . '/' . $folder) as $filename) {
         $path = dirname(__FILE__) . '/' . $folder . '/' . $filename;
-        if (is_file($path)) {
+        if (is_file($path) && $filename !== '.DS_Store') {
 			// require the file
 			require $path;
         }

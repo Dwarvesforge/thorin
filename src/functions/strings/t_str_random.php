@@ -7,7 +7,7 @@
  * @return      {String}                     The string generated
  * @author 		Paul Balanche <pb@buzzbrothers.ch>
  */
-function t_random_string($length = 10) {
+function t_str_random($length = 10) {
 	$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
     $randomString = '';

@@ -13,12 +13,12 @@ final class t_text_to_html extends TestCase
 	public function testTextToHtmlMultipleLineString() {
 		$text = t_text_to_html('hello
 		world');
-		$this->assertEquals(t_remove_whitespaces($text), '<p>hello<br/>world</p>');
+		$this->assertEquals(Thorin::str_remove_whitespaces($text), '<p>hello<br/>world</p>');
 	}
 	public function testTextToHtmlMultipleParagraphsString() {
 		$text = t_text_to_html('hello
 
 		world');
-		$this->assertEquals(t_remove_whitespaces($text), '<p>hello</p><p>world</p>');
+		$this->assertEquals(Thorin::str_remove_whitespaces($text), '<p>hello</p><p>world</p>');
 	}
 }

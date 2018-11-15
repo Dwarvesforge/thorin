@@ -48,6 +48,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_group_by`](doc/src/functions/array/t_array_group_by.md) : Groups the elements of an array based on the given function.
 	- [`Thorin::array_has_duplicates`](doc/src/functions/array/t_array_has_duplicates.md) : Checks a flat list for duplicate values. Returns true if duplicate values exists and false if values are all unique.
 	- [`Thorin::array_head`](doc/src/functions/array/t_array_head.md) : Returns all elements in an array except for the last one
+	- [`Thorin::array_is_assoc`](doc/src/functions/array/t_array_is_assoc.md) : check if is an associative array
 	- [`Thorin::array_last`](doc/src/functions/array/t_array_last.md) : Returns the last element in an array
 	- [`Thorin::array_order_by`](doc/src/functions/array/t_array_order_by.md) : Sorts a collection of arrays or objects by key
 	- [`Thorin::array_pluck`](doc/src/functions/array/t_array_pluck.md) : Retrieves all of the values for a given key
@@ -57,7 +58,6 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_tail`](doc/src/functions/array/t_array_tail.md) : Returns all elements in an array except for the first one
 	- [`Thorin::array_take`](doc/src/functions/array/t_array_take.md) : Returns an array with n elements taken from the beginning
 	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
-	- [`Thorin::is_assoc_array`](doc/src/functions/array/t_is_assoc_array.md) : check if is an associative array
 - Cache
 	- [`Thorin::cache`](doc/src/functions/cache/t_cache.md) : Store/get/delete item from a chosen cache (apc, memcache, filesystem, etc...)
 	- [`Thorin::cache_factory`](doc/src/functions/cache/t_cache_factory.md) : Return a cache pool using the requested driver
@@ -106,9 +106,19 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::image`](doc/src/functions/images/t_image.md) : return an [Intervention](http://image.intervention.io/) image instance to work with
 	- [`Thorin::optimize_image`](doc/src/functions/images/t_optimize_image.md) : easily resize and compress an image
 - Is
+	- [`Thorin::is_ajax_request`](doc/src/functions/utils/t_is_ajax_request.md) : return if the script has been called using ajax or not
+	- [`Thorin::is_android`](doc/src/functions/utils/t_is_android.md) : check if the user comes from an android device
+	- [`Thorin::is_crawler`](doc/src/functions/utils/t_is_crawler.md) : return if the script has been called by a web crawler like the google bot, etc...
+	- [`Thorin::is_desktop`](doc/src/functions/utils/t_is_desktop.md) : check if the user is on a desktop device
 	- [`Thorin::is_email`](doc/src/functions/is/t_is_email.md) : check if the passed string is a valid email
+	- [`Thorin::is_environment`](doc/src/functions/utils/t_is_environment.md) : check if the actual environment match one of the ones passed as parameter
 	- [`Thorin::is_even`](doc/src/function/is/t_is_even.md) : Returns true if the given number is even, false otherwise.
+	- [`Thorin::is_ios`](doc/src/functions/utils/t_is_ios.md) : check if the user is on an ios device
+	- [`Thorin::is_ip_match`](doc/src/functions/utils/t_is_ip_match.md) : check if the user ip match some passed ones like `['234.34.*.*']`
+	- [`Thorin::is_mobile`](doc/src/functions/utils/t_is_mobile.md) : check if the user is on a mobile device (tablet and phone)
 	- [`Thorin::is_odd`](doc/src/function/is/t_is_odd.md) : Returns true if the given number is odd, false otherwise.
+	- [`Thorin::is_phone`](doc/src/functions/utils/t_is_phone.md) : check if the user is on a phone device
+	- [`Thorin::is_tablet`](doc/src/functions/utils/t_is_tablet.md) : check if the user is on a tablet device
 - Medias
 	- [`Thorin::embed`](doc/src/functions/medias/e_embed.md) : get the embed code for a passed video url like youtube, vimeo, etc...
 - Objects
@@ -133,16 +143,16 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::session_flash`](doc/src/functions/session/t_session_flash.md) : get/set some flash session value
 	- [`Thorin::session_id`](doc/src/functions/session/t_session_id.md) : get the session id
 - Strings
-	- [`Thorin::clean_cut`](doc/src/functions/strings/t_clean_cut.md) : return a clean string with a max length and an end character like "..."
-	- [`Thorin::headslash`](doc/src/functions/strings/t_headslash.md) : make sure the passed string has a `/` at the begining
-	- [`Thorin::is_end_with`](doc/src/functions/strings/t_is_end_with.md) : check if a string end with another one
-	- [`Thorin::is_lower_case`](doc/src/functions/strings/t_is_lower_case.md) : Check if the passed string is lower case
-	- [`Thorin::is_start_with`](doc/src/functions/strings/t_is_start_with.md) : check if a string start with another one
-	- [`Thorin::is_upper_case`](doc/src/functions/strings/t_is_upper_case.md) : Check if the passed string is upper case
-	- [`Thorin::random_string`](doc/src/functions/strings/t_random_string.md) : generate a random string with a specific length
-	- [`Thorin::remove_whitespace`](doc/src/functions/strings/t_remove_whitespace.md) : remove all whitespace in a string
-	- [`Thorin::slug`](doc/src/functions/strings/t_slug.md) : generate a slug from a string
-	- [`Thorin::tailslash`](doc/src/functions/strings/t_tailslash.md) : make sure the passed string has a `/` at the end
+	- [`Thorin::str_clean_cut`](doc/src/functions/strings/t_str_clean_cut.md) : return a clean string with a max length and an end character like "..."
+	- [`Thorin::str_headslash`](doc/src/functions/strings/t_str_headslash.md) : make sure the passed string has a `/` at the begining
+	- [`Thorin::str_is_end_with`](doc/src/functions/strings/t_str_is_end_with.md) : check if a string end with another one
+	- [`Thorin::str_is_lower_case`](doc/src/functions/strings/t_str_is_lower_case.md) : Check if the passed string is lower case
+	- [`Thorin::str_is_start_with`](doc/src/functions/strings/t_str_is_start_with.md) : check if a string start with another one
+	- [`Thorin::str_is_upper_case`](doc/src/functions/strings/t_str_is_upper_case.md) : Check if the passed string is upper case
+	- [`Thorin::str_random`](doc/src/functions/strings/t_str_random.md) : generate a random string with a specific length
+	- [`Thorin::str_remove_whitespace`](doc/src/functions/strings/t_str_remove_whitespace.md) : remove all whitespace in a string
+	- [`Thorin::str_slug`](doc/src/functions/strings/t_str_slug.md) : generate a slug from a string
+	- [`Thorin::str_tailslash`](doc/src/functions/strings/t_str_tailslash.md) : make sure the passed string has a `/` at the end
 - Time
 	- [`Thorin::is_timestamp_valid`](doc/src/time/t_is_timestamp_valid.md) : check if the passed timestamp is a valid one
 - Urls
@@ -156,16 +166,6 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::env`](doc/src/functions/utils/t_env.md) : access environment variables with a fallback
 	- [`Thorin::environment`](doc/src/functions/utils/t_environment.md) : return the environment
 	- [`Thorin::ip_address`](doc/src/functions/utils/t_ip_address.md) : return the user ip address
-	- [`Thorin::is_ajax_request`](doc/src/functions/utils/t_is_ajax_request.md) : return if the script has been called using ajax or not
-	- [`Thorin::is_android`](doc/src/functions/utils/t_is_android.md) : check if the user comes from an android device
-	- [`Thorin::is_crawler`](doc/src/functions/utils/t_is_crawler.md) : return if the script has been called by a web crawler like the google bot, etc...
-	- [`Thorin::is_desktop`](doc/src/functions/utils/t_is_desktop.md) : check if the user is on a desktop device
-	- [`Thorin::is_environment`](doc/src/functions/utils/t_is_environment.md) : check if the actual environment match one of the ones passed as parameter
-	- [`Thorin::is_ios`](doc/src/functions/utils/t_is_ios.md) : check if the user is on an ios device
-	- [`Thorin::is_ip_match`](doc/src/functions/utils/t_is_ip_match.md) : check if the user ip match some passed ones like `['234.34.*.*']`
-	- [`Thorin::is_mobile`](doc/src/functions/utils/t_is_mobile.md) : check if the user is on a mobile device (tablet and phone)
-	- [`Thorin::is_phone`](doc/src/functions/utils/t_is_phone.md) : check if the user is on a phone device
-	- [`Thorin::is_tablet`](doc/src/functions/utils/t_is_tablet.md) : check if the user is on a tablet device
 	- [`Thorin::location`](doc/src/functions/utils/t_location.md) : get some location info about the user (uses ipinfo.io)
 	- [`Thorin::pre`](doc/src/functions/utils/t_pre.md) : debug some variables/object/etc... inside a `<pre>` tag
 	- [`Thorin::protocol`](doc/src/functions/utils/t_protocol.md) : return the protocol from the config app.protocol

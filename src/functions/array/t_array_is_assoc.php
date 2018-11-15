@@ -6,7 +6,7 @@
  * @return 		{Boolean} 					true if is an assoc array, false if not
  * @author 		Paul Balanche <pb@buzzbrothers.ch>
  */
-function t_is_assoc_array($arr) {
+function t_array_is_assoc($arr) {
 	if (array() === $arr) return false;
 	return @array_keys($arr) !== range(0, count($arr) - 1);
 }

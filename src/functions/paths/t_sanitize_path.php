@@ -25,7 +25,7 @@ function t_sanitize_path($path) {
 	$path = implode('/', $splits);
 	// check if need to tailslash the path or not
 	if (strpos(basename($path), '.') === false) {
-		$path = Thorin::tailslash($path);
+		$path = Thorin::str_tailslash($path);
 	}
 	// return the new
 	return $path;

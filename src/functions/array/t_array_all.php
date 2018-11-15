@@ -14,6 +14,6 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/appzcoder/30-seconds-of-php-code
  */
-function t_array_all($items, $func) {
+function t_array_all(array $items, callable $func) {
     return count(array_filter($items, $func)) === count($items);
 }

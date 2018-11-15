@@ -5,10 +5,10 @@
  * @return    {String}    The processed string
  *
  * @example    php
- * $whitespaceFree = Thorin::remove_whitespaces('hello world');
+ * $whitespaceFree = Thorin::str_remove_whitespaces('hello world');
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function t_remove_whitespaces($string) {
+function t_str_remove_whitespaces($string) {
 	return preg_replace('/\s+/', '', $string);
 }

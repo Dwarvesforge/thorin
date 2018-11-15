@@ -14,9 +14,9 @@ function t_asset_url($slug, $include_domain = false) {
 	// wanted path relative to the `paths.document_root` one
 	$pathRelativeToTDocumentRoot = str_replace(Thorin::sanitize_path(Thorin::config('paths.document_root')), '', Thorin::sanitize_path(Thorin::config('paths.assets')));
 	if ($include_domain) {
-		$path = Thorin::tailslash(Thorin::config('app.root_url')) . ltrim(Thorin::tailslash($pathRelativeToTDocumentRoot), '/') . ltrim($slug, '/');
+		$path = Thorin::str_tailslash(Thorin::config('app.root_url')) . ltrim(Thorin::str_tailslash($pathRelativeToTDocumentRoot), '/') . ltrim($slug, '/');
 	} else {
-		$path = Thorin::headslash(Thorin::tailslash($pathRelativeToTDocumentRoot)) . ltrim($slug, '/');
+		$path = Thorin::str_headslash(Thorin::str_tailslash($pathRelativeToTDocumentRoot)) . ltrim($slug, '/');
 	}
 	return Thorin::sanitize_url($path);
 }

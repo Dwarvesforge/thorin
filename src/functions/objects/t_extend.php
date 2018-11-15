@@ -24,7 +24,7 @@ function t_extend($a, $b, $deep = true, $extendNonAssociativeArrays = true) {
             if( ! isset($a[$k])) {
 				$a[$k] = $v;
 			}
-			else if ( ! $extendNonAssociativeArrays && is_array($v) && ! t_is_assoc_array($v)) {
+			else if ( ! $extendNonAssociativeArrays && is_array($v) && ! Thorin::array_is_assoc($v)) {
 				$a[$k] = $v;
 			}
 			else {
@@ -35,7 +35,7 @@ function t_extend($a, $b, $deep = true, $extendNonAssociativeArrays = true) {
 				$a[$k] = (array) $a[$k];
 
 				if ($deep) {
-					$a[$k] = array_merge($a[$k], t_extend($a[$k], $v, $deep));
+					$a[$k] = array_merge($a[$k], Thorin::extend($a[$k], $v, $deep));
 				} else {
 					$a[$k] = $v;
 				}

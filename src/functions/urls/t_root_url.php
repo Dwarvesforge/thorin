@@ -10,9 +10,9 @@
  */
 function t_root_url($slug = '', $include_domain = false) {
 	if ($include_domain) {
-		$url = Thorin::tailslash(rtrim(Thorin::config('app.root_url'),'/')) . ltrim($slug, '/');
+		$url = Thorin::str_tailslash(rtrim(Thorin::config('app.root_url'),'/')) . ltrim($slug, '/');
 	} else {
-		$url = Thorin::headslash($slug);
+		$url = Thorin::str_headslash($slug);
 	}
 	return Thorin::sanitize_url($url);
 }

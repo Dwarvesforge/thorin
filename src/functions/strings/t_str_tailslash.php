@@ -7,6 +7,6 @@
  * @return  {String}                The string with a slash at the end
  * @author 		Olivier Bossel <olivier.bossel@gmail.com>
  */
-function t_tailslash($string) {
+function t_str_tailslash($string) {
     return rtrim($string, '/') . '/';
 }

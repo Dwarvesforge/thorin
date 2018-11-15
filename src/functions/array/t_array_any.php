@@ -16,6 +16,6 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/appzcoder/30-seconds-of-php-code
  */
-function t_array_any($items, $func) {
+function t_array_any(array $items, callable $func) {
     return count(array_filter($items, $func)) > 0;
 }
