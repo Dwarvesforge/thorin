@@ -1,4 +1,4 @@
-# t_is_assoc_array
+# t_array_is_assoc
 
 Check if array is assocative or not
 

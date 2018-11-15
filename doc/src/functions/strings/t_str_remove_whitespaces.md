@@ -1,4 +1,4 @@
-# t_remove_whitespaces
+# t_str_remove_whitespaces
 
 Remove all whitespaces in the passed string
 
@@ -12,6 +12,6 @@ Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The 
 
 ### Example
 ```php
-	$whitespaceFree = Thorin::remove_whitespaces('hello world');
+	$whitespaceFree = Thorin::str_remove_whitespaces('hello world');
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)

@@ -1,4 +1,4 @@
-# t_random_string
+# t_str_random
 
 Function which generate random string
 

@@ -1,4 +1,4 @@
-# t_slug
+# t_str_slug
 
 Generate a slug from a string like a title or whatever
 
@@ -12,7 +12,7 @@ Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The 
 
 ### Example
 ```php
-	print Thorin::slug('Hello world and universe');
+	print Thorin::str_slug('Hello world and universe');
 // hello-world-and-universe
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)

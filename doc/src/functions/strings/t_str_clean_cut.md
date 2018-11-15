@@ -1,4 +1,4 @@
-# t_clean_cut
+# t_str_clean_cut
 
 Return a clean string with max lenght
 

@@ -3,8 +3,8 @@
  * Return the two character language code found in the browser language or in
  * a $_GET parameter using the $gerParam variable name.
  *
- * @param    {Array}    [$available=Thorin::config('app.available_languages')]    An array of available languages (ex: ['fr','en'])
- * @param    {String}    [$default=Thorin::config('app.default_language')]    The default language if none is found
+ * @param    {Array}    [$available=Thorin::config('i18n.available_languages')]    An array of available languages (ex: ['fr','en'])
+ * @param    {String}    [$default=Thorin::config('i18n.default_language')]    The default language if none is found
  * @param    {String}    [$getParam="lang"]    The name of the $_GET parameter to check for the language
  * @return    {String}    The two character language code found
  *
