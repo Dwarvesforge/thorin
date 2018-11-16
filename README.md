@@ -55,9 +55,11 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_flatten_deep`](doc/src/functions/array/t_array_flatten_deep.md) : Recursively flattens `array`.
 	- [`Thorin::array_flatten_depth`](doc/src/functions/array/t_array_flatten_depth.md) : Recursively flatten `array` up to `depth` times.
 	- [`Thorin::array_flatten`](doc/src/functions/array/t_array_flatten.md) : Flattens an array up to the one level depth.
+	- [`Thorin::array_from_pairs`](doc/src/functions/array/t_array_from_pairs.md) : The inverse of `Thorin::array_to_pairs`, this method returns an object composed from key-value `pairs`.
 	- [`Thorin::array_group_by`](doc/src/functions/array/t_array_group_by.md) : Groups the elements of an array based on the given function.
 	- [`Thorin::array_has_duplicates`](doc/src/functions/array/t_array_has_duplicates.md) : Checks a flat list for duplicate values. Returns true if duplicate values exists and false if values are all unique.
 	- [`Thorin::array_head`](doc/src/functions/array/t_array_head.md) : Returns all elements in an array except for the last one
+	- [`Thorin::array_index_of`](doc/src/functions/array/t_array_index_of.md) : Gets the index at which the first occurrence of `value` is found in `array` using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero) for equality comparisons
 	- [`Thorin::array_is_assoc`](doc/src/functions/array/t_array_is_assoc.md) : check if is an associative array
 	- [`Thorin::array_last`](doc/src/functions/array/t_array_last.md) : Returns the last element in an array
 	- [`Thorin::array_order_by`](doc/src/functions/array/t_array_order_by.md) : Sorts a collection of arrays or objects by key
