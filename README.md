@@ -61,6 +61,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_head`](doc/src/functions/array/t_array_head.md) : Returns all elements in an array except for the last one
 	- [`Thorin::array_index_of`](doc/src/functions/array/t_array_index_of.md) : Gets the index at which the first occurrence of `value` is found in `array` using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero) for equality comparisons
 	- [`Thorin::array_intersection_by`](doc/src/functions/array/t_array_intersection_by.md) : This method is like `Thorin::array_intersection` except that it accepts `iteratee` which is invoked for each element of each `arrays`
+	- [`Thorin::array_intersection_with`](doc/src/functions/array/t_array_intersection_with.md) : This method is like `Thorin::array_intersection` except that it accepts `comparator` which is invoked to compare elements of `arrays`.
 	- [`Thorin::array_intersection`](doc/src/functions/array/t_array_intersection.md) : Creates an array of unique values that are included in all given arrays
 	- [`Thorin::array_is_assoc`](doc/src/functions/array/t_array_is_assoc.md) : check if is an associative array
 	- [`Thorin::array_last`](doc/src/functions/array/t_array_last.md) : Returns the last element in an array
