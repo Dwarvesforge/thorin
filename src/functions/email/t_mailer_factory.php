@@ -1,6 +1,24 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 
+/**
+ * Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer registered in the `email` config file
+ * @param    {String}    [$name=null]    The mailer name requested. If not passed, will take the email.default_mailer config.
+ * @return    {PHPMailer\PHPMailer\PHPMailer}    A phpmailer instance to work with
+ *
+ * @example    php
+ * $mailer = Thorin::mailer_factory('gmail');
+ * $mailer->addAddress('john.doe@ecample.com', 'John Doe');
+ * $mailer->isHTML(true);
+ * // etc...
+ * if ($mailer->send()) {
+ *   // do something on success
+ * } else {
+ *   // do something on error
+ * }
+ *
+ * @author    Olivier Bossel <olivier.bossel@gmail.com>
+ */
 function t_mailer_factory($mailer = null) {
 
 	// get the disk configuration

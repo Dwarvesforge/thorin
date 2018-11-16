@@ -1,7 +1,7 @@
 {
   "name": "dwarvesforge/thorin",
-  "version": "1.1.10",
-  "description": "PHP toolkit that offers you some nice helpers, missing functions, advances capabilities through vendors, etc...",
+  "version": "1.1.11",
+  "description": "PHP toolkit that offers you some nice helpers, missing functions, advanced capabilities through vendors, etc...",
   "keywords": [
     "dwarves",
     "forge",

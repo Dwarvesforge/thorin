@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return the app path depending on the `paths.APP` config
+ * Return the app path depending on the `paths.app` config
  *
  * @param       {String}        $slug       An optional slug to add to the root url
  * @return      {String}                    The corresponding root url

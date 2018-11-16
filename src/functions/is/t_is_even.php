@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Returns true if the given number is even, false otherwise.
+ * Return true if the given number is even, false otherwise.
  * @param    {Number}   $number    The number to check
  * @return    {Boolean}    true if even, false if not
  *

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return the base path depending on the `paths.BASE` config
+ * Return the base path depending on the `paths.base` config
  *
  * @param       {String}        $slug       An optional slug to add to the base path
  * @return      {String}                    The corresponding base path

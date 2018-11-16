@@ -7,7 +7,7 @@ use League\Flysystem\Sftp\SftpAdapter;
 use Aws\S3\S3Client;
 use League\Flysystem\AwsS3v3\AwsS3Adapter;
 use League\Flysystem\Memory\MemoryAdapter;
-
+$t_filesystems = [];
 /**
  * Create a filesystem instance with the disk requested. Return a [Flysystem](https://flysystem.thephpleague.com/docs/usage/filesystem-api/) instance to work with.
  * If no disk is passed, the default one in the config filsystem.default_disk will be used.
@@ -19,7 +19,6 @@ use League\Flysystem\Memory\MemoryAdapter;
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-$t_filesystems = [];
 function t_filesystem_factory($disk = null) {
 	global $t_filesystems;
 

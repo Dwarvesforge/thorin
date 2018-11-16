@@ -11,7 +11,7 @@
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function t_ext($filepath) {
+function t_file_ext($filepath) {
 	$fileinfo = pathinfo($filepath);
 	return $fileinfo['extension'];
 }

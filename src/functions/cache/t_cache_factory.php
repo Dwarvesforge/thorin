@@ -10,6 +10,8 @@ use Cache\Adapter\Memcache\MemcacheCachePool;
 use Cache\Adapter\Memcached\MemcachedCachePool;
 use Cache\Adapter\Redis\RedisCachePool;
 
+$t_pools = [];
+
 /**
  * Create a cache pool with the driver requested. Return a [PHP-Cache](http://www.php-cache.com/en/latest/introduction/) pool to work with.
  * If no driver is passed, the default one in the config cache.DEFAULT_DRIVER will be used.
@@ -25,7 +27,6 @@ use Cache\Adapter\Redis\RedisCachePool;
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-$t_pools = [];
 function t_cache_factory($driver = null, $forceNewPool = false) {
 	global $t_pools;
 	// make sure the driver passed in in lowercase

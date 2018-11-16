@@ -1,6 +1,6 @@
 {
   "name": "dwarvesforge-thorin",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "PHP toolkit that offers you some nice helpers, missing functions, advances capabilities through vendors, etc...",
   "homepage": "https://thorin.dwarvesforge.io",
   "repository": {
@@ -34,8 +34,11 @@
   ],
   "author": "Dwarvesforge <hello@dwarvesforge.io>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "glob-all": "^3.1.0"
+  },
   "devDependencies": {
+    "coffeekraken-docblock-parser": "^1.0.10",
     "coffeekraken-docblock-to-markdown": "^1.0.0",
     "git-changelog": "^1.1.2",
     "npm-watch": "0.2.0"
