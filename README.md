@@ -66,6 +66,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_is_assoc`](doc/src/functions/array/t_array_is_assoc.md) : check if is an associative array
 	- [`Thorin::array_last_index_of`](doc/src/functions/array/t_array_last_index_of.md) : This method is like `Thorin::array_index_of` except that it iterates over elements of `array` from right to left.
 	- [`Thorin::array_last`](doc/src/functions/array/t_array_last.md) : Returns the last element in an array
+	- [`Thorin::array_nth`](doc/src/functions/array/t_array_nth.md) : Gets the element at index `n` of `array`
 	- [`Thorin::array_order_by`](doc/src/functions/array/t_array_order_by.md) : Sorts a collection of arrays or objects by key
 	- [`Thorin::array_pluck`](doc/src/functions/array/t_array_pluck.md) : Retrieves all of the values for a given key
 	- [`Thorin::array_range`](doc/src/functions/array/t_array_range.md) : create an array with a from, to range
