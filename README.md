@@ -69,6 +69,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_nth`](doc/src/functions/array/t_array_nth.md) : Gets the element at index `n` of `array`
 	- [`Thorin::array_order_by`](doc/src/functions/array/t_array_order_by.md) : Sorts a collection of arrays or objects by key
 	- [`Thorin::array_pluck`](doc/src/functions/array/t_array_pluck.md) : Retrieves all of the values for a given key
+	- [`Thorin::array_pull`](doc/src/functions/array/t_array_pull.md) : Removes all given values from `array` using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero) for equality comparisons.
 	- [`Thorin::array_range`](doc/src/functions/array/t_array_range.md) : create an array with a from, to range
 	- [`Thorin::array_reject`](doc/src/functions/array/t_array_reject.md) : Filters the collection using the given callback
 	- [`Thorin::array_remove_empty`](doc/src/functions/array/t_array_remove_empty.md) : remove empty items in the passed array
