@@ -44,6 +44,8 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_difference_by`](doc/src/functions/array/t_array_difference_by.md) : This method is like `array_difference` except that it accepts `iteratee` which
  * is invoked for each element of `array` and `values` to generate the criterion
  * by which they're compared.
+	- [`Thorin::array_difference_with`](doc/src/functions/array/t_array_difference_with.md) : This method is like `Thorin::array_difference` except that it accepts `comparator`
+ * which is invoked to compare elements of `array` to `values`.
 	- [`Thorin::array_difference`](doc/src/functions/array/t_array_difference.md) : Creates an array of `array` values not included in the other given arrays
  * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * for equality comparisons.
@@ -120,7 +122,8 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::is_desktop`](doc/src/functions/utils/t_is_desktop.md) : check if the user is on a desktop device
 	- [`Thorin::is_email`](doc/src/functions/is/t_is_email.md) : check if the passed string is a valid email
 	- [`Thorin::is_environment`](doc/src/functions/utils/t_is_environment.md) : check if the actual environment match one of the ones passed as parameter
-	- [`Thorin::is_even`](doc/src/function/is/t_is_even.md) : Returns true if the given number is even, false otherwise.
+	- [`Thorin::is_equal`](doc/src/functions/is/t_is_equal.md) : Performs a deep comparison between two values to determine if they are equivalent.
+	- [`Thorin::is_even`](doc/src/functions/is/t_is_even.md) : Returns true if the given number is even, false otherwise.
 	- [`Thorin::is_ios`](doc/src/functions/utils/t_is_ios.md) : check if the user is on an ios device
 	- [`Thorin::is_ip_match`](doc/src/functions/utils/t_is_ip_match.md) : check if the user ip match some passed ones like `['234.34.*.*']`
 	- [`Thorin::is_mobile`](doc/src/functions/utils/t_is_mobile.md) : check if the user is on a mobile device (tablet and phone)
