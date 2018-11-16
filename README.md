@@ -48,6 +48,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_drop_left`](doc/src/functions/array/t_array_drop_left.md) : Returns a new array with n elements removed from the left
 	- [`Thorin::array_drop_right_while`](doc/src/functions/array/t_array_drop_right_while.md) : Creates a slice of `array` excluding elements dropped from the end.
 	- [`Thorin::array_drop_right`](doc/src/functions/array/t_array_drop_right.md) : Returns a new array with n elements removed from the right
+	- [`Thorin::array_find_index`](doc/src/functions/array/t_array_find_index.md) : This method is like `Thorin::array_find` except that it returns the index of the first element predicate returns truthy for instead of the element itself.
 	- [`Thorin::array_find_last`](doc/src/functions/array/t_array_find_last.md) : Returns the last element for which the provided function returns a truthy value.
 	- [`Thorin::array_find_last_index`](doc/src/functions/array/t_array_find_last_index.md) : Returns the index of the last element for which the provided function returns a truthy value.
 	- [`Thorin::array_first`](doc/src/functions/array/t_array_first.md) : Returns the first item of a list.
