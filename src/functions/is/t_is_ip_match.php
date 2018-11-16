@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Check if the user ip address is in the blacklist passed as argument
+ * Check if the user ip address is in the list passed as argument
  * @param    {Array}    $ipsList    The list (array) of ips. Can be something like 345.33.*.*
  * @param    {String}    [$ip=null]    The ip to check agains the list. If null, will take the current user ip
  * @return    {Boolean}    true if ip is banned, false if not

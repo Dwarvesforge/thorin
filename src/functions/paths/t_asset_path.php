@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Return a path relative to the `paths.ASSETS` and `paths.DOCUMENT_ROOT` config
+ * Return a path relative to the `paths.assets` config
  *
  * @param       {String}        $slug       The asset slug to get
  * @param 		{Boolean} 		[$from_server_root=false] 		If returned path need to be relative to the server root or to the 'paths.DOCUMENT_ROOT' config

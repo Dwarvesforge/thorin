@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Sanitize a path for example like "/my/cool/path/." to "/my/cool_path/"
+ * Sanitize a path for example like "/my/cool/../path/." to "/my/path/"
  * It will do these actions:
  * 1. Normalize the path (resolve all ../, remove double slashed, etc...)
  * 2. Remove a trailing "."

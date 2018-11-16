@@ -1,4 +1,5 @@
 <?php
+$t_configs = [];
 /**
  * Get a configuration depending on the path passed
  * @param    {String}    $path    The configuration path to get
@@ -8,7 +9,6 @@
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-$t_configs = [];
 function t_config($path) {
 	global $t_configs;
 	// split the path using the . as separator
