@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This method is like `intersection` except that it accepts `iteratee`
+ * This method is like `Thorin::array_intersection` except that it accepts `iteratee`
  * which is invoked for each element of each `arrays` to generate the criterion
  * by which they're compared. The order and references of result values are
  * determined by the first array. The iteratee is invoked with one argument:
