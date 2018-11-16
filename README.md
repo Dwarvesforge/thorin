@@ -38,6 +38,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_all`](doc/src/functions/array/t_array_all.md) : return true if all the array items pass the test function, false otherwise
 	- [`Thorin::array_any`](doc/src/functions/array/t_array_any.md) : return true if at least one of the array items pass the test function, false otherwise
 	- [`Thorin::array_chunk`](doc/src/functions/array/t_array_chunk.md) : Chunks an array into smaller arrays of a specified size
+	- [`Thorin::array_compact`](doc/src/functions/array/t_array_compact.md) : Creates an array with all falsey values removed
 	- [`Thorin::array_deep_flatten`](doc/src/functions/array/t_array_deep_flatten.md) : Deep flattens an array
 	- [`Thorin::array_drop_left`](doc/src/functions/array/t_array_drop_left.md) : Returns a new array with n elements removed from the left
 	- [`Thorin::array_drop_right`](doc/src/functions/array/t_array_drop_right.md) : Returns a new array with n elements removed from the right
