@@ -1,8 +1,8 @@
 {
     "name": "dwarvesforge-thorin-snippets",
     "displayName": "Dwarvesforge Thorin Snippets",
-    "description": "Dwarvesforge Thorin package snippets",
-    "version": "0.0.1",
+    "description": "Dwarvesforge Thorin Snippets",
+    "version": "1.1.11",
     "publisher": "Olivier Bossel",
     "engines": {
         "vscode": "^1.29.0"

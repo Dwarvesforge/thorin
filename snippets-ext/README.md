@@ -1,65 +1,34 @@
-# dwarvesforge-thorin-snippets README
+# Dwarvesforge Thorin Snippets
 
-This is the README for your extension "dwarvesforge-thorin-snippets". After writing up a brief description, we recommend including the following sections.
+PHP toolkit that offers you some nice helpers, missing functions, advanced capabilities through vendors, etc...
 
-## Features
+This extension gives you access to snippets for all the Thorin functions like:
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- `Thorin::archive_files`
+- `Thorin::extract_files`
+- `Thorin::array_all`
+- `Thorin::array_any`
+- etc...
 
-For example if there is an image subfolder under your extension project workspace:
+<a id="readme-contribute"></a>
+## Contribute
 
-\!\[feature X\]\(images/feature-x.png\)
+Dwarvesforge is an open source project and will ever be! You are more that welcomed to contribute to his development and make it more awesome every day.
+To do so, you have several possibilities:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. [Share the love ❤️](https://github.com/Dwarvesforge/dwarvesforge/blob/master/contribute.md#contribute-share-the-love)
+2. [Declare issues](https://github.com/Dwarvesforge/dwarvesforge/blob/master/contribute.md#contribute-declare-issues)
+3. [Fix issues](https://github.com/Dwarvesforge/dwarvesforge/blob/master/contribute.md#contribute-fix-issues)
+4. [Add features](https://github.com/Dwarvesforge/dwarvesforge/blob/master/contribute.md#contribute-add-features)
 
-## Requirements
+<a id="readme-license"></a>
+## License
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The code is available under the [MIT license](LICENSE.txt). This mean that you can use, modify, or do whatever you want with it. This mean also that it is shipped to you for free, so don't be a hater and if you find some issues, etc... feel free to [contribute](https://github.com/Dwarvesforge/dwarvesforge/blob/master/contribute.md) instead of sharing your frustrations on social networks like an asshole...
 
-## Extension Settings
+<a id="readme-who-are-dwarvesforge"></a>
+## Who are Dwarvesforge
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+We try to be **some cool guys** that build **some cool tools** to make our (and yours hopefully) **every day life better**.  
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+#### [More on who we are](https://github.com/Dwarvesforge/dwarvesforge/blob/master/who-are-we.md)
