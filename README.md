@@ -41,6 +41,9 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_compact`](doc/src/functions/array/t_array_compact.md) : Creates an array with all falsey values removed
 	- [`Thorin::array_concat`](doc/src/functions/array/t_array_concat.md) : Creates a new array concatenating `array` with any additional arrays and/or values.
 	- [`Thorin::array_deep_flatten`](doc/src/functions/array/t_array_deep_flatten.md) : Deep flattens an array
+	- [`Thorin::array_difference`](doc/src/functions/array/t_array_difference.md) : Creates an array of `array` values not included in the other given arrays
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
 	- [`Thorin::array_drop_left`](doc/src/functions/array/t_array_drop_left.md) : Returns a new array with n elements removed from the left
 	- [`Thorin::array_drop_right`](doc/src/functions/array/t_array_drop_right.md) : Returns a new array with n elements removed from the right
 	- [`Thorin::array_find_last`](doc/src/functions/array/t_array_find_last.md) : Returns the last element for which the provided function returns a truthy value.
