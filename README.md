@@ -52,6 +52,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_find_last`](doc/src/functions/array/t_array_find_last.md) : Returns the last element for which the provided function returns a truthy value.
 	- [`Thorin::array_find_last_index`](doc/src/functions/array/t_array_find_last_index.md) : Returns the index of the last element for which the provided function returns a truthy value.
 	- [`Thorin::array_first`](doc/src/functions/array/t_array_first.md) : Returns the first item of a list.
+	- [`Thorin::array_flatten_deep`](doc/src/functions/array/t_array_flatten_deep.md) : Recursively flattens `array`.
 	- [`Thorin::array_flatten`](doc/src/functions/array/t_array_flatten.md) : Flattens an array up to the one level depth.
 	- [`Thorin::array_group_by`](doc/src/functions/array/t_array_group_by.md) : Groups the elements of an array based on the given function.
 	- [`Thorin::array_has_duplicates`](doc/src/functions/array/t_array_has_duplicates.md) : Checks a flat list for duplicate values. Returns true if duplicate values exists and false if values are all unique.
