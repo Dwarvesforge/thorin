@@ -41,14 +41,10 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_compact`](doc/src/functions/array/t_array_compact.md) : Creates an array with all falsey values removed
 	- [`Thorin::array_concat`](doc/src/functions/array/t_array_concat.md) : Creates a new array concatenating `array` with any additional arrays and/or values.
 	- [`Thorin::array_deep_flatten`](doc/src/functions/array/t_array_deep_flatten.md) : Deep flattens an array
-	- [`Thorin::array_difference_by`](doc/src/functions/array/t_array_difference_by.md) : This method is like `array_difference` except that it accepts `iteratee` which
- * is invoked for each element of `array` and `values` to generate the criterion
- * by which they're compared.
-	- [`Thorin::array_difference_with`](doc/src/functions/array/t_array_difference_with.md) : This method is like `Thorin::array_difference` except that it accepts `comparator`
- * which is invoked to compare elements of `array` to `values`.
-	- [`Thorin::array_difference`](doc/src/functions/array/t_array_difference.md) : Creates an array of `array` values not included in the other given arrays
- * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * for equality comparisons.
+	- [`Thorin::array_difference_by`](doc/src/functions/array/t_array_difference_by.md) : This method is like `array_difference` except that it accepts `iteratee` which is invoked for each element of `array` and `values` to generate the criterion by which they're compared.
+	- [`Thorin::array_difference_with`](doc/src/functions/array/t_array_difference_with.md) : This method is like `Thorin::array_difference` except that it accepts `comparator` which is invoked to compare elements of `array` to `values`.
+	- [`Thorin::array_difference`](doc/src/functions/array/t_array_difference.md) : Creates an array of `array` values not included in the other given arrays using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero) for equality comparisons.
+	- [`Thorin::array_drop_left_while`](doc/src/functions/array/t_array_drop_left_while.md) : Creates a slice of `array` excluding elements dropped from the beginning.
 	- [`Thorin::array_drop_left`](doc/src/functions/array/t_array_drop_left.md) : Returns a new array with n elements removed from the left
 	- [`Thorin::array_drop_right_while`](doc/src/functions/array/t_array_drop_right_while.md) : Creates a slice of `array` excluding elements dropped from the end.
 	- [`Thorin::array_drop_right`](doc/src/functions/array/t_array_drop_right.md) : Returns a new array with n elements removed from the right
