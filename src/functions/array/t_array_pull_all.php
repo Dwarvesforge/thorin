@@ -3,7 +3,6 @@
 /**
  * This method is like `Thorin::array_pull` except that it accepts an array of values to remove.
  *
- * **Note:** Unlike `Thorin::array_difference`, this method mutates `array`.
  * @param    {Array}    $array    The array to modify
  * @param    {Array}    $values    The values to exclude
  * @return    {Array}    The mutated array

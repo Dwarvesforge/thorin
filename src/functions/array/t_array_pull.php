@@ -5,9 +5,6 @@
  * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
  * for equality comparisons.
  *
- * **Note:** Unlike `Thorin::array_without`, this method mutates `array`. Use `Thorin::array_remove`
- * to remove elements from an array by predicate.
- *
  * @param    {Array}   $array   The array to modify
  * @param    {Array,String,Integer}   ...$values    The values to remove
  * @return    {Array}    The modified array
