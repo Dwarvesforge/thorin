@@ -82,6 +82,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_tail`](doc/src/functions/array/t_array_tail.md) : Returns all elements in an array except for the first one
 	- [`Thorin::array_take_right_while`](doc/src/functions/array/t_array_take_right_while.md) : Creates a slice of `array` with elements taken from the end. Elements are taken until `predicate` returns falsey.
 	- [`Thorin::array_take_right`](doc/src/functions/array/t_array_take_right.md) : Creates a slice of `array` with `n` elements taken from the end
+	- [`Thorin::array_take_while`](doc/src/functions/array/t_array_take_while.md) : Creates a slice of `array` with elements taken from the beginning. Elements are taken until `predicate` returns falsey
 	- [`Thorin::array_take`](doc/src/functions/array/t_array_take.md) : Returns an array with n elements taken from the beginning
 	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
 - Cache
