@@ -84,6 +84,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_take_right`](doc/src/functions/array/t_array_take_right.md) : Creates a slice of `array` with `n` elements taken from the end
 	- [`Thorin::array_take_while`](doc/src/functions/array/t_array_take_while.md) : Creates a slice of `array` with elements taken from the beginning. Elements are taken until `predicate` returns falsey
 	- [`Thorin::array_take`](doc/src/functions/array/t_array_take.md) : Returns an array with n elements taken from the beginning
+	- [`Thorin::array_union`](doc/src/functions/array/t_array_union.md) : Creates an array of unique values, in order, from all given arrays using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero) for equality comparisons
 	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
 - Cache
 	- [`Thorin::cache`](doc/src/functions/cache/t_cache.md) : Store/get/delete item from a chosen cache (apc, memcache, filesystem, etc...)
