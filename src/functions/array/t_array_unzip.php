@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This method is like `zip` except that it accepts an array of grouped
+ * This method is like `Thorin::array_zip` except that it accepts an array of grouped
  * elements and creates an array regrouping the elements to their pre-zip
  * configuration.
  *
