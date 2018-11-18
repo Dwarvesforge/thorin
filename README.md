@@ -90,6 +90,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_uniq_by`](doc/src/functions/array/t_array_uniq_by.md) : This method is like `Thorin::array_uniq` except that it accepts `iteratee`
 	- [`Thorin::array_uniq_with`](doc/src/functions/array/t_array_uniq_with.md) : This method is like `Thorin::array_uniq` except that it accepts `comparator`
 	- [`Thorin::array_uniq`](doc/src/functions/array/t_array_uniq.md) : Creates a duplicate-free version of an array
+	- [`Thorin::array_unzip_with`](doc/src/functions/array/t_array_unzip_with.md) : This method is like `Thorin::array_unzip` except that it accepts `iteratee`
 	- [`Thorin::array_unzip`](doc/src/functions/array/t_array_unzip.md) : This method is like `Thorin::array_zip` except that it accepts an array of grouped elements and creates an array regrouping the elements to their pre-zip configuration
 	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
 - Cache
