@@ -88,6 +88,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_union_with`](doc/src/functions/array/t_array_union_with.md) : This method is like `Thorin::array_union` except that it accepts `comparator`
 	- [`Thorin::array_union`](doc/src/functions/array/t_array_union.md) : Creates an array of unique values, in order, from all given arrays using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero) for equality comparisons
 	- [`Thorin::array_uniq_by`](doc/src/functions/array/t_array_uniq_by.md) : This method is like `Thorin::array_uniq` except that it accepts `iteratee`
+	- [`Thorin::array_uniq_with`](doc/src/functions/array/t_array_uniq_with.md) : This method is like `Thorin::array_uniq` except that it accepts `comparator`
 	- [`Thorin::array_uniq`](doc/src/functions/array/t_array_uniq.md) : Creates a duplicate-free version of an array
 	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
 - Cache
