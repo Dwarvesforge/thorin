@@ -1,6 +1,6 @@
 # t_is_even
 
-Returns true if the given number is even, false otherwise.
+Return true if the given number is even, false otherwise.
 
 
 ### Parameters

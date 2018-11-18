@@ -1,4 +1,4 @@
-# $t_pools
+# t_cache_factory
 
 Create a cache pool with the driver requested. Return a [PHP-Cache](http://www.php-cache.com/en/latest/introduction/) pool to work with.
 If no driver is passed, the default one in the config cache.DEFAULT_DRIVER will be used.
@@ -20,5 +20,3 @@ $item->set('hello world');
 $apcPool->save($item);
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
-
-Default : **[]**

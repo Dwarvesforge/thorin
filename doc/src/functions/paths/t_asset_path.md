@@ -1,6 +1,6 @@
 # t_asset_path
 
-Return a path relative to the `paths.ASSETS` and `paths.DOCUMENT_ROOT` config
+Return a path relative to the `paths.assets` config
 
 
 

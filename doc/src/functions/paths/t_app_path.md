@@ -1,6 +1,6 @@
 # t_app_path
 
-Return the app path depending on the `paths.APP` config
+Return the app path depending on the `paths.app` config
 
 
 

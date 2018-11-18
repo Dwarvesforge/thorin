@@ -6,7 +6,7 @@ Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of 
 ### Parameters
 Name  |  Type  |  Description  |  Status  |  Default
 ------------  |  ------------  |  ------------  |  ------------  |  ------------
-$name  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The mailer name requested. If not passed, will take the email.default_mailer config.  |  optional  |  null
+$mailer  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  |  The mailer name requested. If not passed, will take the email.default_mailer config.  |  optional  |  null
 
 Return **{ PHPMailer\PHPMailer\PHPMailer }** A phpmailer instance to work with
 

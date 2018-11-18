@@ -1,6 +1,6 @@
 # t_is_ip_match
 
-Check if the user ip address is in the blacklist passed as argument
+Check if the user ip address is in the list passed as argument
 
 
 ### Parameters

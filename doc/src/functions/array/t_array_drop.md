@@ -1,4 +1,4 @@
-# t_array_drop_left
+# t_array_drop
 
 Returns a new array with n elements removed from the left
 
@@ -13,7 +13,7 @@ Return **{ [Array](http://php.net/manual/en/language.types.array.php) }** The ne
 
 ### Example
 ```php
-	Thorin::array_drop_left([1,2,3], 2) // [3]
+	Thorin::array_drop([1,2,3], 2) // [3]
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
 

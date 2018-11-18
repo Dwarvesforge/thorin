@@ -1,8 +1,6 @@
 # t_optimize_image
 
-Optimize the passed image by compressing (resize and quality) it and save it to the paths.IMAGES_CACHE folder
-in order to avoid recreating it again and again.
-The $path argument is relative to the paths.BASE path
+Optimize the passed image by compressing (resize and quality) it.
 
 
 ### Parameters

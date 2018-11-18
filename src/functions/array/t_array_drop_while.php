@@ -21,6 +21,6 @@
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/lodash-php/lodash-php/blob/master/src/Array/dropWhile.php
  */
-function t_array_drop_left_while(array $array, callable $predicate): array {
+function t_array_drop_while(array $array, callable $predicate): array {
 	return _::dropWhile($array, $predicate);
 }

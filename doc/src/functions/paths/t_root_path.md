@@ -1,6 +1,6 @@
 # t_root_path
 
-Return the root website url depending on the `paths.document_root` config
+Return the document root path depending on the `paths.document_root` config
 
 
 

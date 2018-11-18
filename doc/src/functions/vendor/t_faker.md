@@ -1,4 +1,4 @@
-# $t_faker
+# t_faker
 
 Return an instance of faker with the one
 you can call all the faker methods
@@ -11,5 +11,3 @@ Return **{ Faker }** A faker instance
 // use faker here...
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
-
-Default : **null**

@@ -1,4 +1,4 @@
-# t_ext
+# t_file_ext
 
 Return the extension of the file path passed
 

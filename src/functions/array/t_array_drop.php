@@ -7,11 +7,11 @@
  * @return    {Array}    The new array produced
  *
  * @example    php
- * Thorin::array_drop_left([1,2,3], 2) // [3]
+ * Thorin::array_drop([1,2,3], 2) // [3]
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/appzcoder/30-seconds-of-php-code
  */
-function t_array_drop_left($items, $n = 1) {
+function t_array_drop($items, $n = 1) {
     return array_slice($items, $n);
 }

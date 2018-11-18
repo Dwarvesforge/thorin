@@ -1,4 +1,4 @@
-# $t_filesystems
+# t_filesystem_factory
 
 Create a filesystem instance with the disk requested. Return a [Flysystem](https://flysystem.thephpleague.com/docs/usage/filesystem-api/) instance to work with.
 If no disk is passed, the default one in the config filsystem.default_disk will be used.
@@ -15,5 +15,3 @@ $disk  |  **{ [String](http://php.net/manual/en/language.types.string.php) }**  
 $contents = $ftp->listContents('/')
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
-
-Default : **[]**

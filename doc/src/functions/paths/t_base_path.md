@@ -1,6 +1,6 @@
 # t_base_path
 
-Return the base path depending on the `paths.BASE` config
+Return the base path depending on the `paths.base` config
 
 
 
