@@ -9,7 +9,7 @@ Return the config path
 $configPath = Thorin::config_path();
 ```
 
-[Full documentation](/doc/src/functions/config/t_config_path.md)
+[Full documentation](/doc/src/functions/config/config_path.md)
 
 <a name="Thorin_config"></a>
 ## Thorin::config
@@ -18,4 +18,4 @@ Get a configuration depending on the path passed
 print Thorin::config('app.environment');
 ```
 
-[Full documentation](/doc/src/functions/config/t_config.md)
+[Full documentation](/doc/src/functions/config/config.md)

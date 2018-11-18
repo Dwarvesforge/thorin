@@ -14,7 +14,7 @@ Return the lodash php class that you can use directly
 $newArray = Thorin::_()::concat($array, 2, [3], [[4]]);
 ```
 
-[Full documentation](/doc/src/functions/vendor/t__.md)
+[Full documentation](/doc/src/functions/vendor/_.md)
 
 <a name="Thorin_dotenv"></a>
 ## Thorin::dotenv
@@ -23,12 +23,12 @@ Return the dotenv instance used to parse the .env file at the root of the projec
 Thorin::dotenv()->required('MYVAR');
 ```
 
-[Full documentation](/doc/src/functions/vendor/t_dotenv.md)
+[Full documentation](/doc/src/functions/vendor/dotenv.md)
 
 [See more](https://github.com/vlucas/phpdotenv)
 
-<a name="Thorin_faker"></a>
-## Thorin::faker
+<a name="Thorin_t_faker"></a>
+## Thorin::t_faker
 Return an instance of faker with the one
 you can call all the faker methods
 ```php
@@ -36,7 +36,7 @@ $faker = Thorin::faker()
 // use faker here...
 ```
 
-[Full documentation](/doc/src/functions/vendor/t_faker.md)
+[Full documentation](/doc/src/functions/vendor/faker.md)
 
 <a name="Thorin_lodash"></a>
 ## Thorin::lodash
@@ -45,7 +45,7 @@ Return the lodash php class that you can use directly
 $newArray = Thorin::lodash()::concat($array, 2, [3], [[4]]);
 ```
 
-[Full documentation](/doc/src/functions/vendor/t_lodash.md)
+[Full documentation](/doc/src/functions/vendor/lodash.md)
 
 [See more](https://github.com/lodash-php/lodash-php)
 
@@ -58,7 +58,7 @@ if (Thorin::mobile_detect()->is('Firefox')) {
 }
 ```
 
-[Full documentation](/doc/src/functions/vendor/t_mobile_detect.md)
+[Full documentation](/doc/src/functions/vendor/mobile_detect.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
 
@@ -70,7 +70,7 @@ This use the cool [Shellwrap](https://github.com/MrRio/shellwrap) library to wor
 $res = Thorin::sh('ls', '-la');
 ```
 
-[Full documentation](/doc/src/functions/vendor/t_sh.md)
+[Full documentation](/doc/src/functions/vendor/sh.md)
 
 <a name="Thorin_validator"></a>
 ## Thorin::validator
@@ -79,6 +79,6 @@ Return a Respect Validation class instance to work with
 Thorin::validator()->alnum()->length(1,15)->validate('alganet'); // true
 ```
 
-[Full documentation](/doc/src/functions/vendor/t_validator.md)
+[Full documentation](/doc/src/functions/vendor/validator.md)
 
 [See more](https://respect-validation.readthedocs.io/en/1.1/)

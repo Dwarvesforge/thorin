@@ -10,7 +10,7 @@ Get the average color of an image in hexadecimal format like "45A3F3"
 $color = Thorin::average_color(Thorin::asset_path('img/my-cool-image.jpg'));
 ```
 
-[Full documentation](/doc/src/functions/images/t_average_color.md)
+[Full documentation](/doc/src/functions/images/average_color.md)
 
 [See more](https://github.com/ksubileau/color-thief-php)
 
@@ -23,10 +23,10 @@ $image->resize(200,300);
 $image->save('my-cool-image.png');
 ```
 
-[Full documentation](/doc/src/functions/images/t_image.md)
+[Full documentation](/doc/src/functions/images/image.md)
 
 <a name="Thorin_optimize_image"></a>
 ## Thorin::optimize_image
 Optimize the passed image by compressing (resize and quality) it.
 
-[Full documentation](/doc/src/functions/images/t_optimize_image.md)
+[Full documentation](/doc/src/functions/images/optimize_image.md)

@@ -11,7 +11,7 @@ Destroy the whole session
 Thorin::session_destroy();
 ```
 
-[Full documentation](/doc/src/functions/session/t_session_destroy.md)
+[Full documentation](/doc/src/functions/session/session_destroy.md)
 
 <a name="Thorin_session_flash"></a>
 ## Thorin::session_flash
@@ -23,7 +23,7 @@ print Thorin::session_flash('my-key'); // my value
 print Thorin::session_flash('my-key'); // null
 ```
 
-[Full documentation](/doc/src/functions/session/t_session_flash.md)
+[Full documentation](/doc/src/functions/session/session_flash.md)
 
 <a name="Thorin_session_id"></a>
 ## Thorin::session_id
@@ -32,7 +32,7 @@ Return the session id of the current session
 $sessionId = Thorin::session_id();
 ```
 
-[Full documentation](/doc/src/functions/session/t_session_id.md)
+[Full documentation](/doc/src/functions/session/session_id.md)
 
 <a name="Thorin_session"></a>
 ## Thorin::session
@@ -42,4 +42,4 @@ To delete the value, pass -1 as $value parameter
 Thorin::session('my-key', 'my value');
 ```
 
-[Full documentation](/doc/src/functions/session/t_session.md)
+[Full documentation](/doc/src/functions/session/session.md)

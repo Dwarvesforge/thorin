@@ -15,14 +15,14 @@
 Return a clean string with max lenght
 
 
-[Full documentation](/doc/src/functions/strings/t_str_clean_cut.md)
+[Full documentation](/doc/src/functions/strings/str_clean_cut.md)
 
 <a name="Thorin_str_headslash"></a>
 ## Thorin::str_headslash
 Make sure the passed string has a slash at the begining
 
 
-[Full documentation](/doc/src/functions/strings/t_str_headslash.md)
+[Full documentation](/doc/src/functions/strings/str_headslash.md)
 
 <a name="Thorin_str_is_end_with"></a>
 ## Thorin::str_is_end_with
@@ -33,7 +33,7 @@ if (Thorin::str_is_end_with($myText, 'world')) {
 }
 ```
 
-[Full documentation](/doc/src/functions/strings/t_str_is_end_with.md)
+[Full documentation](/doc/src/functions/strings/str_is_end_with.md)
 
 <a name="Thorin_str_is_lower_case"></a>
 ## Thorin::str_is_lower_case
@@ -43,7 +43,7 @@ Thorin::str_is_lower_case('Hello world');
 // false
 ```
 
-[Full documentation](/doc/src/functions/strings/t_str_is_lowercase.md)
+[Full documentation](/doc/src/functions/strings/str_is_lowercase.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -56,7 +56,7 @@ if (Thorin::str_is_start_with($myText, 'hello world')) {
 }
 ```
 
-[Full documentation](/doc/src/functions/strings/t_str_is_start_with.md)
+[Full documentation](/doc/src/functions/strings/str_is_start_with.md)
 
 <a name="Thorin_str_is_upper_case"></a>
 ## Thorin::str_is_upper_case
@@ -66,7 +66,7 @@ Thorin::str_is_upper_case('Hello world');
 // false
 ```
 
-[Full documentation](/doc/src/functions/strings/t_str_is_upper_case.md)
+[Full documentation](/doc/src/functions/strings/str_is_upper_case.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -74,8 +74,12 @@ Thorin::str_is_upper_case('Hello world');
 ## Thorin::str_random
 Function which generate random string
 
+```php
+Thorin::str_random(10);
+// fjeik9eud8
+```
 
-[Full documentation](/doc/src/functions/strings/t_str_random.md)
+[Full documentation](/doc/src/functions/strings/str_random.md)
 
 <a name="Thorin_str_remove_whitespaces"></a>
 ## Thorin::str_remove_whitespaces
@@ -84,7 +88,7 @@ Remove all whitespaces in the passed string
 $whitespaceFree = Thorin::str_remove_whitespaces('hello world');
 ```
 
-[Full documentation](/doc/src/functions/strings/t_str_remove_whitespaces.md)
+[Full documentation](/doc/src/functions/strings/str_remove_whitespaces.md)
 
 <a name="Thorin_str_slug"></a>
 ## Thorin::str_slug
@@ -94,11 +98,11 @@ print Thorin::str_slug('Hello world and universe');
 // hello-world-and-universe
 ```
 
-[Full documentation](/doc/src/functions/strings/t_str_slug.md)
+[Full documentation](/doc/src/functions/strings/str_slug.md)
 
 <a name="Thorin_str_tailslash"></a>
 ## Thorin::str_tailslash
 Make sure the passed string has a slash at the end
 
 
-[Full documentation](/doc/src/functions/strings/t_str_tailslash.md)
+[Full documentation](/doc/src/functions/strings/str_tailslash.md)

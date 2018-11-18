@@ -16,7 +16,7 @@ Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.c
 
 ### __callStatic
 
-Catch static calls to redirect it to the corresponding t_... function if it exist
+Catch static calls to redirect it to the corresponding thorin\... function if it exist
 
 
 #### Parameters

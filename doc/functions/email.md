@@ -10,7 +10,7 @@ Return a mailer configuration array
 $disk = Thorin::mailer_config('gmail');
 ```
 
-[Full documentation](/doc/src/functions/email/t_mailer_config.md)
+[Full documentation](/doc/src/functions/email/mailer_config.md)
 
 <a name="Thorin_mailer_factory"></a>
 ## Thorin::mailer_factory
@@ -27,7 +27,7 @@ if ($mailer->send()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/email/t_mailer_factory.md)
+[Full documentation](/doc/src/functions/email/mailer_factory.md)
 
 <a name="Thorin_mailer"></a>
 ## Thorin::mailer
@@ -44,4 +44,4 @@ if ($mailer->send()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/email/t_mailer.md)
+[Full documentation](/doc/src/functions/email/mailer.md)

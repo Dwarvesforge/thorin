@@ -11,7 +11,7 @@ Generate a CSRF input hidden field
 $myInput = Thorin::csrf_input();
 ```
 
-[Full documentation](/doc/src/functions/security/t_csrf_input.md)
+[Full documentation](/doc/src/functions/security/csrf_input.md)
 
 [See more](https://packagist.org/packages/volnix/csrf)
 
@@ -22,7 +22,7 @@ Generate a CSRF query string
 $myQueryString = Thorin::csrf_qs();
 ```
 
-[Full documentation](/doc/src/functions/security/t_csrf_qs.md)
+[Full documentation](/doc/src/functions/security/csrf_qs.md)
 
 [See more](https://packagist.org/packages/volnix/csrf)
 
@@ -33,7 +33,7 @@ Return the token for the given name, or the default token if no name is provided
 $token = Thorin::csrf_token();
 ```
 
-[Full documentation](/doc/src/functions/security/t_csrf_token.md)
+[Full documentation](/doc/src/functions/security/csrf_token.md)
 
 [See more](https://packagist.org/packages/volnix/csrf)
 
@@ -50,6 +50,6 @@ if (Thorin::csrf_validate()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/security/t_csrf_validate.md)
+[Full documentation](/doc/src/functions/security/csrf_validate.md)
 
 [See more](https://packagist.org/packages/volnix/csrf)

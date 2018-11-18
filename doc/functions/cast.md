@@ -6,4 +6,4 @@
 Convert variable to boolean
 
 
-[Full documentation](/doc/src/functions/cast/t_to_boolean.md)
+[Full documentation](/doc/src/functions/cast/to_boolean.md)

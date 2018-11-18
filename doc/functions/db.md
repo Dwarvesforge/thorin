@@ -12,7 +12,7 @@ Boot the eloquent framework
 Thorin::db_boot_eloquent();
 ```
 
-[Full documentation](/doc/src/functions/db/t_db_boot_eloquent.md)
+[Full documentation](/doc/src/functions/db/db_boot_eloquent.md)
 
 <a name="Thorin_db_connection_config"></a>
 ## Thorin::db_connection_config
@@ -21,7 +21,7 @@ Return a db connection configuration array
 $config = Thorin::db_connection_config('db1');
 ```
 
-[Full documentation](/doc/src/functions/db/t_db_connection_config.md)
+[Full documentation](/doc/src/functions/db/db_connection_config.md)
 
 <a name="Thorin_db_connection_factory"></a>
 ## Thorin::db_connection_factory
@@ -31,7 +31,7 @@ $db = Thorin::db_connection_factory('mysql');
 $users = $db->table('users')->get();
 ```
 
-[Full documentation](/doc/src/functions/db/t_db_connection_factory.md)
+[Full documentation](/doc/src/functions/db/db_connection_factory.md)
 
 <a name="Thorin_db_eloquent_capsule"></a>
 ## Thorin::db_eloquent_capsule
@@ -40,14 +40,14 @@ Boot the eloquent ORM with the db.connections configurations
 Thorin::db_boot_eloquent();
 ```
 
-[Full documentation](/doc/src/functions/db/t_db_eloquent_capsule.md)
+[Full documentation](/doc/src/functions/db/db_eloquent_capsule.md)
 
-<a name="Thorin_db"></a>
-## Thorin::db
+<a name="Thorin_t_db"></a>
+## Thorin::t_db
 Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/api/5.3/Illuminate/Database/Connection.html) instance of the requested connection
 ```php
 $db = Thorin::db('mysql');
 $users = $db->table('users')->get();
 ```
 
-[Full documentation](/doc/src/functions/db/t_db.md)
+[Full documentation](/doc/src/functions/db/db.md)

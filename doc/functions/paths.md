@@ -12,28 +12,28 @@
 Return the app path depending on the `paths.app` config
 
 
-[Full documentation](/doc/src/functions/paths/t_app_path.md)
+[Full documentation](/doc/src/functions/paths/app_path.md)
 
 <a name="Thorin_asset_path"></a>
 ## Thorin::asset_path
 Return a path relative to the `paths.assets` config
 
 
-[Full documentation](/doc/src/functions/paths/t_asset_path.md)
+[Full documentation](/doc/src/functions/paths/asset_path.md)
 
 <a name="Thorin_base_path"></a>
 ## Thorin::base_path
 Return the base path depending on the `paths.base` config
 
 
-[Full documentation](/doc/src/functions/paths/t_base_path.md)
+[Full documentation](/doc/src/functions/paths/base_path.md)
 
 <a name="Thorin_document_root_path"></a>
 ## Thorin::document_root_path
 Return the document root path depending on the `paths.document_root` config
 
 
-[Full documentation](/doc/src/functions/paths/t_document_root_path.md)
+[Full documentation](/doc/src/functions/paths/document_root_path.md)
 
 <a name="Thorin_normalize_path"></a>
 ## Thorin::normalize_path
@@ -45,14 +45,14 @@ Return a normalized version of the passed path.
 $path = Thorin::normalize_path('hello/world/../universe');
 ```
 
-[Full documentation](/doc/src/functions/paths/t_normalize_path.md)
+[Full documentation](/doc/src/functions/paths/normalize_path.md)
 
 <a name="Thorin_root_path"></a>
 ## Thorin::root_path
 Return the document root path depending on the `paths.document_root` config
 
 
-[Full documentation](/doc/src/functions/paths/t_root_path.md)
+[Full documentation](/doc/src/functions/paths/root_path.md)
 
 <a name="Thorin_sanitize_path"></a>
 ## Thorin::sanitize_path
@@ -63,4 +63,4 @@ It will do these actions:
 3. Make sure the path finish with a "/" if it's not a file
 
 
-[Full documentation](/doc/src/functions/paths/t_sanitize_path.md)
+[Full documentation](/doc/src/functions/paths/sanitize_path.md)

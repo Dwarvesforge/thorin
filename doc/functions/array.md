@@ -72,7 +72,7 @@ if (Thorin::array_all([1,2,3,4], function($item) {
 }
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_all.md)
+[Full documentation](/doc/src/functions/array/array_all.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -87,7 +87,7 @@ if (Thorin::array_any([1,10,15,20], function($item) {
 }
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_any.md)
+[Full documentation](/doc/src/functions/array/array_any.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -99,7 +99,7 @@ Thorin::array_chunk([1,2,3,4,5], 2);
 // [[1, 2], [3, 4], [5]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_chunk.md)
+[Full documentation](/doc/src/functions/array/array_chunk.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -113,7 +113,7 @@ Thorin::array_compact([0, 1, false, 2, '', 3]);
 // [1, 2, 3]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_compact.md)
+[Full documentation](/doc/src/functions/array/array_compact.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/compact.php)
 
@@ -127,7 +127,7 @@ Thorin::array_concat([1], 2, [3], [[4]])
 // [1, 2, 3, [4]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_concat.md)
+[Full documentation](/doc/src/functions/array/array_concat.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/concat.php)
 
@@ -139,7 +139,7 @@ Thorin::array_deep_flatten([1, [2], [[3], 4], 5]);
 // [1, 2, 3, 4, 5]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_deep_flatten.md)
+[Full documentation](/doc/src/functions/array/array_deep_flatten.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -158,7 +158,7 @@ Thorin::array_difference_by([2.1, 1.2], [2.3, 3.4], 'floor');
 // [1.2]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_difference_by.md)
+[Full documentation](/doc/src/functions/array/array_difference_by.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/differenceBy.php)
 
@@ -180,7 +180,7 @@ Thorin::array_difference_with(
 // [[ 'x' => 2, 'y' => 1 ]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_difference_with.md)
+[Full documentation](/doc/src/functions/array/array_difference_with.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/differenceWith.php)
 
@@ -198,7 +198,7 @@ Thorin::array_difference([2, 1], [2, 3]);
 // [1]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_difference.md)
+[Full documentation](/doc/src/functions/array/array_difference.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/difference.php)
 
@@ -218,7 +218,7 @@ Thorin::array_drop_right_while($users, function($user) { return $user['active'];
 // objects for ['barney']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_drop_right_while.md)
+[Full documentation](/doc/src/functions/array/array_drop_right_while.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/dropRightWhile.php)
 
@@ -229,7 +229,7 @@ Returns a new array with n elements removed from the right
 Thorin::array_drop_right([1,2,3], 2) // [1]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_drop_right.md)
+[Full documentation](/doc/src/functions/array/array_drop_right.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -249,7 +249,7 @@ Thorin::array_drop_left_while($users, function($user) { return $user['active']; 
 // objects for ['pebbles']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_drop_while.md)
+[Full documentation](/doc/src/functions/array/array_drop_while.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/dropWhile.php)
 
@@ -260,7 +260,7 @@ Returns a new array with n elements removed from the left
 Thorin::array_drop([1,2,3], 2) // [3]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_drop.md)
+[Full documentation](/doc/src/functions/array/array_drop.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -284,7 +284,7 @@ Thorin::array_find_index($users, 'active');
 // 2
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_find_index.md)
+[Full documentation](/doc/src/functions/array/array_find_index.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/findIndex.php)
 
@@ -298,7 +298,7 @@ Thorin::array_find_last_index([1, 2, 3, 4], function($n) {
 // 2
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_find_last_index.md)
+[Full documentation](/doc/src/functions/array/array_find_last_index.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code#findlastindex)
 
@@ -312,7 +312,7 @@ Thorin::array_find_last([1, 2, 3, 4], function($item) {
 // 3
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_find_last.md)
+[Full documentation](/doc/src/functions/array/array_find_last.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -324,7 +324,7 @@ Thorin::array_first([1,2,3,4]);
 // 1
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_first.md)
+[Full documentation](/doc/src/functions/array/array_first.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -337,7 +337,7 @@ Thorin::array_flatten_deep([1, [2, [3, [4]], 5]]);
 // [1, 2, 3, 4, 5]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_flatten_deep.md)
+[Full documentation](/doc/src/functions/array/array_flatten_deep.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/flattenDeep.php)
 
@@ -351,7 +351,7 @@ Thorin::array_flatten_depth($array, 1);
 // [1, 2, [3, [4]], 5]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_flatten_depth.md)
+[Full documentation](/doc/src/functions/array/array_flatten_depth.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/flattenDepth.php)
 
@@ -363,7 +363,7 @@ Thorin::array_flatten([1, [2], 3, 4]);
 // [1, 2, 3, 4]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_flatten.md)
+[Full documentation](/doc/src/functions/array/array_flatten.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -377,7 +377,7 @@ Thorin::array_from_pairs([['a', 1], ['b', 2]]);
 // {'a':1, 'b': 2}
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_from_pairs.md)
+[Full documentation](/doc/src/functions/array/array_from_pairs.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/fromPairs.php)
 
@@ -389,7 +389,7 @@ Thorin::array_group_by(['one','two','three'], 'strlen');
 // [3 => ['one', 'two'], 5 => ['three']]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_group_by.md)
+[Full documentation](/doc/src/functions/array/array_group_by.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -401,7 +401,7 @@ Thorin::array_has_duplicates([1,2,3,1,2]);
 // true
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_has_duplicates.md)
+[Full documentation](/doc/src/functions/array/array_has_duplicates.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -413,7 +413,7 @@ Thorin::array_head([1,2,3]);
 // [1,2]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_head.md)
+[Full documentation](/doc/src/functions/array/array_head.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -429,7 +429,7 @@ Thorin::array_index_of([1, 2, 1, 2], 2);
 // 1
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_index_of.md)
+[Full documentation](/doc/src/functions/array/array_index_of.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/indexOf.php)
 
@@ -446,7 +446,7 @@ Thorin::array_intersection_by([2.1, 1.2], [2.3, 3.4], Math.floor);
 // [2.1]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_intersection_by.md)
+[Full documentation](/doc/src/functions/array/array_intersection_by.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/intersectionBy.php)
 
@@ -464,7 +464,7 @@ Thorin::array_intersection_with($objects, $others, 'Thorin::is_equal');
 // [[ 'x' => 1, 'y' => 2 ]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_intersection_with.md)
+[Full documentation](/doc/src/functions/array/array_intersection_with.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/intersectionWith.php)
 
@@ -480,15 +480,19 @@ Thorin::array_intersection([2, 1], [2, 3]);
 // [2]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_intersection.md)
+[Full documentation](/doc/src/functions/array/array_intersection.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/intersection.php)
 
 <a name="Thorin_array_is_assoc"></a>
 ## Thorin::array_is_assoc
 Check if array is assocative or not
+```php
+Thorin::array_is_assoc(['a' => 1, 'b' => 2]);
+// true
+```
 
-[Full documentation](/doc/src/functions/array/t_array_is_assoc.md)
+[Full documentation](/doc/src/functions/array/array_is_assoc.md)
 
 <a name="Thorin_array_last_index_of"></a>
 ## Thorin::array_last_index_of
@@ -500,7 +504,7 @@ Thorin::array_last_index_of([1, 2, 1, 2], 2);
 // 3
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_last_index_of.md)
+[Full documentation](/doc/src/functions/array/array_last_index_of.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/lastIndexOf.php)
 
@@ -512,7 +516,7 @@ Thorin::array_last([1,2,3,4]);
 // 4
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_last.md)
+[Full documentation](/doc/src/functions/array/array_last.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -526,7 +530,7 @@ Thorin::array_nth(['a', 'b', 'c', 'd'], 2);
 // b
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_nth.md)
+[Full documentation](/doc/src/functions/array/array_nth.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/nth.php)
 
@@ -542,7 +546,7 @@ Thorin::array_order_by([
 // [['id' => 3, 'name' => 'Khaja'], ['id' => 2, 'name' => 'Joy'], ['id' => 1, 'name' => 'Raja']]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_order_by.md)
+[Full documentation](/doc/src/functions/array/array_order_by.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -557,7 +561,7 @@ Thorin::array_pluck([
 // ['Desk','Chair']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_pluck.md)
+[Full documentation](/doc/src/functions/array/array_pluck.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -574,7 +578,7 @@ var_dump($array);
 // [[ 'x' => 2 ]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_pull_all_by.md)
+[Full documentation](/doc/src/functions/array/array_pull_all_by.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAllBy.php)
 
@@ -590,7 +594,7 @@ Thorin::array_pull_all_with($array, [[ 'x' => 3, 'y' => 4 ]], 'Thorin::is_equal'
 // [[ 'x' => 1, 'y' => 2 ], [ 'x' => 5, 'y' => 6 ]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_pull_all_with.md)
+[Full documentation](/doc/src/functions/array/array_pull_all_with.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAllWith.php)
 
@@ -605,7 +609,7 @@ var_dump($array);
 // ['b', 'b']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_pull_all.md)
+[Full documentation](/doc/src/functions/array/array_pull_all.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAll.php)
 
@@ -620,7 +624,7 @@ Thorin::array_pull_at($array, [1, 3]);
 // ['b', 'd']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_pull_at.md)
+[Full documentation](/doc/src/functions/array/array_pull_at.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAt.php)
 
@@ -637,7 +641,7 @@ var_dump($array);
 // ['b', 'b']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_pull.md)
+[Full documentation](/doc/src/functions/array/array_pull.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pull.php)
 
@@ -649,7 +653,7 @@ $ranges = Thorin::array_range(0,10);
 // [0,1,2,3,4,5,6,7,8,9,10]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_range.md)
+[Full documentation](/doc/src/functions/array/array_range.md)
 
 [See more](https://www.jonasjohn.de/snippets/php/array-range.htm)
 
@@ -663,7 +667,7 @@ Thorin::array_reject(['Apple', 'Pear', 'Kiwi', 'Banana'], function($item) {
 // ['Pear','Kiwi']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_reject.md)
+[Full documentation](/doc/src/functions/array/array_reject.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -675,7 +679,7 @@ $newArray = Thorin::array_remove_empty(['','hello','','world']);
 // ['hello','world']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_remove_empty.md)
+[Full documentation](/doc/src/functions/array/array_remove_empty.md)
 
 <a name="Thorin_array_slice"></a>
 ## Thorin::array_slice
@@ -687,7 +691,7 @@ Thorin::array_slide($array, 1, 3);
 // [2,3,4]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_slice.md)
+[Full documentation](/doc/src/functions/array/array_slice.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/slice.php)
 
@@ -699,7 +703,7 @@ Thorin::array_tail([1,2,3]);
 // [2,3]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_tail.md)
+[Full documentation](/doc/src/functions/array/array_tail.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -719,7 +723,7 @@ Thorin::array_take_right_while($users, function($value) { return $value['active'
 // objects for ['fred', 'pebbles']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_take_right_while.md)
+[Full documentation](/doc/src/functions/array/array_take_right_while.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/takeRightWhile.php)
 
@@ -732,7 +736,7 @@ Thorin::array_take_right([1, 2, 3], 2);
 // [2,3]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_take_right.md)
+[Full documentation](/doc/src/functions/array/array_take_right.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/takeRight.php)
 
@@ -752,7 +756,7 @@ Thorin::array_take_while($users, function($value) { return $value['active']; });
 // objects for ['barney', 'fred']
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_take_while.md)
+[Full documentation](/doc/src/functions/array/array_take_while.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/takeWhile.php)
 
@@ -764,7 +768,7 @@ Thorin::array_take([1,2,3,4,5], 2);
 // [1,2]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_take.md)
+[Full documentation](/doc/src/functions/array/array_take.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -781,7 +785,7 @@ Thorin::array_union_by([2.1], [1.2, 2.3], 'floor');
 // [2.1, 1.2]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_union_by.md)
+[Full documentation](/doc/src/functions/array/array_union_by.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unionBy.php)
 
@@ -799,7 +803,7 @@ Thorin::array_union_with($objects, $others, 'Thorin::is_equal')
 // => [['x' => 1, 'y' => 2], ['x' => 2, 'y' => 1], ['x' => 1, 'y' => 1]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_union_with.md)
+[Full documentation](/doc/src/functions/array/array_union_with.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unionWith.php)
 
@@ -814,7 +818,7 @@ Thorin::array_union([2], [1, 2]);
 // [2, 1]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_union.md)
+[Full documentation](/doc/src/functions/array/array_union.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/union.php)
 
@@ -831,7 +835,7 @@ Thorin::array_uniq_by([2.1, 1.2, 2.3], 'floor');
 // [2.1, 1.2]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_uniq_by.md)
+[Full documentation](/doc/src/functions/array/array_uniq_by.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/uniqBy.php)
 
@@ -848,7 +852,7 @@ Thorin::array_uniq_with($objects, 'Thorin::is_equal');
 // [['x' => 1, 'y' => 2], ['x' => 2, 'y' => 1]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_uniq_with.md)
+[Full documentation](/doc/src/functions/array/array_uniq_with.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/uniqWith.php)
 
@@ -865,7 +869,7 @@ Thorin::array_uniq([2, 1, 2]);
 // [2,1]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_uniq.md)
+[Full documentation](/doc/src/functions/array/array_uniq.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/uniq.php)
 
@@ -882,7 +886,7 @@ Thorin::array_unzip_with($zipped, 'Thorin::add');
 // [3, 30, 300]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_unzip_with.md)
+[Full documentation](/doc/src/functions/array/array_unzip_with.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unzipWith.php)
 
@@ -899,7 +903,7 @@ Thorin::array_unzip($zipped);
 // [['a', 'b'], [1, 2], [true, false]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_unzip.md)
+[Full documentation](/doc/src/functions/array/array_unzip.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unzip.php)
 
@@ -911,7 +915,7 @@ Thorin::array_without([1,2,3,4,5], 1, 3);
 // [2,4,5]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_without.md)
+[Full documentation](/doc/src/functions/array/array_without.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -938,7 +942,7 @@ class stdClass#20 (1) {
 */
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_zip_object_deep.md)
+[Full documentation](/doc/src/functions/array/array_zip_object_deep.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/zipObjectDeep.php)
 
@@ -956,7 +960,7 @@ Thorin::array_zip_object(['a', 'b'], [1, 2]);
 */
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_zip_object.md)
+[Full documentation](/doc/src/functions/array/array_zip_object.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/zipObject.php)
 
@@ -971,7 +975,7 @@ Thorin::array_zip_with([1, 2], [10, 20], [100, 200], function($a, $b, $c) { retu
 // [111, 222]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_zip_with.md)
+[Full documentation](/doc/src/functions/array/array_zip_with.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/zipWith.php)
 
@@ -986,6 +990,6 @@ Thorin::array_zip(['a', 'b'], [1, 2], [true, false]);
 // [['a', 1, true], ['b', 2, false]]
 ```
 
-[Full documentation](/doc/src/functions/array/t_array_zip.md)
+[Full documentation](/doc/src/functions/array/array_zip.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/zip.php)

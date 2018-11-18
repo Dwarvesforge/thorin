@@ -13,7 +13,7 @@ $item->set('hello world');
 $apcPool->save($item);
 ```
 
-[Full documentation](/doc/src/functions/cache/t_cache_factory.md)
+[Full documentation](/doc/src/functions/cache/cache_factory.md)
 
 <a name="Thorin_cache"></a>
 ## Thorin::cache
@@ -25,4 +25,4 @@ The key will automatically bein hashed using sha1.
 Thorin::cache('my_item', 'hello world', 60);
 ```
 
-[Full documentation](/doc/src/functions/cache/t_cache.md)
+[Full documentation](/doc/src/functions/cache/cache.md)

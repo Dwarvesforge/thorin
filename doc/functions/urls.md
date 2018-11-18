@@ -8,14 +8,14 @@
 Return a url relative to the `paths.assets` and the `app.root_url` config
 
 
-[Full documentation](/doc/src/functions/urls/t_asset_url.md)
+[Full documentation](/doc/src/functions/urls/asset_url.md)
 
 <a name="Thorin_root_url"></a>
 ## Thorin::root_url
 Return the root website url depending on the `app.root_url` config
 
 
-[Full documentation](/doc/src/functions/urls/t_root_url.md)
+[Full documentation](/doc/src/functions/urls/root_url.md)
 
 <a name="Thorin_sanitize_url"></a>
 ## Thorin::sanitize_url
@@ -23,4 +23,4 @@ Return a sanitized version of the passed path. Here's the actions applied on the
 - Ensure no double "/" in the path like http://my-domain.com/some//thing
 - Apply the filter_var function withe the FILTER_SANITIZE_URL flag
 
-[Full documentation](/doc/src/functions/urls/t_sanitize_url.md)
+[Full documentation](/doc/src/functions/urls/sanitize_url.md)

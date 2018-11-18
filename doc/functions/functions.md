@@ -15,7 +15,7 @@ $composed = Thorin::compose(function($x) {
 $composed(2); // 13
 ```
 
-[Full documentation](/doc/src/functions/functions/t_compose.md)
+[Full documentation](/doc/src/functions/functions/compose.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -29,7 +29,7 @@ $currieAdd = Thorin::currie(function($a, $b) {
 $currieAdd(10)(15); // 25
 ```
 
-[Full documentation](/doc/src/functions/functions/t_curry.md)
+[Full documentation](/doc/src/functions/functions/curry.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -47,6 +47,6 @@ $memoizedAdd(6); // 16
 $memoizedAdd(5); // 15 but cached
 ```
 
-[Full documentation](/doc/src/functions/functions/t_memoize.md)
+[Full documentation](/doc/src/functions/functions/memoize.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)

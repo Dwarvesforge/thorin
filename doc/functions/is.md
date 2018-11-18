@@ -19,10 +19,10 @@
 Check if the script has been called using an ajax request or not
 
 
-[Full documentation](/doc/src/functions/is/t_is_ajax_request.md)
+[Full documentation](/doc/src/functions/is/is_ajax_request.md)
 
-<a name="Thorin_is_android"></a>
-## Thorin::is_android
+<a name="Thorin_t_is_android"></a>
+## Thorin::t_is_android
 Return true if the request is made from an android device
 ```php
 if (Thorin::is_android()) {
@@ -30,7 +30,7 @@ if (Thorin::is_android()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_android.md)
+[Full documentation](/doc/src/functions/is/is_android.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
 
@@ -39,7 +39,7 @@ if (Thorin::is_android()) {
 Detect if the "visitor" is a web crawler like googlebot, etc...
 
 
-[Full documentation](/doc/src/functions/is/t_is_crawler.md)
+[Full documentation](/doc/src/functions/is/is_crawler.md)
 
 <a name="Thorin_is_desktop"></a>
 ## Thorin::is_desktop
@@ -50,7 +50,7 @@ if (Thorin::is_desktop()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_desktop.md)
+[Full documentation](/doc/src/functions/is/is_desktop.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
 
@@ -63,7 +63,7 @@ if (Thorin::is_email('something@something.com')) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_email.md)
+[Full documentation](/doc/src/functions/is/is_email.md)
 
 <a name="Thorin_is_environment"></a>
 ## Thorin::is_environment
@@ -74,7 +74,7 @@ if (Thorin::is_environment('testing','production')) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_environment.md)
+[Full documentation](/doc/src/functions/is/is_environment.md)
 
 <a name="Thorin_is_equal"></a>
 ## Thorin::is_equal
@@ -91,7 +91,7 @@ Thorin::is_equal([ 'a' => 1], ['a' => '1'])
 // true
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_equal.md)
+[Full documentation](/doc/src/functions/is/is_equal.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Lang/isEqual.php)
 
@@ -103,7 +103,7 @@ Thorin::is_even(2);
 // true
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_even.md)
+[Full documentation](/doc/src/functions/is/is_even.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -116,7 +116,7 @@ if (Thorin::is_ios()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_ios.md)
+[Full documentation](/doc/src/functions/is/is_ios.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
 
@@ -129,7 +129,7 @@ if (Thorin::is_ip_match([127.0.0.1])) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_ip_match.md)
+[Full documentation](/doc/src/functions/is/is_ip_match.md)
 
 <a name="Thorin_is_mobile"></a>
 ## Thorin::is_mobile
@@ -140,7 +140,7 @@ if (Thorin::is_mobile()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_mobile.md)
+[Full documentation](/doc/src/functions/is/is_mobile.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
 
@@ -152,7 +152,7 @@ Thorin::is_odd(3);
 // true
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_odd.md)
+[Full documentation](/doc/src/functions/is/is_odd.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
@@ -165,7 +165,7 @@ if (Thorin::is_phone()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_phone.md)
+[Full documentation](/doc/src/functions/is/is_phone.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
 
@@ -178,6 +178,6 @@ if (Thorin::is_tablet()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/is/t_is_tablet.md)
+[Full documentation](/doc/src/functions/is/is_tablet.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)

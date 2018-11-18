@@ -11,6 +11,6 @@ $emitter->addListener('event.name', function($event) {
 });
 ```
 
-[Full documentation](/doc/src/functions/events/t_emitter.md)
+[Full documentation](/doc/src/functions/events/emitter.md)
 
 [See more](http://event.thephpleague.com/2.0/emitter/basic-usage/)

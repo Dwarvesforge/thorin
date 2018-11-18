@@ -10,7 +10,7 @@ Display a recaptcha using the configured secret, sitekey, lang and attributes
 print Thorin::recaptcha_display();
 ```
 
-[Full documentation](/doc/src/functions/recaptcha/t_recaptcha_display.md)
+[Full documentation](/doc/src/functions/recaptcha/recaptcha_display.md)
 
 [See more](https://github.com/ARCANEDEV/noCAPTCHA)
 
@@ -21,7 +21,7 @@ Create a Arcanedev\NoCaptcha\NoCaptcha nocaptcha instance to work with.
 $nocaptcha = Thorin::nocaptcha_factory();
 ```
 
-[Full documentation](/doc/src/functions/recaptcha/t_recaptcha_factory.md)
+[Full documentation](/doc/src/functions/recaptcha/recaptcha_factory.md)
 
 [See more](https://github.com/ARCANEDEV/noCAPTCHA)
 
@@ -36,6 +36,6 @@ if (Thorin::recaptcha_verify()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/recaptcha/t_recaptcha_verify.md)
+[Full documentation](/doc/src/functions/recaptcha/recaptcha_verify.md)
 
 [See more](https://github.com/ARCANEDEV/noCAPTCHA)

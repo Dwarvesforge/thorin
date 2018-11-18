@@ -6,4 +6,4 @@
 Check if timestamp is valid
 
 
-[Full documentation](/doc/src/functions/time/t_is_timestamp_valid.md)
+[Full documentation](/doc/src/functions/time/is_timestamp_valid.md)

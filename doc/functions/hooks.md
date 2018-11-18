@@ -13,7 +13,7 @@ Thorin::add_action('my-action', function() {
 });
 ```
 
-[Full documentation](/doc/src/functions/hooks/t_add_action.md)
+[Full documentation](/doc/src/functions/hooks/add_action.md)
 
 [See more](https://packagist.org/packages/voku/php-hooks)
 
@@ -26,7 +26,7 @@ Thorin::add_filter('my-filter', function($value) {
 });
 ```
 
-[Full documentation](/doc/src/functions/hooks/t_add_filter.md)
+[Full documentation](/doc/src/functions/hooks/add_filter.md)
 
 [See more](https://packagist.org/packages/voku/php-hooks)
 
@@ -40,7 +40,7 @@ Thorin::add_filter('my-filter', function($value) {
 print Thorin::apply_filters('my-filter', 'world'); // Hello world
 ```
 
-[Full documentation](/doc/src/functions/hooks/t_apply_filter.md)
+[Full documentation](/doc/src/functions/hooks/apply_filter.md)
 
 [See more](https://packagist.org/packages/voku/php-hooks)
 
@@ -51,6 +51,6 @@ Execute all the corresponding actions registered with the `t_add_action` functio
 Thorin::do_action('my-action');
 ```
 
-[Full documentation](/doc/src/functions/hooks/t_do_action.md)
+[Full documentation](/doc/src/functions/hooks/do_action.md)
 
 [See more](https://packagist.org/packages/voku/php-hooks)

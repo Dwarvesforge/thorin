@@ -15,7 +15,7 @@ Calculate a directory size
 $size = Thorin::get_dir_size('my_cool_directory');
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_dir_size.md)
+[Full documentation](/doc/src/functions/filesystem/dir_size.md)
 
 <a name="Thorin_disk_config"></a>
 ## Thorin::disk_config
@@ -24,7 +24,7 @@ Return a disk configuration array
 $disk = Thorin::disk('base');
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_disk_config.md)
+[Full documentation](/doc/src/functions/filesystem/disk_config.md)
 
 <a name="Thorin_disk"></a>
 ## Thorin::disk
@@ -34,7 +34,7 @@ $disk = Thorin::disk('local');
 $disk->listContents();
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_disk.md)
+[Full documentation](/doc/src/functions/filesystem/disk.md)
 
 <a name="Thorin_disks"></a>
 ## Thorin::disks
@@ -44,17 +44,17 @@ $pool = Thorin::disks('base','assets');
 $pool->listContents();
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_disks.md)
+[Full documentation](/doc/src/functions/filesystem/disks.md)
 
 <a name="Thorin_file_ext"></a>
 ## Thorin::file_ext
 Return the extension of the file path passed
 ```php
-$ext = Thorin::ext('my/cool/file.jpg');
+$ext = Thorin::file_ext('my/cool/file.jpg');
 // jpg
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_file_ext.md)
+[Full documentation](/doc/src/functions/filesystem/file_ext.md)
 
 <a name="Thorin_filesystem_factory"></a>
 ## Thorin::filesystem_factory
@@ -65,7 +65,7 @@ $ftp = Thorin::filesystem_factory('ftp');
 $contents = $ftp->listContents('/')
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_filesystem_factory.md)
+[Full documentation](/doc/src/functions/filesystem/filesystem_factory.md)
 
 <a name="Thorin_force_download"></a>
 ## Thorin::force_download
@@ -74,7 +74,7 @@ Force download the passed file with the passed name
 Thorin::force_download('/path/to/my-file.zip', 'cool-file.zip');
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_force_download.md)
+[Full documentation](/doc/src/functions/filesystem/force_download.md)
 
 [See more](https://www.jonasjohn.de/snippets/php/file-download.htm)
 
@@ -85,7 +85,7 @@ Force download the passed file with the passed name
 Thorin::force_download('/path/to/my-file.zip', 'cool-file.zip');
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_force_download.md)
+[Full documentation](/doc/src/functions/filesystem/force_download.md)
 
 [See more](https://www.jonasjohn.de/snippets/php/file-download.htm)
 
@@ -97,4 +97,4 @@ print Thorin::human_filesize(14356543);
 // 13.69 MB
 ```
 
-[Full documentation](/doc/src/functions/filesystem/t_human_filesize.md)
+[Full documentation](/doc/src/functions/filesystem/human_filesize.md)
