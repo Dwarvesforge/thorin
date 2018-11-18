@@ -93,6 +93,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_unzip_with`](doc/src/functions/array/t_array_unzip_with.md) : This method is like `Thorin::array_unzip` except that it accepts `iteratee`
 	- [`Thorin::array_unzip`](doc/src/functions/array/t_array_unzip.md) : This method is like `Thorin::array_zip` except that it accepts an array of grouped elements and creates an array regrouping the elements to their pre-zip configuration
 	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
+	- [`Thorin:array_zip`](doc/src/functions/array/t_array_zip.md) : Creates an array of grouped elements, the first of which contains the first elements of the given arrays, the second of which contains the second elements of the given arrays, and so on.
 - Cache
 	- [`Thorin::cache`](doc/src/functions/cache/t_cache.md) : Store/get/delete item from a chosen cache (apc, memcache, filesystem, etc...)
 	- [`Thorin::cache_factory`](doc/src/functions/cache/t_cache_factory.md) : Return a cache pool using the requested driver
