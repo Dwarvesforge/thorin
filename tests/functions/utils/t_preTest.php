@@ -10,6 +10,6 @@ final class t_pre extends TestCase
 		$res =  '<pre>
 hello world
 </pre>';
-		$this->assertEquals(t_pre('hello world'), $res);
+		$this->assertEquals(Thorin::pre('hello world'), $res);
 	}
 }

@@ -7,9 +7,9 @@ use PHPUnit\Framework\TestCase;
 final class t_esc_attr extends TestCase
 {
     public function testEscapeAString() {
-		$this->assertEquals(t_esc_attr('"hello world"'), '&quot;hello world&quot;');
+		$this->assertEquals(Thorin::esc_attr('"hello world"'), '&quot;hello world&quot;');
 	}
 	public function testEscapeASimpleString() {
-		$this->assertEquals(t_esc_attr('hello world'), 'hello world');
+		$this->assertEquals(Thorin::esc_attr('hello world'), 'hello world');
 	}
 }

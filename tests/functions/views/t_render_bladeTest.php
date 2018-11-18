@@ -8,7 +8,7 @@ final class t_render_blade_test extends TestCase
 {
     public function testRender() {
 		$res = '<div>Hello World</div>';
-		$this->assertEquals(trim(t_render_blade('test', [
+		$this->assertEquals(trim(Thorin::render_blade('test', [
 			'message' => 'Hello World'
 		])), $res);
 	}

@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_extend extends TestCase
 {
     public function testExtendSimpleObjects() {
-		$extended = t_extend((object) [
+		$extended = Thorin::extend((object) [
 			'hello' => 'world'
 		], (object) [
 			'world' => 'hello'
@@ -18,7 +18,7 @@ final class t_extend extends TestCase
 		]);
 	}
 	public function testExtendComplexeObjects() {
-		$extended = t_extend((object) [
+		$extended = Thorin::extend((object) [
 			'obj1' => (object) [
 				'hello' => 'world'
 			]
@@ -35,7 +35,7 @@ final class t_extend extends TestCase
 		]);
 	}
 	public function testExtendSimpleArrays() {
-		$extended = t_extend([
+		$extended = Thorin::extend([
 			'hello' => 'world'
 		], [
 			'world' => 'hello'
@@ -46,7 +46,7 @@ final class t_extend extends TestCase
 		]);
 	}
 	public function testExtendComplexeArrays() {
-		$extended = t_extend([
+		$extended = Thorin::extend([
 			'obj1' => [
 				'hello' => 'world'
 			]

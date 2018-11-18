@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_define extends TestCase
 {
     public function testValidTimestamp() {
-		t_define('T_TEST', true);
+		Thorin::define('T_TEST', true);
 		$this->assertEquals(T_TEST, true);
 	}
 }

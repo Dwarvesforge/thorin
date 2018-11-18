@@ -8,7 +8,7 @@ final class t_render_test extends TestCase
 {
     public function testRender() {
 		$res = '<div>Hello World</div>';
-		$this->assertEquals(trim(t_render('test', [
+		$this->assertEquals(trim(Thorin::render('test', [
 			'message' => 'Hello World'
 		])), $res);
 	}

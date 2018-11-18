@@ -11,7 +11,7 @@
 class Thorin {
 
 	/**
-	 * Catch static calls to redirect it to the corresponding t_... function if it exist
+	 * Catch static calls to redirect it to the corresponding thorin\... function if it exist
 	 * @name __callStatic
 	 * @param 	{String} 		$name 		The function name to call
 	 * @param 	{Array} 		$arguments 	The arguments passed to the static call
@@ -20,8 +20,8 @@ class Thorin {
 	public static function __callStatic($name, $arguments)
 	{
 		// check if function is available in the stack
-		if (function_exists('t_'.$name)) {
-			return call_user_func_array('t_'.$name, $arguments);
+		if (is_callable("\\thorin\\$name")) {
+			return call_user_func_array("thorin\\$name", $arguments);
 		} else {
 			throw new Exception('Try to call a function "'.$name.'" that does not exist on "Thorin"');
 		}
