@@ -93,6 +93,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 	- [`Thorin::array_unzip_with`](doc/src/functions/array/t_array_unzip_with.md) : This method is like `Thorin::array_unzip` except that it accepts `iteratee`
 	- [`Thorin::array_unzip`](doc/src/functions/array/t_array_unzip.md) : This method is like `Thorin::array_zip` except that it accepts an array of grouped elements and creates an array regrouping the elements to their pre-zip configuration
 	- [`Thorin::array_without`](doc/src/functions/array/t_array_without.md) : Filters out the elements of an array, that have one of the specified values
+	- [`Thorin::array_zip_object_deep`](doc/src/functions/array/t_array_zip_object_deep.md) : This method is like `Thorin::array_zip_object` except that it supports property paths.
 	- [`Thorin::array_zip_object`](doc/src/functions/array/t_array_zip_object.md) : This method is like `Thorin::array_from_pairs` except that it accepts two arrays, one of property identifiers and one of corresponding values.
 	- [`Thorin:array_zip`](doc/src/functions/array/t_array_zip.md) : Creates an array of grouped elements, the first of which contains the first elements of the given arrays, the second of which contains the second elements of the given arrays, and so on.
 - Cache
