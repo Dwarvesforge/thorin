@@ -1,8 +1,8 @@
 # cache
 
-- [Thorin::cache_factory](#Thorin::cache_factory)
-- [Thorin::cache](#Thorin::cache)
-<a name="Thorin::cache_factory"></a>
+- [Thorin::cache_factory](#Thorin_cache_factory)
+- [Thorin::cache](#Thorin_cache)
+<a name="Thorin_cache_factory"></a>
 ## Thorin::cache_factory
 Create a cache pool with the driver requested. Return a [PHP-Cache](http://www.php-cache.com/en/latest/introduction/) pool to work with.
 If no driver is passed, the default one in the config cache.DEFAULT_DRIVER will be used.
@@ -15,7 +15,7 @@ $apcPool->save($item);
 
 [Full documentation](/doc/src/functions/cache/t_cache_factory.md)
 
-<a name="Thorin::cache"></a>
+<a name="Thorin_cache"></a>
 ## Thorin::cache
 Get/Set a cache item quickly with this cache helper function.
 Allows to add, edit or delete any cache item quickly.

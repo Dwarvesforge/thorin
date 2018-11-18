@@ -1,7 +1,7 @@
 # events
 
-- [Thorin::emitter](#Thorin::emitter)
-<a name="Thorin::emitter"></a>
+- [Thorin::emitter](#Thorin_emitter)
+<a name="Thorin_emitter"></a>
 ## Thorin::emitter
 Return a [League\Event\Emitter](http://event.thephpleague.com/2.0/emitter/basic-usage/) instance to work with.
 ```php

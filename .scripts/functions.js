@@ -30,7 +30,7 @@ folders.forEach((folder) => {
 	// loop on each files
 	files.forEach((file) => {
 		const name = 'Thorin::' + path.basename(file).replace('.php','').substr(2)
-		mds.push(`- [${name}](#${name})`)
+		mds.push(`- [${name}](#${name.replace('::','_')})`)
 	})
 
 	// loop on each files
@@ -48,7 +48,7 @@ folders.forEach((folder) => {
 			const name = 'Thorin::' + docblock.name.substr(2)
 
 			// generate the markdown code to add to the file
-			mds.push(`<a name="${name}"></a>`)
+			mds.push(`<a name="${name.replace('::','_')}"></a>`)
 			mds.push(`## ${name}`)
 			mds.push(docblock.body)
 			if (docblock.example) {

@@ -1,9 +1,9 @@
 # email
 
-- [Thorin::mailer_config](#Thorin::mailer_config)
-- [Thorin::mailer_factory](#Thorin::mailer_factory)
-- [Thorin::mailer](#Thorin::mailer)
-<a name="Thorin::mailer_config"></a>
+- [Thorin::mailer_config](#Thorin_mailer_config)
+- [Thorin::mailer_factory](#Thorin_mailer_factory)
+- [Thorin::mailer](#Thorin_mailer)
+<a name="Thorin_mailer_config"></a>
 ## Thorin::mailer_config
 Return a mailer configuration array
 ```php
@@ -12,7 +12,7 @@ $disk = Thorin::mailer_config('gmail');
 
 [Full documentation](/doc/src/functions/email/t_mailer_config.md)
 
-<a name="Thorin::mailer_factory"></a>
+<a name="Thorin_mailer_factory"></a>
 ## Thorin::mailer_factory
 Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer registered in the `email` config file
 ```php
@@ -29,7 +29,7 @@ if ($mailer->send()) {
 
 [Full documentation](/doc/src/functions/email/t_mailer_factory.md)
 
-<a name="Thorin::mailer"></a>
+<a name="Thorin_mailer"></a>
 ## Thorin::mailer
 Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer registered in the `email` config file
 ```php

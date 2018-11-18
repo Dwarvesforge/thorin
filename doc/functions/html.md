@@ -1,9 +1,9 @@
 # html
 
-- [Thorin::autolink](#Thorin::autolink)
-- [Thorin::esc_attr](#Thorin::esc_attr)
-- [Thorin::text_to_html](#Thorin::text_to_html)
-<a name="Thorin::autolink"></a>
+- [Thorin::autolink](#Thorin_autolink)
+- [Thorin::esc_attr](#Thorin_esc_attr)
+- [Thorin::text_to_html](#Thorin_text_to_html)
+<a name="Thorin_autolink"></a>
 ## Thorin::autolink
 Automaticaly transform urls into links in the passed text.
 ```php
@@ -14,14 +14,14 @@ $newText = Thorin::autolink($text);
 
 [Full documentation](/doc/src/functions/html/t_autolink.md)
 
-<a name="Thorin::esc_attr"></a>
+<a name="Thorin_esc_attr"></a>
 ## Thorin::esc_attr
 Escape the passed string to ensure it will not break any html when printed inside an attribute
 
 
 [Full documentation](/doc/src/functions/html/t_esc_attr.md)
 
-<a name="Thorin::text_to_html"></a>
+<a name="Thorin_text_to_html"></a>
 ## Thorin::text_to_html
 Format a simple passed text into a nice formated html one.
 This will transform the new line into <br>, as well as the line breaks into paragraphs
