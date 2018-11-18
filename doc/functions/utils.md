@@ -12,6 +12,7 @@
 - [Thorin::redirect_ip](#Thorin::redirect_ip)
 - [Thorin::safe_redirect](#Thorin::safe_redirect)
 - [Thorin::whois](#Thorin::whois)
+<a name="Thorin::current_url"></a>
 ## Thorin::current_url
 Return the current url
 ```php
@@ -20,12 +21,14 @@ $current = Thorin::current_url();
 
 [Full documentation](/doc/src/functions/utils/t_current_url.md)
 
+<a name="Thorin::define"></a>
 ## Thorin::define
 Define a constant if not already defined
 
 
 [Full documentation](/doc/src/functions/utils/t_define.md)
 
+<a name="Thorin::domain"></a>
 ## Thorin::domain
 Return the domain
 ```php
@@ -34,6 +37,7 @@ $domain = Thorin::domain();
 
 [Full documentation](/doc/src/functions/utils/t_domain.md)
 
+<a name="Thorin::env"></a>
 ## Thorin::env
 Return the environment variable that correspond to the requested one or a default value passed as a second parameter
 ```php
@@ -42,6 +46,7 @@ $myValue = Thorin::env('MY_VARIABLE', false);
 
 [Full documentation](/doc/src/functions/utils/t_env.md)
 
+<a name="Thorin::environment"></a>
 ## Thorin::environment
 Return the environment set in `app.ENVIRONMENT` config
 ```php
@@ -50,6 +55,7 @@ $env = Thorin::environment();
 
 [Full documentation](/doc/src/functions/utils/t_environment.md)
 
+<a name="Thorin::ip_address"></a>
 ## Thorin::ip_address
 Return the ip address of the user
 ```php
@@ -58,6 +64,7 @@ $ip = Thorin::ip_address();
 
 [Full documentation](/doc/src/functions/utils/t_ip_address.md)
 
+<a name="Thorin::location"></a>
 ## Thorin::location
 Retreive a location from a passed ip address. If no ip address is passed,
 will try to get the user one automaticaly.
@@ -68,6 +75,7 @@ $location = Thorin::location();
 
 [Full documentation](/doc/src/functions/utils/t_location.md)
 
+<a name="Thorin::pre"></a>
 ## Thorin::pre
 Format/beautify array
 
@@ -77,6 +85,7 @@ print Thorin::pre($myArray);
 
 [Full documentation](/doc/src/functions/utils/t_pre.md)
 
+<a name="Thorin::protocol"></a>
 ## Thorin::protocol
 Return the protocol used to request the page
 ```php
@@ -85,11 +94,13 @@ $protocol = Thorin::protocol();
 
 [Full documentation](/doc/src/functions/utils/t_protocol.md)
 
+<a name="Thorin::redirect_ip"></a>
 ## Thorin::redirect_ip
 Check some ip's and redirect the passed ones to the passed url
 
 [Full documentation](/doc/src/functions/utils/t_redirect_ip.md)
 
+<a name="Thorin::safe_redirect"></a>
 ## Thorin::safe_redirect
 Redirect the user to a specific url. If the header redirect did not work, print a redirect in the html
 ```php
@@ -100,6 +111,7 @@ Thorin::safe_redirect('https://google.com');
 
 [See more](https://www.jonasjohn.de/snippets/php/secure-redirect.htm)
 
+<a name="Thorin::whois"></a>
 ## Thorin::whois
 Query the whois service and return the response for the passed domain name
 ```php

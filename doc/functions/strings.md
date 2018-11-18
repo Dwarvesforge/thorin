@@ -10,18 +10,21 @@
 - [Thorin::str_remove_whitespaces](#Thorin::str_remove_whitespaces)
 - [Thorin::str_slug](#Thorin::str_slug)
 - [Thorin::str_tailslash](#Thorin::str_tailslash)
+<a name="Thorin::str_clean_cut"></a>
 ## Thorin::str_clean_cut
 Return a clean string with max lenght
 
 
 [Full documentation](/doc/src/functions/strings/t_str_clean_cut.md)
 
+<a name="Thorin::str_headslash"></a>
 ## Thorin::str_headslash
 Make sure the passed string has a slash at the begining
 
 
 [Full documentation](/doc/src/functions/strings/t_str_headslash.md)
 
+<a name="Thorin::str_is_end_with"></a>
 ## Thorin::str_is_end_with
 Check if the passed string end with the other passed string
 ```php
@@ -32,6 +35,7 @@ if (Thorin::str_is_end_with($myText, 'world')) {
 
 [Full documentation](/doc/src/functions/strings/t_str_is_end_with.md)
 
+<a name="Thorin::str_is_lower_case"></a>
 ## Thorin::str_is_lower_case
 Check if the passed string is lower case
 ```php
@@ -43,6 +47,7 @@ Thorin::str_is_lower_case('Hello world');
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::str_is_start_with"></a>
 ## Thorin::str_is_start_with
 Check if the passed string start with the other passed string
 ```php
@@ -53,6 +58,7 @@ if (Thorin::str_is_start_with($myText, 'hello world')) {
 
 [Full documentation](/doc/src/functions/strings/t_str_is_start_with.md)
 
+<a name="Thorin::str_is_upper_case"></a>
 ## Thorin::str_is_upper_case
 Check if the passed string is upper case
 ```php
@@ -64,12 +70,14 @@ Thorin::str_is_upper_case('Hello world');
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::str_random"></a>
 ## Thorin::str_random
 Function which generate random string
 
 
 [Full documentation](/doc/src/functions/strings/t_str_random.md)
 
+<a name="Thorin::str_remove_whitespaces"></a>
 ## Thorin::str_remove_whitespaces
 Remove all whitespaces in the passed string
 ```php
@@ -78,6 +86,7 @@ $whitespaceFree = Thorin::str_remove_whitespaces('hello world');
 
 [Full documentation](/doc/src/functions/strings/t_str_remove_whitespaces.md)
 
+<a name="Thorin::str_slug"></a>
 ## Thorin::str_slug
 Generate a slug from a string like a title or whatever
 ```php
@@ -87,6 +96,7 @@ print Thorin::str_slug('Hello world and universe');
 
 [Full documentation](/doc/src/functions/strings/t_str_slug.md)
 
+<a name="Thorin::str_tailslash"></a>
 ## Thorin::str_tailslash
 Make sure the passed string has a slash at the end
 

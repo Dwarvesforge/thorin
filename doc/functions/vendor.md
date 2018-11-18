@@ -7,6 +7,7 @@
 - [Thorin::mobile_detect](#Thorin::mobile_detect)
 - [Thorin::sh](#Thorin::sh)
 - [Thorin::validator](#Thorin::validator)
+<a name="Thorin::_"></a>
 ## Thorin::_
 Return the lodash php class that you can use directly
 ```php
@@ -15,6 +16,7 @@ $newArray = Thorin::_()::concat($array, 2, [3], [[4]]);
 
 [Full documentation](/doc/src/functions/vendor/t__.md)
 
+<a name="Thorin::dotenv"></a>
 ## Thorin::dotenv
 Return the dotenv instance used to parse the .env file at the root of the project
 ```php
@@ -25,6 +27,7 @@ Thorin::dotenv()->required('MYVAR');
 
 [See more](https://github.com/vlucas/phpdotenv)
 
+<a name="Thorin::faker"></a>
 ## Thorin::faker
 Return an instance of faker with the one
 you can call all the faker methods
@@ -35,6 +38,7 @@ $faker = Thorin::faker()
 
 [Full documentation](/doc/src/functions/vendor/t_faker.md)
 
+<a name="Thorin::lodash"></a>
 ## Thorin::lodash
 Return the lodash php class that you can use directly
 ```php
@@ -45,6 +49,7 @@ $newArray = Thorin::lodash()::concat($array, 2, [3], [[4]]);
 
 [See more](https://github.com/lodash-php/lodash-php)
 
+<a name="Thorin::mobile_detect"></a>
 ## Thorin::mobile_detect
 Return a mobile detect instance to work with
 ```php
@@ -57,6 +62,7 @@ if (Thorin::mobile_detect()->is('Firefox')) {
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
 
+<a name="Thorin::sh"></a>
 ## Thorin::sh
 Call a shell function and pass it some arguments.
 This use the cool [Shellwrap](https://github.com/MrRio/shellwrap) library to work.
@@ -66,6 +72,7 @@ $res = Thorin::sh('ls', '-la');
 
 [Full documentation](/doc/src/functions/vendor/t_sh.md)
 
+<a name="Thorin::validator"></a>
 ## Thorin::validator
 Return a Respect Validation class instance to work with
 ```php

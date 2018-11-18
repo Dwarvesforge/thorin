@@ -48,6 +48,7 @@ folders.forEach((folder) => {
 			const name = 'Thorin::' + docblock.name.substr(2)
 
 			// generate the markdown code to add to the file
+			mds.push(`<a name="${name}"></a>`)
 			mds.push(`## ${name}`)
 			mds.push(docblock.body)
 			if (docblock.example) {

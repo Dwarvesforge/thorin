@@ -7,30 +7,35 @@
 - [Thorin::normalize_path](#Thorin::normalize_path)
 - [Thorin::root_path](#Thorin::root_path)
 - [Thorin::sanitize_path](#Thorin::sanitize_path)
+<a name="Thorin::app_path"></a>
 ## Thorin::app_path
 Return the app path depending on the `paths.app` config
 
 
 [Full documentation](/doc/src/functions/paths/t_app_path.md)
 
+<a name="Thorin::asset_path"></a>
 ## Thorin::asset_path
 Return a path relative to the `paths.assets` config
 
 
 [Full documentation](/doc/src/functions/paths/t_asset_path.md)
 
+<a name="Thorin::base_path"></a>
 ## Thorin::base_path
 Return the base path depending on the `paths.base` config
 
 
 [Full documentation](/doc/src/functions/paths/t_base_path.md)
 
+<a name="Thorin::document_root_path"></a>
 ## Thorin::document_root_path
 Return the document root path depending on the `paths.document_root` config
 
 
 [Full documentation](/doc/src/functions/paths/t_document_root_path.md)
 
+<a name="Thorin::normalize_path"></a>
 ## Thorin::normalize_path
 Return a normalized version of the passed path.
 1. Resolve all the ../
@@ -42,12 +47,14 @@ $path = Thorin::normalize_path('hello/world/../universe');
 
 [Full documentation](/doc/src/functions/paths/t_normalize_path.md)
 
+<a name="Thorin::root_path"></a>
 ## Thorin::root_path
 Return the document root path depending on the `paths.document_root` config
 
 
 [Full documentation](/doc/src/functions/paths/t_root_path.md)
 
+<a name="Thorin::sanitize_path"></a>
 ## Thorin::sanitize_path
 Sanitize a path for example like "/my/cool/../path/." to "/my/path/"
 It will do these actions:

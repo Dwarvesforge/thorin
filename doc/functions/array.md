@@ -61,6 +61,7 @@
 - [Thorin::array_zip_object](#Thorin::array_zip_object)
 - [Thorin::array_zip_with](#Thorin::array_zip_with)
 - [Thorin::array_zip](#Thorin::array_zip)
+<a name="Thorin::array_all"></a>
 ## Thorin::array_all
 Returns true if the provided function returns true for all elements of an array, false otherwise
 ```php
@@ -75,6 +76,7 @@ if (Thorin::array_all([1,2,3,4], function($item) {
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_any"></a>
 ## Thorin::array_any
 Returns true if the provided function returns true for at least one element of an array, false otherwise.
 ```php
@@ -89,6 +91,7 @@ if (Thorin::array_any([1,10,15,20], function($item) {
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_chunk"></a>
 ## Thorin::array_chunk
 Chunks an array into smaller arrays of a specified size
 ```php
@@ -100,6 +103,7 @@ Thorin::array_chunk([1,2,3,4,5], 2);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_compact"></a>
 ## Thorin::array_compact
 Creates an array with all falsey values removed. The values `false`, `null`,
 `0`, `""`, `undefined`, and `NaN` are falsey.
@@ -113,6 +117,7 @@ Thorin::array_compact([0, 1, false, 2, '', 3]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/compact.php)
 
+<a name="Thorin::array_concat"></a>
 ## Thorin::array_concat
 Creates a new array concatenating `array` with any additional arrays
 and/or values.
@@ -126,6 +131,7 @@ Thorin::array_concat([1], 2, [3], [[4]])
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/concat.php)
 
+<a name="Thorin::array_deep_flatten"></a>
 ## Thorin::array_deep_flatten
 Deep flattens an array
 ```php
@@ -137,6 +143,7 @@ Thorin::array_deep_flatten([1, [2], [[3], 4], 5]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_difference_by"></a>
 ## Thorin::array_difference_by
 This method is like `array_difference` except that it accepts `iteratee` which
 is invoked for each element of `array` and `values` to generate the criterion
@@ -155,6 +162,7 @@ Thorin::array_difference_by([2.1, 1.2], [2.3, 3.4], 'floor');
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/differenceBy.php)
 
+<a name="Thorin::array_difference_with"></a>
 ## Thorin::array_difference_with
 This method is like `Thorin::array_difference` except that it accepts `comparator`
 which is invoked to compare elements of `array` to `values`. The order and
@@ -176,6 +184,7 @@ Thorin::array_difference_with(
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/differenceWith.php)
 
+<a name="Thorin::array_difference"></a>
 ## Thorin::array_difference
 Creates an array of `array` values not included in the other given arrays
 using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
@@ -193,6 +202,7 @@ Thorin::array_difference([2, 1], [2, 3]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/difference.php)
 
+<a name="Thorin::array_drop_right_while"></a>
 ## Thorin::array_drop_right_while
 Creates a slice of `array` excluding elements dropped from the end.
 Elements are dropped until `predicate` returns falsey. The predicate is
@@ -212,6 +222,7 @@ Thorin::array_drop_right_while($users, function($user) { return $user['active'];
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/dropRightWhile.php)
 
+<a name="Thorin::array_drop_right"></a>
 ## Thorin::array_drop_right
 Returns a new array with n elements removed from the right
 ```php
@@ -222,6 +233,7 @@ Thorin::array_drop_right([1,2,3], 2) // [1]
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_drop_while"></a>
 ## Thorin::array_drop_while
 Creates a slice of `array` excluding elements dropped from the beginning.
 Elements are dropped until `predicate` returns falsey. The predicate is
@@ -241,6 +253,7 @@ Thorin::array_drop_left_while($users, function($user) { return $user['active']; 
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/dropWhile.php)
 
+<a name="Thorin::array_drop"></a>
 ## Thorin::array_drop
 Returns a new array with n elements removed from the left
 ```php
@@ -251,6 +264,7 @@ Thorin::array_drop([1,2,3], 2) // [3]
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_find_index"></a>
 ## Thorin::array_find_index
 This method is like `Thorin::array_find` except that it returns the index of the first element predicate returns truthy for instead of the element itself.
 
@@ -274,6 +288,7 @@ Thorin::array_find_index($users, 'active');
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/findIndex.php)
 
+<a name="Thorin::array_find_last_index"></a>
 ## Thorin::array_find_last_index
 Returns the index of the last element for which the provided function returns a truthy value.
 ```php
@@ -287,6 +302,7 @@ Thorin::array_find_last_index([1, 2, 3, 4], function($n) {
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code#findlastindex)
 
+<a name="Thorin::array_find_last"></a>
 ## Thorin::array_find_last
 Returns the last element for which the provided function returns a truthy value.
 ```php
@@ -300,6 +316,7 @@ Thorin::array_find_last([1, 2, 3, 4], function($item) {
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_first"></a>
 ## Thorin::array_first
 Returns the first item of a list.
 ```php
@@ -311,6 +328,7 @@ Thorin::array_first([1,2,3,4]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_flatten_deep"></a>
 ## Thorin::array_flatten_deep
 Recursively flattens `array`.
 
@@ -323,6 +341,7 @@ Thorin::array_flatten_deep([1, [2, [3, [4]], 5]]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/flattenDeep.php)
 
+<a name="Thorin::array_flatten_depth"></a>
 ## Thorin::array_flatten_depth
 Recursively flatten `array` up to `depth` times.
 
@@ -336,6 +355,7 @@ Thorin::array_flatten_depth($array, 1);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/flattenDepth.php)
 
+<a name="Thorin::array_flatten"></a>
 ## Thorin::array_flatten
 Flattens an array up to the one level depth.
 ```php
@@ -347,6 +367,7 @@ Thorin::array_flatten([1, [2], 3, 4]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_from_pairs"></a>
 ## Thorin::array_from_pairs
 The inverse of `Thorin::array_to_pairs`, this method returns an object composed
 from key-value `pairs`.
@@ -360,6 +381,7 @@ Thorin::array_from_pairs([['a', 1], ['b', 2]]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/fromPairs.php)
 
+<a name="Thorin::array_group_by"></a>
 ## Thorin::array_group_by
 Groups the elements of an array based on the given function.
 ```php
@@ -371,6 +393,7 @@ Thorin::array_group_by(['one','two','three'], 'strlen');
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_has_duplicates"></a>
 ## Thorin::array_has_duplicates
 Checks a flat list for duplicate values. Returns true if duplicate values exists and false if values are all unique.
 ```php
@@ -382,6 +405,7 @@ Thorin::array_has_duplicates([1,2,3,1,2]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_head"></a>
 ## Thorin::array_head
 Returns all elements in an array except for the last one.
 ```php
@@ -393,6 +417,7 @@ Thorin::array_head([1,2,3]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_index_of"></a>
 ## Thorin::array_index_of
 Gets the index at which the first occurrence of `value` is found in `array`
 using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
@@ -408,6 +433,7 @@ Thorin::array_index_of([1, 2, 1, 2], 2);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/indexOf.php)
 
+<a name="Thorin::array_intersection_by"></a>
 ## Thorin::array_intersection_by
 This method is like `Thorin::array_intersection` except that it accepts `iteratee`
 which is invoked for each element of each `arrays` to generate the criterion
@@ -424,6 +450,7 @@ Thorin::array_intersection_by([2.1, 1.2], [2.3, 3.4], Math.floor);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/intersectionBy.php)
 
+<a name="Thorin::array_intersection_with"></a>
 ## Thorin::array_intersection_with
 This method is like `Thorin::array_intersection` except that it accepts `comparator`
 which is invoked to compare elements of `arrays`. The order and references
@@ -441,6 +468,7 @@ Thorin::array_intersection_with($objects, $others, 'Thorin::is_equal');
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/intersectionWith.php)
 
+<a name="Thorin::array_intersection"></a>
 ## Thorin::array_intersection
 Creates an array of unique values that are included in all given arrays
 using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
@@ -456,11 +484,13 @@ Thorin::array_intersection([2, 1], [2, 3]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/intersection.php)
 
+<a name="Thorin::array_is_assoc"></a>
 ## Thorin::array_is_assoc
 Check if array is assocative or not
 
 [Full documentation](/doc/src/functions/array/t_array_is_assoc.md)
 
+<a name="Thorin::array_last_index_of"></a>
 ## Thorin::array_last_index_of
 This method is like `Thorin::array_index_of` except that it iterates over elements of
 `array` from right to left.
@@ -474,6 +504,7 @@ Thorin::array_last_index_of([1, 2, 1, 2], 2);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/lastIndexOf.php)
 
+<a name="Thorin::array_last"></a>
 ## Thorin::array_last
 Returns the last element in an array.
 ```php
@@ -485,6 +516,7 @@ Thorin::array_last([1,2,3,4]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_nth"></a>
 ## Thorin::array_nth
 Gets the element at index `n` of `array`. If `n` is negative, the nth
 element from the end is returned.
@@ -498,6 +530,7 @@ Thorin::array_nth(['a', 'b', 'c', 'd'], 2);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/nth.php)
 
+<a name="Thorin::array_order_by"></a>
 ## Thorin::array_order_by
 Sorts a collection of arrays or objects by key.
 ```php
@@ -513,6 +546,7 @@ Thorin::array_order_by([
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_pluck"></a>
 ## Thorin::array_pluck
 Retrieves all of the values for a given key.
 ```php
@@ -527,6 +561,7 @@ Thorin::array_pluck([
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_pull_all_by"></a>
 ## Thorin::array_pull_all_by
 This method is like `Thorin::array_pull_all` except that it accepts `iteratee` which is
 invoked for each element of `array` and `values` to generate the criterion
@@ -543,6 +578,7 @@ var_dump($array);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAllBy.php)
 
+<a name="Thorin::array_pull_all_with"></a>
 ## Thorin::array_pull_all_with
 This method is like `Thorin::array_pull_all` except that it accepts `comparator` which
 is invoked to compare elements of `array` to `values`. The comparator is
@@ -558,6 +594,7 @@ Thorin::array_pull_all_with($array, [[ 'x' => 3, 'y' => 4 ]], 'Thorin::is_equal'
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAllWith.php)
 
+<a name="Thorin::array_pull_all"></a>
 ## Thorin::array_pull_all
 This method is like `Thorin::array_pull` except that it accepts an array of values to remove.
 
@@ -572,6 +609,7 @@ var_dump($array);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAll.php)
 
+<a name="Thorin::array_pull_at"></a>
 ## Thorin::array_pull_at
 Removes elements from `array` corresponding to `indexes` and returns an
 array of removed elements.
@@ -586,6 +624,7 @@ Thorin::array_pull_at($array, [1, 3]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pullAt.php)
 
+<a name="Thorin::array_pull"></a>
 ## Thorin::array_pull
 Removes all given values from `array` using
 [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
@@ -602,6 +641,7 @@ var_dump($array);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/pull.php)
 
+<a name="Thorin::array_range"></a>
 ## Thorin::array_range
 Create an array with a range from, to.
 ```php
@@ -613,6 +653,7 @@ $ranges = Thorin::array_range(0,10);
 
 [See more](https://www.jonasjohn.de/snippets/php/array-range.htm)
 
+<a name="Thorin::array_reject"></a>
 ## Thorin::array_reject
 Filters the collection using the given callback.
 ```php
@@ -626,6 +667,7 @@ Thorin::array_reject(['Apple', 'Pear', 'Kiwi', 'Banana'], function($item) {
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_remove_empty"></a>
 ## Thorin::array_remove_empty
 Remove empty entries in an array
 ```php
@@ -635,6 +677,7 @@ $newArray = Thorin::array_remove_empty(['','hello','','world']);
 
 [Full documentation](/doc/src/functions/array/t_array_remove_empty.md)
 
+<a name="Thorin::array_slice"></a>
 ## Thorin::array_slice
 Creates a slice of `array` from `start` up to, but not including, `end`.
 
@@ -648,6 +691,7 @@ Thorin::array_slide($array, 1, 3);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/slice.php)
 
+<a name="Thorin::array_tail"></a>
 ## Thorin::array_tail
 Returns all elements in an array except for the first one.
 ```php
@@ -659,6 +703,7 @@ Thorin::array_tail([1,2,3]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_take_right_while"></a>
 ## Thorin::array_take_right_while
 Creates a slice of `array` with elements taken from the end. Elements are
 taken until `predicate` returns falsey. The predicate is invoked with
@@ -678,6 +723,7 @@ Thorin::array_take_right_while($users, function($value) { return $value['active'
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/takeRightWhile.php)
 
+<a name="Thorin::array_take_right"></a>
 ## Thorin::array_take_right
 Creates a slice of `array` with `n` elements taken from the end.
 
@@ -690,6 +736,7 @@ Thorin::array_take_right([1, 2, 3], 2);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/takeRight.php)
 
+<a name="Thorin::array_take_while"></a>
 ## Thorin::array_take_while
 Creates a slice of `array` with elements taken from the beginning. Elements
 are taken until `predicate` returns falsey. The predicate is invoked with
@@ -709,6 +756,7 @@ Thorin::array_take_while($users, function($value) { return $value['active']; });
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/takeWhile.php)
 
+<a name="Thorin::array_take"></a>
 ## Thorin::array_take
 Returns an array with n elements taken from the beginning
 ```php
@@ -720,6 +768,7 @@ Thorin::array_take([1,2,3,4,5], 2);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_union_by"></a>
 ## Thorin::array_union_by
 This method is like `Thorin::array_union` except that it accepts `iteratee` which is
 invoked for each element of each `arrays` to generate the criterion by
@@ -736,6 +785,7 @@ Thorin::array_union_by([2.1], [1.2, 2.3], 'floor');
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unionBy.php)
 
+<a name="Thorin::array_union_with"></a>
 ## Thorin::array_union_with
 This method is like `Thorin::array_union` except that it accepts `comparator` which
 is invoked to compare elements of `arrays`. Result values are chosen from
@@ -753,6 +803,7 @@ Thorin::array_union_with($objects, $others, 'Thorin::is_equal')
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unionWith.php)
 
+<a name="Thorin::array_union"></a>
 ## Thorin::array_union
 Creates an array of unique values, in order, from all given arrays using
 [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
@@ -767,6 +818,7 @@ Thorin::array_union([2], [1, 2]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/union.php)
 
+<a name="Thorin::array_uniq_by"></a>
 ## Thorin::array_uniq_by
 This method is like `Thorin::array_uniq` except that it accepts `iteratee` which is
 invoked for each element in `array` to generate the criterion by which
@@ -783,6 +835,7 @@ Thorin::array_uniq_by([2.1, 1.2, 2.3], 'floor');
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/uniqBy.php)
 
+<a name="Thorin::array_uniq_with"></a>
 ## Thorin::array_uniq_with
 This method is like `Thorin::array_uniq` except that it accepts `comparator` which
 is invoked to compare elements of `array`. The order of result values is
@@ -799,6 +852,7 @@ Thorin::array_uniq_with($objects, 'Thorin::is_equal');
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/uniqWith.php)
 
+<a name="Thorin::array_uniq"></a>
 ## Thorin::array_uniq
 Creates a duplicate-free version of an array, using
 [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
@@ -815,6 +869,7 @@ Thorin::array_uniq([2, 1, 2]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/uniq.php)
 
+<a name="Thorin::array_unzip_with"></a>
 ## Thorin::array_unzip_with
 This method is like `Thorin::array_unzip` except that it accepts `iteratee` to specify
 how regrouped values should be combined. The iteratee is invoked with the
@@ -831,6 +886,7 @@ Thorin::array_unzip_with($zipped, 'Thorin::add');
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unzipWith.php)
 
+<a name="Thorin::array_unzip"></a>
 ## Thorin::array_unzip
 This method is like `Thorin::array_zip` except that it accepts an array of grouped
 elements and creates an array regrouping the elements to their pre-zip
@@ -847,6 +903,7 @@ Thorin::array_unzip($zipped);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/unzip.php)
 
+<a name="Thorin::array_without"></a>
 ## Thorin::array_without
 Filters out the elements of an array, that have one of the specified values.
 ```php
@@ -858,6 +915,7 @@ Thorin::array_without([1,2,3,4,5], 1, 3);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin::array_zip_object_deep"></a>
 ## Thorin::array_zip_object_deep
 This method is like `Thorin::array_zip_object` except that it supports property paths.
 
@@ -884,6 +942,7 @@ class stdClass#20 (1) {
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/zipObjectDeep.php)
 
+<a name="Thorin::array_zip_object"></a>
 ## Thorin::array_zip_object
 This method is like `Thorin::array_from_pairs` except that it accepts two arrays,
 one of property identifiers and one of corresponding values.
@@ -901,6 +960,7 @@ Thorin::array_zip_object(['a', 'b'], [1, 2]);
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/zipObject.php)
 
+<a name="Thorin::array_zip_with"></a>
 ## Thorin::array_zip_with
 This method is like `Thorin::array_zip` except that it accepts `iteratee` to specify
 how grouped values should be combined. The iteratee is invoked with the
@@ -915,6 +975,7 @@ Thorin::array_zip_with([1, 2], [10, 20], [100, 200], function($a, $b, $c) { retu
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Array/zipWith.php)
 
+<a name="Thorin::array_zip"></a>
 ## Thorin::array_zip
 Creates an array of grouped elements, the first of which contains the
 first elements of the given arrays, the second of which contains the

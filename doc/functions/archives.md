@@ -2,6 +2,7 @@
 
 - [Thorin::archive_files](#Thorin::archive_files)
 - [Thorin::extract_files](#Thorin::extract_files)
+<a name="Thorin::archive_files"></a>
 ## Thorin::archive_files
 Create an archive with some files/folders
 ```php
@@ -12,6 +13,7 @@ Thorin::archive_files('my-cool-image.jpg', 'my-archive.zip');
 
 [See more](https://github.com/wapmorgan/UnifiedArchive)
 
+<a name="Thorin::extract_files"></a>
 ## Thorin::extract_files
 Extract an archive file in an output folder
 ```php

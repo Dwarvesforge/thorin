@@ -2,6 +2,7 @@
 
 - [Thorin::config_path](#Thorin::config_path)
 - [Thorin::config](#Thorin::config)
+<a name="Thorin::config_path"></a>
 ## Thorin::config_path
 Return the config path
 ```php
@@ -10,6 +11,7 @@ $configPath = Thorin::config_path();
 
 [Full documentation](/doc/src/functions/config/t_config_path.md)
 
+<a name="Thorin::config"></a>
 ## Thorin::config
 Get a configuration depending on the path passed
 ```php
