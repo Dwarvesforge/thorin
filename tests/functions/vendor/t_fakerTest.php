@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 final class t_faker extends TestCase
 {
     public function testIfGetAFakerInstance() {
-		$isFaker = t_faker()->sentence != null;
+		$isFaker = Thorin::faker()->sentence != null;
 		$this->assertEquals($isFaker, true);
 	}
 }

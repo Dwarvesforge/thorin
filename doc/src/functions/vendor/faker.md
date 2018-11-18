@@ -1,4 +1,4 @@
-# t_faker
+# faker
 
 Return an instance of faker with the one
 you can call all the faker methods

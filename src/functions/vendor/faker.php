@@ -1,4 +1,7 @@
 <?php
+
+namespace thorin;
+
 $t_faker = null;
 /**
  * Return an instance of faker with the one
@@ -11,10 +14,10 @@ $t_faker = null;
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function t_faker() {
+function faker() {
 	global $t_faker;
 	if ($t_faker == null) {
-		$t_faker = Faker\Factory::create();
+		$t_faker = \Faker\Factory::create();
 	}
 	return $t_faker;
 }
