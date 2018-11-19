@@ -42,8 +42,8 @@ Thorin::db_boot_eloquent();
 
 [Full documentation](/doc/src/functions/db/db_eloquent_capsule.md)
 
-<a name="Thorin_t_db"></a>
-## Thorin::t_db
+<a name="Thorin_db"></a>
+## Thorin::db
 Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/api/5.3/Illuminate/Database/Connection.html) instance of the requested connection
 ```php
 $db = Thorin::db('mysql');

@@ -10,6 +10,6 @@
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com>
  */
-function t_db($connection = null) {
+function db($connection = null) {
 	return Thorin::db_connection_factory($connection);
 }

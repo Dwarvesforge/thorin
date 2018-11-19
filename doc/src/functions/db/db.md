@@ -1,4 +1,4 @@
-# t_db
+# db
 
 Return eloquent connection [Illuminate\Database\Connection](https://laravel.com/api/5.3/Illuminate/Database/Connection.html) instance of the requested connection
 
