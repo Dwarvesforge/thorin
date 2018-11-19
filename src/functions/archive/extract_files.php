@@ -13,7 +13,7 @@ use \wapmorgan\UnifiedArchive\UnifiedArchive;
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/wapmorgan/UnifiedArchive
  */
-function t_extract_files($archive, $output) {
+function extract_files($archive, $output) {
 	$archiveInstance = UnifiedArchive::open($archive);
 	return $archiveInstance->extractFiles($output);
 }

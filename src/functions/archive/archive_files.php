@@ -12,6 +12,6 @@ use \wapmorgan\UnifiedArchive\UnifiedArchive;
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/wapmorgan/UnifiedArchive
  */
-function t_archive_files($files, $archive) {
+function archive_files($files, $archive) {
 	return UnifiedArchive::archiveFiles($files, $archive);
 }

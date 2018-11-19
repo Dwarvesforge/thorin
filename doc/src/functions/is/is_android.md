@@ -1,4 +1,4 @@
-# t_is_android
+# is_android
 
 Return true if the request is made from an android device
 

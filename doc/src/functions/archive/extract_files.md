@@ -1,4 +1,4 @@
-# t_extract_files
+# extract_files
 
 Extract an archive file in an output folder
 

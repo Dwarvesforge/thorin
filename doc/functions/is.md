@@ -23,8 +23,8 @@ Check if the script has been called using an ajax request or not
 
 [Full documentation](/doc/src/functions/is/is_ajax_request.md)
 
-<a name="Thorin_t_is_android"></a>
-## Thorin::t_is_android
+<a name="Thorin_is_android"></a>
+## Thorin::is_android
 Return true if the request is made from an android device
 ```php
 if (Thorin::is_android()) {

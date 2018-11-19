@@ -1,4 +1,4 @@
-# t_archive_files
+# archive_files
 
 Create an archive with some files/folders
 

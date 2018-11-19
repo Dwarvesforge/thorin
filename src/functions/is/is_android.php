@@ -14,7 +14,7 @@ namespace thorin;
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/serbanghita/Mobile-Detect
  */
-function t_is_android() {
+function is_android() {
 	$detect = \Thorin::mobile_detect();
 	return $detect->isAndroidOS();
 }
