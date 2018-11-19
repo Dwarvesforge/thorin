@@ -22,7 +22,7 @@ function config($path) {
 	$filepath = \Thorin::sanitize_path(\Thorin::config_path()) . $filename . '.php';
 	$basefilepath = __DIR__ . '/../../config/' . $filename . '.php';
 	if ( ! file_exists($filepath) && ! file_exists($basefilepath)) {
-		throw new Exception('The config file "' . $filename . '" does not exist');
+		throw new \Exception('The config file "' . $filename . '" does not exist');
 	}
 	// load this file
 	if (!isset($t_configs[$filepath])) {

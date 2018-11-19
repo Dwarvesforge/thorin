@@ -15,9 +15,9 @@ use Intervention\Image\ImageManager;
  */
 function optimize_image($path, $saveTo = null, $settings = []) {
 	$originalSettings = (object) [
-		'quality' => \Thorin::config('images.QUALITY'),
-		'width' => \Thorin::config('images.MAX_WIDTH'),
-		'height' => \Thorin::config('images.MAX_HEIGHT')
+		'quality' => \Thorin::config('image.QUALITY'),
+		'width' => \Thorin::config('image.MAX_WIDTH'),
+		'height' => \Thorin::config('image.MAX_HEIGHT')
 	];
 
 	$settings = \Thorin::extend($originalSettings, $settings);

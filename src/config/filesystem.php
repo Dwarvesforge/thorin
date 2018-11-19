@@ -24,7 +24,7 @@ return [
 		 */
 		'base' => [
 			'driver' => 'local',
-			'path' => '${paths.base}'
+			'path' => '${path.base}'
 		],
 		/**
 		 * @name    document_root
@@ -33,7 +33,7 @@ return [
 		 */
 		'document_root' => [
 			'driver' => 'local',
-			'path' => '${paths.document_root}'
+			'path' => '${path.document_root}'
 		],
 		/**
 		 * @name    assets
@@ -42,7 +42,7 @@ return [
 		 */
 		'assets' => [
 			'driver' => 'local',
-			'path' => '${paths.assets}'
+			'path' => '${path.assets}'
 		]
 		/**
 		 * @name    s3
