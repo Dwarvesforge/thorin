@@ -1,4 +1,4 @@
-# `app/config/images.php`
+# `app/config/image.php`
 
 ```php
 return [

@@ -19,8 +19,9 @@
   "scripts": {
     "watch": "npm-watch",
     "start": "npm run watch",
-    "doc": "rm -rf doc/src && npm run doc.php",
-    "doc.php": "coffeekraken-docblock-to-markdown -f 'src/**/*.php' -d doc",
+    "doc": "rm -rf doc/src && npm run doc:php && npm run doc:functions",
+    "doc:functions": "node .scripts/functions.js",
+    "doc:php": "coffeekraken-docblock-to-markdown -f 'src/**/*.php' -d doc",
     "changelog": "git-changelog --version_name $npm_package_version  --app_name $npm_package_name --intro \"$npm_package_description\" --logo \".resources/coffeekraken-logo.jpg\"",
     "test": "./phpunit --stderr --bootstrap tests/bootstrap.php tests",
     "server": "php -S 0.0.0.0:8081 -t public/"

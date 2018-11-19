@@ -1,21 +1,10 @@
 # vendor
 
-- [Thorin::_](#Thorin__)
 - [Thorin::dotenv](#Thorin_dotenv)
 - [Thorin::faker](#Thorin_faker)
-- [Thorin::lodash](#Thorin_lodash)
 - [Thorin::mobile_detect](#Thorin_mobile_detect)
 - [Thorin::sh](#Thorin_sh)
 - [Thorin::validator](#Thorin_validator)
-<a name="Thorin__"></a>
-## Thorin::_
-Return the lodash php class that you can use directly
-```php
-$newArray = Thorin::_()::concat($array, 2, [3], [[4]]);
-```
-
-[Full documentation](/doc/src/functions/vendor/_.md)
-
 <a name="Thorin_dotenv"></a>
 ## Thorin::dotenv
 Return the dotenv instance used to parse the .env file at the root of the project
@@ -37,17 +26,6 @@ $faker = Thorin::faker()
 ```
 
 [Full documentation](/doc/src/functions/vendor/faker.md)
-
-<a name="Thorin_lodash"></a>
-## Thorin::lodash
-Return the lodash php class that you can use directly
-```php
-$newArray = Thorin::lodash()::concat($array, 2, [3], [[4]]);
-```
-
-[Full documentation](/doc/src/functions/vendor/lodash.md)
-
-[See more](https://github.com/lodash-php/lodash-php)
 
 <a name="Thorin_mobile_detect"></a>
 ## Thorin::mobile_detect
