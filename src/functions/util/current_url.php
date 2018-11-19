@@ -12,5 +12,5 @@ namespace thorin;
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
 function current_url() {
-	return \Thorin::root_url(@$_SERVER['REQUEST_URI'], true);
+	return \Thorin::url_root(@$_SERVER['REQUEST_URI'], true);
 }

@@ -19,7 +19,7 @@ function config($path) {
 	// file to load is the first value in the splits stack
 	$filename = array_shift($splits);
 	// check if a config file exist with this filename
-	$filepath = \Thorin::sanitize_path(\Thorin::config_path()) . $filename . '.php';
+	$filepath = \Thorin::path_sanitize(\Thorin::config_path()) . $filename . '.php';
 	$basefilepath = __DIR__ . '/../../config/' . $filename . '.php';
 	if ( ! file_exists($filepath) && ! file_exists($basefilepath)) {
 		throw new \Exception('The config file "' . $filename . '" does not exist');

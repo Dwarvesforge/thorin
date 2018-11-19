@@ -48,7 +48,7 @@ function fs_disk_factory($disk = null) {
 	// switch on the driver
 	switch($config['driver']) {
 		case 'local':
-			$adapter = new Local(\Thorin::sanitize_path($config['path']));
+			$adapter = new Local(\Thorin::path_sanitize($config['path']));
 			$filesystem = new Filesystem($adapter);
 		break;
 		case 'ftp':
@@ -58,7 +58,7 @@ function fs_disk_factory($disk = null) {
 				'password' => $config['password'],
 				/** optional config settings */
 				'port' => $config['port'],
-				'root' => \Thorin::sanitize_path($config['root']),
+				'root' => \Thorin::path_sanitize($config['root']),
 				'passive' => $config['passive'],
 				'ssl' => $config['ssl'],
 				'timeout' => $config['timeout'],
@@ -71,7 +71,7 @@ function fs_disk_factory($disk = null) {
 				'username' => $config['username'],
 				'password' => $config['password'],
 				'privateKey' => $config['privatekey'],
-				'root' => \Thorin::sanitize_path($config['root']),
+				'root' => \Thorin::path_sanitize($config['root']),
 				'timeout' => $config['timeout'],
 			]));
 		break;
@@ -84,7 +84,7 @@ function fs_disk_factory($disk = null) {
 				'region' => $config['region'],
 				'version' => 'latest',
 			]);
-			$adapter = new AwsS3Adapter($client, $config['bucket'], \Thorin::sanitize_path($config['root']));
+			$adapter = new AwsS3Adapter($client, $config['bucket'], \Thorin::path_sanitize($config['root']));
 			$filesystem = new Filesystem($adapter);
 		break;
 		case 'memory':

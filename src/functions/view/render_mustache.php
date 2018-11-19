@@ -17,7 +17,7 @@ function render_mustache($slug, $data = []) {
 	// ensure we have an array and not an object
 	if (is_object($data)) $data = get_object_vars($data);
 	// allow render something like 'myview/myview' this way 'myview'
-	if (is_dir(\Thorin::sanitize_path(\Thorin::config('path.views')) . $slug)) {
+	if (is_dir(\Thorin::path_sanitize(\Thorin::config('path.views')) . $slug)) {
 		$parts = explode('/', $slug);
 		$slug = $slug . '/' . $parts[count($parts)-1];
 	}
@@ -25,11 +25,11 @@ function render_mustache($slug, $data = []) {
 	if ( ! $t_mustache_engine) {
 		$t_mustache_engine = new \Mustache_Engine(array(
 			'template_class_prefix' => '__mustache__',
-			'cache' => \Thorin::sanitize_path(\Thorin::config('path.views_cache')),
+			'cache' => \Thorin::path_sanitize(\Thorin::config('path.views_cache')),
 			'cache_file_mode' => 0666, // Please, configure your umask instead of doing this :)
 			'cache_lambda_templates' => false,
-			'loader' => new \Mustache_Loader_FilesystemLoader(\Thorin::sanitize_path(\Thorin::config('path.views'))),
-			'partials_loader' => new \Mustache_Loader_FilesystemLoader(\Thorin::sanitize_path(\Thorin::config('path.views'))),
+			'loader' => new \Mustache_Loader_FilesystemLoader(\Thorin::path_sanitize(\Thorin::config('path.views'))),
+			'partials_loader' => new \Mustache_Loader_FilesystemLoader(\Thorin::path_sanitize(\Thorin::config('path.views'))),
 			'helpers' => [],
 			'escape' => function($value) {
 				return htmlspecialchars($value, ENT_COMPAT, 'UTF-8');

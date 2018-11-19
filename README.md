@@ -31,7 +31,6 @@
 
 Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions in multiple areas like:
 
-- [Archive](doc/functions/archive.md)
 - [Array](doc/functions/array.md)
 - [Cache](doc/functions/cache.md)
 - [Cast](doc/functions/cast.md)
@@ -95,9 +94,8 @@ Create the files/folders structure described bellow and start using Thorin with 
 - | app
 - |--- cache
 - |------- views
-- |------- images 
 - |--- config
-- |--- lang
+- |--- i18n
 - |------- en
 - |--- views
 - | public (document root)

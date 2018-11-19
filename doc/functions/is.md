@@ -16,6 +16,7 @@
 - [Thorin::is_odd](#Thorin_is_odd)
 - [Thorin::is_phone](#Thorin_is_phone)
 - [Thorin::is_tablet](#Thorin_is_tablet)
+- [Thorin::is_timestamp_valid](#Thorin_is_timestamp_valid)
 <a name="Thorin_is_ajax_request"></a>
 ## Thorin::is_ajax_request
 Check if the script has been called using an ajax request or not
@@ -216,3 +217,10 @@ if (Thorin::is_tablet()) {
 [Full documentation](/doc/src/functions/is/is_tablet.md)
 
 [See more](https://github.com/serbanghita/Mobile-Detect)
+
+<a name="Thorin_is_timestamp_valid"></a>
+## Thorin::is_timestamp_valid
+Check if timestamp is valid
+
+
+[Full documentation](/doc/src/functions/is/is_timestamp_valid.md)

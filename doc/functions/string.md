@@ -1,9 +1,11 @@
 # string
 
+- [Thorin::str_autolink](#Thorin_str_autolink)
 - [Thorin::str_camel_case](#Thorin_str_camel_case)
 - [Thorin::str_capitalize](#Thorin_str_capitalize)
 - [Thorin::str_clean_cut](#Thorin_str_clean_cut)
 - [Thorin::str_deburr](#Thorin_str_deburr)
+- [Thorin::str_escape_attr](#Thorin_str_escape_attr)
 - [Thorin::str_escape_regexp](#Thorin_str_escape_regexp)
 - [Thorin::str_escape](#Thorin_str_escape)
 - [Thorin::str_headslash](#Thorin_str_headslash)
@@ -25,7 +27,19 @@
 - [Thorin::str_split](#Thorin_str_split)
 - [Thorin::str_start_case](#Thorin_str_start_case)
 - [Thorin::str_tailslash](#Thorin_str_tailslash)
+- [Thorin::str_to_html](#Thorin_str_to_html)
 - [Thorin::str_unescape](#Thorin_str_unescape)
+<a name="Thorin_str_autolink"></a>
+## Thorin::str_autolink
+Automaticaly transform urls into links in the passed text.
+```php
+$text = 'Hello world this is a nice http://google.com sample of text.';
+$newText = Thorin::str_autolink($text);
+// Hello world this is a nice <a href="http://google.com">http://google.com</a> sample of text.
+```
+
+[Full documentation](/doc/src/functions/string/str_autolink.md)
+
 <a name="Thorin_str_camel_case"></a>
 ## Thorin::str_camel_case
 Converts `string` to [camel case](https://en.wikipedia.org/wiki/CamelCase).
@@ -80,6 +94,17 @@ Thorin::str_deburr('déjà vue');
 [Full documentation](/doc/src/functions/string/str_deburr.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/String/deburr.php)
+
+<a name="Thorin_str_escape_attr"></a>
+## Thorin::str_escape_attr
+Escape the passed string to ensure it will not break any html when printed inside an attribute
+
+```php
+Thorin::str_escape_attr('This is my cool "escaped" value');
+// This is my cool &quot;escaped&quot; value
+```
+
+[Full documentation](/doc/src/functions/string/str_escape_attr.md)
 
 <a name="Thorin_str_escape_regexp"></a>
 ## Thorin::str_escape_regexp
@@ -354,6 +379,18 @@ Make sure the passed string has a slash at the end
 
 
 [Full documentation](/doc/src/functions/string/str_tailslash.md)
+
+<a name="Thorin_str_to_html"></a>
+## Thorin::str_to_html
+Format a simple passed text into a nice formated html one.
+This will transform the new line into <br>, as well as the line breaks into paragraphs
+
+```php
+Thorin::str_to_html('Hello world');
+// <p>Hello world</p>
+```
+
+[Full documentation](/doc/src/functions/string/str_to_html.md)
 
 <a name="Thorin_str_unescape"></a>
 ## Thorin::str_unescape

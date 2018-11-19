@@ -11,9 +11,6 @@ function t_require_functions_folder($folder) {
     }
 }
 
-// archive
-t_require_functions_folder('archive');
-
 // array
 t_require_functions_folder('array');
 

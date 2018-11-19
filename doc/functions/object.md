@@ -1,13 +1,6 @@
 # object
 
-- [Thorin::extend](#Thorin_extend)
 - [Thorin::obj_pick](#Thorin_obj_pick)
-<a name="Thorin_extend"></a>
-## Thorin::extend
-Extend an array or an object either deeply or not
-
-[Full documentation](/doc/src/functions/object/extend.md)
-
 <a name="Thorin_obj_pick"></a>
 ## Thorin::obj_pick
 Creates an object composed of the picked `object` properties.

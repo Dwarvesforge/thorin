@@ -4,6 +4,7 @@
 - [Thorin::col_each_right](#Thorin_col_each_right)
 - [Thorin::col_each](#Thorin_col_each)
 - [Thorin::col_every](#Thorin_col_every)
+- [Thorin::col_extend](#Thorin_col_extend)
 - [Thorin::col_filter](#Thorin_col_filter)
 - [Thorin::col_find_last](#Thorin_col_find_last)
 - [Thorin::col_find](#Thorin_col_find)
@@ -91,6 +92,12 @@ Thorin::col_every([true, 1, null, 'yes'], function ($value) { return is_bool($va
 [Full documentation](/doc/src/functions/collection/col_every.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Collection/every.php)
+
+<a name="Thorin_col_extend"></a>
+## Thorin::col_extend
+Extend an array or an object either deeply or not
+
+[Full documentation](/doc/src/functions/collection/col_extend.md)
 
 <a name="Thorin_col_filter"></a>
 ## Thorin::col_filter

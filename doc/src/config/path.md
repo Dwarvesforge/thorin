@@ -39,7 +39,7 @@ Default : **${path.base}app/**
 Specify where the assets (images, etc...) are stored absolute to the server root folder.
 Need to end with a trailing /
 This path MUST be inside of the DOCUMENT_ROOT path
-This is bein used in functions like "t_asset_url", "t_asset_path", etc...
+This is bein used in functions like "url_asset", "path_asset", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
@@ -50,38 +50,27 @@ Default : **${path.document_root}dist/**
 
 Specify where to store the filesystem cache
 Need to end with a trailing /
-This is bein used in functions like "t_cache", etc...
+This is bein used in functions like "cache", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
 
-### lang
+### i18n
 
 Specify where the lang files are stored absolute to the server root folder.
 Need to end with a trailing /
-This is bein used in functions like "t_lang", etc...
+This is bein used in functions like "i18n", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${path.app}lang/**
-
-
-### images_cache
-
-Specify where the cache are stored absolute to the server root folder
-Need to end with a trailing /
-This is bein used in functions like "t_optimize_image", etc...
-
-Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
-
-Default : **${path.app}cache/images/**
+Default : **${path.app}i18n/**
 
 
 ### views
 
 Specify where the views are stored absolute to the server root folder.
 Need to end with a trailing /
-This is bein used in functions like "t_render_blade", "t_render", etc...
+This is bein used in functions like "render_blade", "render", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
@@ -92,7 +81,7 @@ Default : **${path.app}views/**
 
 Specify where the cache are stored absolute to the server root folder
 Need to end with a trailing /
-This is bein used in functions like "t_render_blade", etc...
+This is bein used in functions like "render_blade", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 

@@ -35,7 +35,7 @@ return [
 	 * Specify where the assets (images, etc...) are stored absolute to the server root folder.
 	 * Need to end with a trailing /
 	 * This path MUST be inside of the DOCUMENT_ROOT path
-	 * This is bein used in functions like "t_asset_url", "t_asset_path", etc...
+	 * This is bein used in functions like "url_asset", "path_asset", etc...
 	 * @type 		{String}
 	 * @default 	${path.document_root}dist/
 	 */
@@ -45,37 +45,27 @@ return [
 	 * @name 		cache_filesystem
 	 * Specify where to store the filesystem cache
 	 * Need to end with a trailing /
-	 * This is bein used in functions like "t_cache", etc...
+	 * This is bein used in functions like "cache", etc...
 	 * @type 		{String}
 	 * default 		${path.app}cache/filesystem/
 	 */
 	'cache_filesystem' => '${path.app}cache/filesystem/',
 
 	/**
-	 * @name 		lang
+	 * @name 		i18n
 	 * Specify where the lang files are stored absolute to the server root folder.
 	 * Need to end with a trailing /
-	 * This is bein used in functions like "t_lang", etc...
+	 * This is bein used in functions like "i18n", etc...
 	 * @type 		{String}
-	 * @default 	${path.app}lang/
+	 * @default 	${path.app}i18n/
 	 */
-	'lang' => '${path.app}lang/',
-
-	/**
-	 * @name 		images_cache
-	 * Specify where the cache are stored absolute to the server root folder
-	 * Need to end with a trailing /
-	 * This is bein used in functions like "t_optimize_image", etc...
-	 * @type 		{String}
-	 * @default 	${path.app}cache/images/
-	 */
-	'images_cache' => '${path.app}cache/images/',
+	'i18n' => '${path.app}i18n/',
 
 	/**
 	 * @name 		views
 	 * Specify where the views are stored absolute to the server root folder.
 	 * Need to end with a trailing /
-	 * This is bein used in functions like "t_render_blade", "t_render", etc...
+	 * This is bein used in functions like "render_blade", "render", etc...
 	 * @type 		{String}
 	 * @default 	${path.app}views/
 	 */
@@ -85,7 +75,7 @@ return [
 	 * @name 		cache_path
 	 * Specify where the cache are stored absolute to the server root folder
 	 * Need to end with a trailing /
-	 * This is bein used in functions like "t_render_blade", etc...
+	 * This is bein used in functions like "render_blade", etc...
 	 * @type 		{String}
 	 * @default 	${path.app}cache/views/
 	 */

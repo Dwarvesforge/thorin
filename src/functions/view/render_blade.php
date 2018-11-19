@@ -18,13 +18,13 @@ function render_blade($slug, $data = []) {
     // ensure we have an array and not an object
 	if (is_object($data)) $data = get_object_vars($data);
 	// allow render something like 'myview/myview' this way 'myview'
-	if (is_dir(\Thorin::sanitize_path(\Thorin::config('path.views')) . $slug)) {
+	if (is_dir(\Thorin::path_sanitize(\Thorin::config('path.views')) . $slug)) {
 		$parts = explode('/', $slug);
 		$slug = $slug . '/' . $parts[count($parts)-1];
 	}
 	// generate blade
 	if ( ! $t_blade) {
-    	$t_blade = new Blade( \Thorin::sanitize_path(\Thorin::config('path.views')), \Thorin::sanitize_path(\Thorin::config('path.views_cache')));
+    	$t_blade = new Blade( \Thorin::path_sanitize(\Thorin::config('path.views')), \Thorin::path_sanitize(\Thorin::config('path.views_cache')));
 	}
 	return $t_blade->view()->make($slug, $data)->render();
 }
