@@ -53,9 +53,6 @@ t_require_functions_folder('function');
 // hook
 t_require_functions_folder('hook');
 
-// html
-t_require_functions_folder('html');
-
 // i18n
 t_require_functions_folder('i18n');
 
@@ -88,9 +85,6 @@ t_require_functions_folder('session');
 
 // string
 t_require_functions_folder('string');
-
-// time
-t_require_functions_folder('time');
 
 // url
 t_require_functions_folder('url');

@@ -20,7 +20,7 @@ function optimize_image($path, $saveTo = null, $settings = []) {
 		'height' => \Thorin::config('image.MAX_HEIGHT')
 	];
 
-	$settings = \Thorin::extend($originalSettings, $settings);
+	$settings = \Thorin::col_extend($originalSettings, $settings);
 
 	// process the $path argument
 	$serverFilePath = \Thorin::sanitize_path($path);

@@ -34,7 +34,7 @@ function config($path) {
 		if (file_exists($basefilepath)) {
 			$baseConfig = require($basefilepath);
 			// merge the configs
-			$config = \Thorin::extend($baseConfig, $config, true, false);
+			$config = \Thorin::col_extend($baseConfig, $config, true, false);
 		}
 		// cache config
 		$t_configs[$filepath] = $config;
