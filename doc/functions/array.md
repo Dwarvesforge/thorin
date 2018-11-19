@@ -31,6 +31,8 @@
 - [Thorin::array_is_assoc](#Thorin_array_is_assoc)
 - [Thorin::array_last_index_of](#Thorin_array_last_index_of)
 - [Thorin::array_last](#Thorin_array_last)
+- [Thorin::array_max_by](#Thorin_array_max_by)
+- [Thorin::array_max](#Thorin_array_max)
 - [Thorin::array_nth](#Thorin_array_nth)
 - [Thorin::array_order_by](#Thorin_array_order_by)
 - [Thorin::array_pluck](#Thorin_array_pluck)
@@ -42,6 +44,9 @@
 - [Thorin::array_range](#Thorin_array_range)
 - [Thorin::array_reject](#Thorin_array_reject)
 - [Thorin::array_remove_empty](#Thorin_array_remove_empty)
+- [Thorin::array_sample_size](#Thorin_array_sample_size)
+- [Thorin::array_sample](#Thorin_array_sample)
+- [Thorin::array_shuffle](#Thorin_array_shuffle)
 - [Thorin::array_slice](#Thorin_array_slice)
 - [Thorin::array_tail](#Thorin_array_tail)
 - [Thorin::array_take_right_while](#Thorin_array_take_right_while)
@@ -520,6 +525,35 @@ Thorin::array_last([1,2,3,4]);
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
 
+<a name="Thorin_array_max_by"></a>
+## Thorin::array_max_by
+This method is like `Thorin::array_max` except that it accepts `iteratee` which is
+invoked for each element in `array` to generate the criterion by which
+the value is ranked. The iteratee is invoked with one argument: (value).
+
+```php
+$objects = [['n' => 1], ['n' => 2]];
+Thorin::array_max_by($objects, function($o) { return $o['n']; });
+// ['n' => 2]
+```
+
+[Full documentation](/doc/src/functions/array/array_max_by.md)
+
+[See more](https://github.com/lodash-php/lodash-php/blob/master/src/Math/maxBy.php)
+
+<a name="Thorin_array_max"></a>
+## Thorin::array_max
+Computes the maximum value of `array`. If `array` is empty or falsey, null is returned.
+
+```php
+Thorin::array_max([4, 2, 8, 6]);
+// 8
+```
+
+[Full documentation](/doc/src/functions/array/array_max.md)
+
+[See more](https://github.com/lodash-php/lodash-php/blob/master/src/Math/max.php)
+
 <a name="Thorin_array_nth"></a>
 ## Thorin::array_nth
 Gets the element at index `n` of `array`. If `n` is negative, the nth
@@ -680,6 +714,46 @@ $newArray = Thorin::array_remove_empty(['','hello','','world']);
 ```
 
 [Full documentation](/doc/src/functions/array/array_remove_empty.md)
+
+<a name="Thorin_array_sample_size"></a>
+## Thorin::array_sample_size
+Gets `n` random elements at unique keys from `array` up to the
+size of `array`.
+
+```php
+Thorin::array_sample_size([1, 2, 3], 2);
+// [1,3]
+```
+
+[Full documentation](/doc/src/functions/array/array_sample_size.md)
+
+[See more](https://github.com/lodash-php/lodash-php/blob/master/src/Collection/sampleSize.php)
+
+<a name="Thorin_array_sample"></a>
+## Thorin::array_sample
+Gets a random element from `array`
+
+```php
+Thorin::array_sample([1,2,3,4,5]);
+// 2
+```
+
+[Full documentation](/doc/src/functions/array/array_sample.md)
+
+[See more](https://github.com/lodash-php/lodash-php/blob/master/src/Collection/sample.php)
+
+<a name="Thorin_array_shuffle"></a>
+## Thorin::array_shuffle
+Creates an array of shuffled values
+
+```php
+Thorin::array_shuffle([1, 2, 3, 4]);
+// [4, 1, 3, 2]
+```
+
+[Full documentation](/doc/src/functions/array/array_shuffle.md)
+
+[See more](https://github.com/lodash-php/lodash-php/blob/master/src/Collection/shuffle.php)
 
 <a name="Thorin_array_slice"></a>
 ## Thorin::array_slice

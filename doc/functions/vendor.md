@@ -27,8 +27,8 @@ Thorin::dotenv()->required('MYVAR');
 
 [See more](https://github.com/vlucas/phpdotenv)
 
-<a name="Thorin_t_faker"></a>
-## Thorin::t_faker
+<a name="Thorin_faker"></a>
+## Thorin::faker
 Return an instance of faker with the one
 you can call all the faker methods
 ```php

@@ -7,7 +7,9 @@
 - [Thorin::is_email](#Thorin_is_email)
 - [Thorin::is_environment](#Thorin_is_environment)
 - [Thorin::is_equal](#Thorin_is_equal)
+- [Thorin::is_error](#Thorin_is_error)
 - [Thorin::is_even](#Thorin_is_even)
+- [Thorin::is_in_range](#Thorin_is_in_range)
 - [Thorin::is_ios](#Thorin_is_ios)
 - [Thorin::is_ip_match](#Thorin_is_ip_match)
 - [Thorin::is_mobile](#Thorin_is_mobile)
@@ -95,6 +97,19 @@ Thorin::is_equal([ 'a' => 1], ['a' => '1'])
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Lang/isEqual.php)
 
+<a name="Thorin_is_error"></a>
+## Thorin::is_error
+Checks if `value` is an `\Exception`, `\ParseError`, \Error`, \Throwable`, \SoapFault`, \DOMException`, \PDOException`, object.
+
+```php
+Thorin::is_error(new \Exception());
+// true
+```
+
+[Full documentation](/doc/src/functions/is/is_error.md)
+
+[See more](https://github.com/lodash-php/lodash-php/blob/master/src/Lang/isError.php)
+
 <a name="Thorin_is_even"></a>
 ## Thorin::is_even
 Return true if the given number is even, false otherwise.
@@ -106,6 +121,26 @@ Thorin::is_even(2);
 [Full documentation](/doc/src/functions/is/is_even.md)
 
 [See more](https://github.com/appzcoder/30-seconds-of-php-code)
+
+<a name="Thorin_is_in_range"></a>
+## Thorin::is_in_range
+Checks if `number` is between `start` and up to, but not including, `end`. If
+`end` is not specified, it's set to `start` with `start` then set to `0`.
+If `start` is greater than `end` the params are swapped to support
+negative ranges.
+
+```php
+Thorin::is_in_range(3, 2, 4);
+// true
+Thorin::is_in_range(4, 8);
+// true
+Thorin::is_in_range(4, 2);
+// false
+```
+
+[Full documentation](/doc/src/functions/is/is_in_range.md)
+
+[See more](https://github.com/lodash-php/lodash-php/blob/master/src/Number/inRange.php)
 
 <a name="Thorin_is_ios"></a>
 ## Thorin::is_ios
