@@ -68,6 +68,9 @@ t_require_functions_folder('is');
 // media
 t_require_functions_folder('media');
 
+// number
+t_require_functions_folder('number');
+
 // object
 t_require_functions_folder('object');
 
