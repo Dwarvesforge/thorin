@@ -13,6 +13,7 @@ namespace thorin;
  *   return $n % 2 == 0;
  * }
  * Thorin::col_filter([1, 2, 3, 4, 5, 6], Thorin::negate($isEven));
+ * // [1, 3, 5]
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/lodash-php/lodash-php/blob/master/src/Function/negate.php
