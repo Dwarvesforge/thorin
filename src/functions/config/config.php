@@ -64,10 +64,10 @@ function config($path) {
 function config_replace_tokens($value) {
 	preg_match_all('#\$\{[a-zA-Z0-9._-]+\}#', $value, $matches);
 	foreach($matches[0] as $token) {
-		$tokenPath = str_replace('${','',$token);
-		$tokenPath = str_replace('}','',$tokenPath);
+		$tokenPath = \str_replace('${','',$token);
+		$tokenPath = \str_replace('}','',$tokenPath);
 		$tokenValue = \Thorin::config($tokenPath);
-		$value = str_replace($token, $tokenValue, $value);
+		$value = \str_replace($token, $tokenValue, $value);
 	}
 	return $value;
 }

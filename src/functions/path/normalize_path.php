@@ -16,7 +16,7 @@ namespace thorin;
 function normalize_path($path)
 {
     $parts = array();// Array to build a new path from the good parts
-    $path = str_replace('\\', '/', $path);// Replace backslashes with forwardslashes
+    $path = \str_replace('\\', '/', $path);// Replace backslashes with forwardslashes
     $path = preg_replace('/\/+/', '/', $path);// Combine multiple slashes into a single slash
     $segments = explode('/', $path);// Collect path segments
     $test = '';// Initialize testing variable

@@ -14,7 +14,7 @@ function asset_url($slug, $include_domain = false) {
 
 	// need to strip the `path.document_root` part from the `app.ASSET_PATH` to get the
 	// wanted path relative to the `path.document_root` one
-	$pathRelativeToTDocumentRoot = str_replace(\Thorin::sanitize_path(\Thorin::config('path.document_root')), '', \Thorin::sanitize_path(\Thorin::config('path.assets')));
+	$pathRelativeToTDocumentRoot = \str_replace(\Thorin::sanitize_path(\Thorin::config('path.document_root')), '', \Thorin::sanitize_path(\Thorin::config('path.assets')));
 	if ($include_domain) {
 		$path = \Thorin::str_tailslash(\Thorin::config('app.root_url')) . ltrim(\Thorin::str_tailslash($pathRelativeToTDocumentRoot), '/') . ltrim($slug, '/');
 	} else {

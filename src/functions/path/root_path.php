@@ -13,6 +13,6 @@ namespace thorin;
 function root_path($slug = '') {
 	// remove the root path to be sure we don't sens back
 	// a path from the server root if it's not the wanted behavior
-	$slug = str_replace(\Thorin::sanitize_path(\Thorin::config('path.document_root')), '', $slug);
+	$slug = \str_replace(\Thorin::sanitize_path(\Thorin::config('path.document_root')), '', $slug);
 	return \Thorin::sanitize_path(\Thorin::config('path.document_root')) . ltrim($slug, '/');
 }
