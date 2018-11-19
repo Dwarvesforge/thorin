@@ -18,7 +18,7 @@ print Thorin::recaptcha_display();
 ## Thorin::recaptcha_factory
 Create a Arcanedev\NoCaptcha\NoCaptcha nocaptcha instance to work with.
 ```php
-$nocaptcha = Thorin::nocaptcha_factory();
+$recaptcha = Thorin::recaptcha_factory();
 ```
 
 [Full documentation](/doc/src/functions/recaptcha/recaptcha_factory.md)

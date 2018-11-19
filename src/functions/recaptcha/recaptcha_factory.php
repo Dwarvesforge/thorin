@@ -12,7 +12,7 @@ use Arcanedev\NoCaptcha\NoCaptcha;
  * @return    {Arcanedev\NoCaptcha\NoCaptcha}    A nocaptcha instance to work with
  *
  * @example    php
- * $nocaptcha = Thorin::nocaptcha_factory();
+ * $recaptcha = Thorin::recaptcha_factory();
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  * @see    https://github.com/ARCANEDEV/noCAPTCHA
