@@ -7,6 +7,13 @@ namespace thorin;
  *
  * @param       {String}        $var         The var to be convert in boolean
  * @return      {Boolean}                    true or false
+ *
+ * @example    php
+ * Thorin::to_boolean('true');
+ * // true
+ * Thorin::to_boolean(0);
+ * // false
+ *
  * @author 		Paul Balanche <pb@buzzbrothers.ch>
  */
 function to_boolean($var) {
