@@ -1,6 +1,6 @@
 {
   "name": "dwarvesforge-thorin",
-  "version": "1.1.11",
+  "version": "2.0.0",
   "description": "PHP toolkit that offers you some nice helpers, missing functions, advances capabilities through vendors, etc...",
   "homepage": "https://thorin.dwarvesforge.io",
   "repository": {
@@ -19,8 +19,9 @@
   "scripts": {
     "watch": "npm-watch",
     "start": "npm run watch",
-    "doc": "rm -rf doc/src && npm run doc.php",
-    "doc.php": "coffeekraken-docblock-to-markdown -f 'src/**/*.php' -d doc",
+    "doc": "rm -rf doc/src && npm run doc:php && npm run doc:functions",
+    "doc:functions": "node .scripts/functions.js",
+    "doc:php": "coffeekraken-docblock-to-markdown -f 'src/**/*.php' -d doc",
     "changelog": "git-changelog --version_name $npm_package_version  --app_name $npm_package_name --intro \"$npm_package_description\" --logo \".resources/coffeekraken-logo.jpg\"",
     "test": "./phpunit --stderr --bootstrap tests/bootstrap.php tests",
     "server": "php -S 0.0.0.0:8081 -t public/"
@@ -41,6 +42,7 @@
     "coffeekraken-docblock-parser": "^1.0.10",
     "coffeekraken-docblock-to-markdown": "^1.0.0",
     "git-changelog": "^1.1.2",
-    "npm-watch": "0.2.0"
+    "npm-watch": "0.2.0",
+    "rimraf": "^2.6.2"
   }
 }

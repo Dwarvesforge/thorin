@@ -11,9 +11,6 @@ function t_require_functions_folder($folder) {
     }
 }
 
-// archives
-t_require_functions_folder('archives');
-
 // array
 t_require_functions_folder('array');
 
@@ -23,14 +20,17 @@ t_require_functions_folder('cache');
 // cast
 t_require_functions_folder('cast');
 
-// collections
-t_require_functions_folder('collections');
+// collection
+t_require_functions_folder('collection');
 
-// colors
-t_require_functions_folder('colors');
+// color
+t_require_functions_folder('color');
 
 // config
 t_require_functions_folder('config');
+
+// date
+t_require_functions_folder('date');
 
 // db
 t_require_functions_folder('db');
@@ -38,38 +38,38 @@ t_require_functions_folder('db');
 // email
 t_require_functions_folder('email');
 
-// events
-t_require_functions_folder('events');
+// event
+t_require_functions_folder('event');
 
 // filesystem
 t_require_functions_folder('filesystem');
 
-// functions
-t_require_functions_folder('functions');
+// function
+t_require_functions_folder('function');
 
-// hooks
-t_require_functions_folder('hooks');
-
-// html
-t_require_functions_folder('html');
+// hook
+t_require_functions_folder('hook');
 
 // i18n
 t_require_functions_folder('i18n');
 
-// images
-t_require_functions_folder('images');
+// image
+t_require_functions_folder('image');
 
 // is
 t_require_functions_folder('is');
 
-// medias
-t_require_functions_folder('medias');
+// media
+t_require_functions_folder('media');
 
-// objects
-t_require_functions_folder('objects');
+// number
+t_require_functions_folder('number');
 
-// paths
-t_require_functions_folder('paths');
+// object
+t_require_functions_folder('object');
+
+// path
+t_require_functions_folder('path');
 
 // recaptcha
 t_require_functions_folder('recaptcha');
@@ -80,20 +80,17 @@ t_require_functions_folder('security');
 // session
 t_require_functions_folder('session');
 
-// strings
-t_require_functions_folder('strings');
+// string
+t_require_functions_folder('string');
 
-// time
-t_require_functions_folder('time');
+// url
+t_require_functions_folder('url');
 
-// urls
-t_require_functions_folder('urls');
-
-// utils
-t_require_functions_folder('utils');
+// util
+t_require_functions_folder('util');
 
 // vendor
 t_require_functions_folder('vendor');
 
-// views
-t_require_functions_folder('views');
+// view
+t_require_functions_folder('view');
