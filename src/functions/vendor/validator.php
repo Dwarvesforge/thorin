@@ -5,7 +5,7 @@ namespace thorin;
 use Respect\Validation\Validator;
 
 /**
- * Return a Respect Validation class instance to work with
+ * Return a [Respect Validation|(https://github.com/Respect/Validation) class instance to work with
  * @return    {Respect\Validation\Validator}    The validator class instance to work with
  *
  * @example    php

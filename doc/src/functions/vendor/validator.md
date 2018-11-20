@@ -1,6 +1,6 @@
 # validator
 
-Return a Respect Validation class instance to work with
+Return a [Respect Validation|(https://github.com/Respect/Validation) class instance to work with
 
 Return **{ Respect\Validation\Validator }** The validator class instance to work with
 

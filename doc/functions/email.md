@@ -1,8 +1,26 @@
 # email
 
+- [Thorin::email_has_mx](#Thorin_email_has_mx)
 - [Thorin::email_mailer_config](#Thorin_email_mailer_config)
 - [Thorin::email_mailer_factory](#Thorin_email_mailer_factory)
 - [Thorin::email_mailer](#Thorin_email_mailer)
+<a name="Thorin_email_has_mx"></a>
+## Thorin::email_has_mx
+Check if the passed email address has some mx configurated.
+
+```php
+Thorin::email_has_mx('hello@google.com');
+// true
+Thorin::email_has_mx('example@example.com');
+// false
+Thorin::email_has_mx('example.com');
+// null
+```
+
+[Full documentation](/doc/src/functions/email/email_has_mx.md)
+
+[See more](https://github.com/nojacko/email-validator)
+
 <a name="Thorin_email_mailer_config"></a>
 ## Thorin::email_mailer_config
 Return a mailer configuration array

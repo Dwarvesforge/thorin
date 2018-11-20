@@ -52,7 +52,7 @@ $res = Thorin::sh('ls', '-la');
 
 <a name="Thorin_validator"></a>
 ## Thorin::validator
-Return a Respect Validation class instance to work with
+Return a [Respect Validation|(https://github.com/Respect/Validation) class instance to work with
 ```php
 Thorin::validator()->alnum()->length(1,15)->validate('alganet'); // true
 ```
