@@ -21,7 +21,7 @@ return [
 	 * The recaptcha lang to use
 	 * @type    {String}
 	 */
-	'lang' => Thorin::env('RECAPTCHA_LANG', Thorin::i18n_language()),
+	'lang' => Thorin::env('RECAPTCHA_LANG', Thorin::language()),
 
 	/**
 	 * @name    attributes

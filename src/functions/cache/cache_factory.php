@@ -41,7 +41,7 @@ function cache_factory($driver = null, $forceNewPool = false) {
 	// switch on the requested driver to create a new pool
 	switch($driver) {
 		case 'filesystem':
-			$filesystemAdapter = new Local(\Thorin::path_sanitize(\Thorin::config('path.cache_filesystem')));
+			$filesystemAdapter = new Local(\Thorin::sanitize_path(\Thorin::config('path.cache_filesystem')));
 			$filesystem        = new Filesystem($filesystemAdapter);
 			$pool = new FilesystemCachePool($filesystem);
 		break;

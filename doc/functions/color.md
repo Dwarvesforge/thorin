@@ -1,12 +1,12 @@
 # color
 
-- [Thorin::color_random](#Thorin_color_random)
-<a name="Thorin_color_random"></a>
-## Thorin::color_random
+- [Thorin::random_color](#Thorin_random_color)
+<a name="Thorin_random_color"></a>
+## Thorin::random_color
 Generate a randon hexadecimal color like "F4A342"
 ```php
-Thorin::color_random();
+Thorin::random_color();
 // F4A342
 ```
 
-[Full documentation](/doc/src/functions/color/color_random.md)
+[Full documentation](/doc/src/functions/color/random_color.md)

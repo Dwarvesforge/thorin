@@ -2,6 +2,7 @@
 
 - [Thorin::define](#Thorin_define)
 - [Thorin::env](#Thorin_env)
+- [Thorin::environment](#Thorin_environment)
 - [Thorin::eq](#Thorin_eq)
 - [Thorin::ip_address](#Thorin_ip_address)
 - [Thorin::location](#Thorin_location)
@@ -24,6 +25,16 @@ $myValue = Thorin::env('MY_VARIABLE', false);
 ```
 
 [Full documentation](/doc/src/functions/util/env.md)
+
+<a name="Thorin_environment"></a>
+## Thorin::environment
+Return the application environment set in `app.environment` config
+```php
+$env = Thorin::environment();
+// development
+```
+
+[Full documentation](/doc/src/functions/util/environment.md)
 
 <a name="Thorin_eq"></a>
 ## Thorin::eq

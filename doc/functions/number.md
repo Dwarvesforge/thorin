@@ -1,15 +1,15 @@
 # number
 
-- [Thorin::num_clamp](#Thorin_num_clamp)
-<a name="Thorin_num_clamp"></a>
-## Thorin::num_clamp
+- [Thorin::clamp](#Thorin_clamp)
+<a name="Thorin_clamp"></a>
+## Thorin::clamp
 Clamps `number` within the inclusive `lower` and `upper` bounds.
 
 ```php
-Thorin::num_clamp(-10, -5, 5);
+Thorin::clamp(-10, -5, 5);
 // -5
 ```
 
-[Full documentation](/doc/src/functions/number/num_clamp.md)
+[Full documentation](/doc/src/functions/number/clamp.md)
 
 [See more](https://github.com/lodash-php/lodash-php/blob/master/src/Number/clamp.php)
