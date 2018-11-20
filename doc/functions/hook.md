@@ -2,7 +2,7 @@
 
 - [Thorin::add_action](#Thorin_add_action)
 - [Thorin::add_filter](#Thorin_add_filter)
-- [Thorin::apply_filter](#Thorin_apply_filter)
+- [Thorin::apply_filters](#Thorin_apply_filters)
 - [Thorin::do_action](#Thorin_do_action)
 <a name="Thorin_add_action"></a>
 ## Thorin::add_action
@@ -40,7 +40,7 @@ Thorin::add_filter('my-filter', function($value) {
 print Thorin::apply_filters('my-filter', 'world'); // Hello world
 ```
 
-[Full documentation](/doc/src/functions/hook/apply_filter.md)
+[Full documentation](/doc/src/functions/hook/apply_filters.md)
 
 [See more](https://packagist.org/packages/voku/php-hooks)
 
