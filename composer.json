@@ -56,7 +56,8 @@
     "wapmorgan/unified-archive": "^0.1.1",
     "arcanedev/no-captcha": "^7.0",
     "asika/autolink": "^1.0",
-    "ksubileau/color-thief-php": "^1.4"
+    "ksubileau/color-thief-php": "^1.4",
+    "jwage/purl": "^0.0.10"
   },
 	"require-dev": {
     "matthiasnoback/phpunit-asynchronicity": "^2.0",
