@@ -1,42 +1,20 @@
 # util
 
-- [Thorin::current_url](#Thorin_current_url)
 - [Thorin::define](#Thorin_define)
-- [Thorin::domain](#Thorin_domain)
 - [Thorin::env](#Thorin_env)
-- [Thorin::environment](#Thorin_environment)
 - [Thorin::eq](#Thorin_eq)
 - [Thorin::ip_address](#Thorin_ip_address)
 - [Thorin::location](#Thorin_location)
 - [Thorin::pre](#Thorin_pre)
-- [Thorin::protocol](#Thorin_protocol)
 - [Thorin::redirect_ip](#Thorin_redirect_ip)
 - [Thorin::safe_redirect](#Thorin_safe_redirect)
 - [Thorin::whois](#Thorin_whois)
-<a name="Thorin_current_url"></a>
-## Thorin::current_url
-Return the current url
-```php
-$current = Thorin::current_url();
-```
-
-[Full documentation](/doc/src/functions/util/current_url.md)
-
 <a name="Thorin_define"></a>
 ## Thorin::define
 Define a constant if not already defined
 
 
 [Full documentation](/doc/src/functions/util/define.md)
-
-<a name="Thorin_domain"></a>
-## Thorin::domain
-Return the domain
-```php
-$domain = Thorin::domain();
-```
-
-[Full documentation](/doc/src/functions/util/domain.md)
 
 <a name="Thorin_env"></a>
 ## Thorin::env
@@ -46,15 +24,6 @@ $myValue = Thorin::env('MY_VARIABLE', false);
 ```
 
 [Full documentation](/doc/src/functions/util/env.md)
-
-<a name="Thorin_environment"></a>
-## Thorin::environment
-Return the environment set in `app.ENVIRONMENT` config
-```php
-$env = Thorin::environment();
-```
-
-[Full documentation](/doc/src/functions/util/environment.md)
 
 <a name="Thorin_eq"></a>
 ## Thorin::eq
@@ -98,15 +67,6 @@ print Thorin::pre($myArray);
 ```
 
 [Full documentation](/doc/src/functions/util/pre.md)
-
-<a name="Thorin_protocol"></a>
-## Thorin::protocol
-Return the protocol used to request the page
-```php
-$protocol = Thorin::protocol();
-```
-
-[Full documentation](/doc/src/functions/util/protocol.md)
 
 <a name="Thorin_redirect_ip"></a>
 ## Thorin::redirect_ip

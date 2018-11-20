@@ -11,6 +11,9 @@ function t_require_functions_folder($folder) {
     }
 }
 
+// app
+t_require_functions_folder('app');
+
 // array
 t_require_functions_folder('array');
 

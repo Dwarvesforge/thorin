@@ -1,11 +1,12 @@
-# environment
+# app_environment
 
-Return the environment set in `app.ENVIRONMENT` config
+Return the application environment set in `app.environment` config
 
 Return **{ [String](http://php.net/manual/en/language.types.string.php) }** The environment
 
 ### Example
 ```php
-	$env = Thorin::environment();
+	$env = Thorin::app_environment();
+// development
 ```
 Author : Olivier Bossel [olivier.bossel@gmail.com](mailto:olivier.bossel@gmail.com) [https://olivierbossel.com](https://olivierbossel.com)
