@@ -35,7 +35,7 @@ return [
 	 * Specify where the assets (images, etc...) are stored absolute to the server root folder.
 	 * Need to end with a trailing /
 	 * This path MUST be inside of the DOCUMENT_ROOT path
-	 * This is bein used in functions like "url_asset", "path_asset", etc...
+	 * This is bein used in functions like "asset_url", "asset_path", etc...
 	 * @type 		{String}
 	 * @default 	${path.document_root}dist/
 	 */

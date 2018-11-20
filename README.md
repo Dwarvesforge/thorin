@@ -98,7 +98,7 @@ Create the files/folders structure described bellow and start using Thorin with 
 - |--- cache
 - |------- views
 - |--- config
-- |--- i18n
+- |--- lang
 - |------- en
 - |--- views
 - | public (document root)
