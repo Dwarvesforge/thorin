@@ -23,7 +23,7 @@ return [
 		 */
 		'sqlite' => [
 			'driver' => 'sqlite',
-            'database' => Thorin::env('DB_PATH', Thorin::path_app('db/database.sqlite')),
+            'database' => Thorin::env('DB_PATH', Thorin::app_path('db/database.sqlite')),
             'prefix' => Thorin::env('DB_PREFIX', '')
 		],
 		/**

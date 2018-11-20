@@ -1,7 +1,6 @@
 # app
 
 - [Thorin::app_domain](#Thorin_app_domain)
-- [Thorin::app_environment](#Thorin_app_environment)
 - [Thorin::app_name](#Thorin_app_name)
 - [Thorin::app_protocol](#Thorin_app_protocol)
 <a name="Thorin_app_domain"></a>
@@ -13,16 +12,6 @@ $domain = Thorin::app_domain();
 ```
 
 [Full documentation](/doc/src/functions/app/app_domain.md)
-
-<a name="Thorin_app_environment"></a>
-## Thorin::app_environment
-Return the application environment set in `app.environment` config
-```php
-$env = Thorin::app_environment();
-// development
-```
-
-[Full documentation](/doc/src/functions/app/app_environment.md)
 
 <a name="Thorin_app_name"></a>
 ## Thorin::app_name

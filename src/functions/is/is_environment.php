@@ -16,7 +16,7 @@ namespace thorin;
  */
 function is_environment() {
 	$args = func_get_args();
-	$environment = \Thorin::app_environment();
+	$environment = \Thorin::environment();
 	foreach($args as $env) {
 		if ($environment == $env) return true;
 	}

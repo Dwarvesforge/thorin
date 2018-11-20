@@ -55,15 +55,15 @@ This is bein used in functions like "cache", etc...
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
 
-### i18n
+### lang
 
 Specify where the lang files are stored absolute to the server root folder.
 Need to end with a trailing /
-This is bein used in functions like "i18n", etc...
+This is bein used in functions like "lang", etc...
 
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
-Default : **${path.app}i18n/**
+Default : **${path.app}lang/**
 
 
 ### views

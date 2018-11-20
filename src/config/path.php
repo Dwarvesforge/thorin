@@ -35,7 +35,7 @@ return [
 	 * Specify where the assets (images, etc...) are stored absolute to the server root folder.
 	 * Need to end with a trailing /
 	 * This path MUST be inside of the DOCUMENT_ROOT path
-	 * This is bein used in functions like "url_asset", "path_asset", etc...
+	 * This is bein used in functions like "asset_url", "asset_path", etc...
 	 * @type 		{String}
 	 * @default 	${path.document_root}dist/
 	 */
@@ -52,14 +52,14 @@ return [
 	'cache_filesystem' => '${path.app}cache/filesystem/',
 
 	/**
-	 * @name 		i18n
+	 * @name 		lang
 	 * Specify where the lang files are stored absolute to the server root folder.
 	 * Need to end with a trailing /
-	 * This is bein used in functions like "i18n", etc...
+	 * This is bein used in functions like "lang", etc...
 	 * @type 		{String}
-	 * @default 	${path.app}i18n/
+	 * @default 	${path.app}lang/
 	 */
-	'i18n' => '${path.app}i18n/',
+	'lang' => '${path.app}lang/',
 
 	/**
 	 * @name 		views

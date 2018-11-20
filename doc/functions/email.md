@@ -1,9 +1,9 @@
 # email
 
 - [Thorin::email_has_mx](#Thorin_email_has_mx)
-- [Thorin::email_mailer_config](#Thorin_email_mailer_config)
-- [Thorin::email_mailer_factory](#Thorin_email_mailer_factory)
-- [Thorin::email_mailer](#Thorin_email_mailer)
+- [Thorin::mailer_config](#Thorin_mailer_config)
+- [Thorin::mailer_factory](#Thorin_mailer_factory)
+- [Thorin::mailer](#Thorin_mailer)
 <a name="Thorin_email_has_mx"></a>
 ## Thorin::email_has_mx
 Check if the passed email address has some mx configurated.
@@ -21,20 +21,20 @@ Thorin::email_has_mx('example.com');
 
 [See more](https://github.com/nojacko/email-validator)
 
-<a name="Thorin_email_mailer_config"></a>
-## Thorin::email_mailer_config
+<a name="Thorin_mailer_config"></a>
+## Thorin::mailer_config
 Return a mailer configuration array
 ```php
-$disk = Thorin::email_mailer_config('gmail');
+$disk = Thorin::mailer_config('gmail');
 ```
 
-[Full documentation](/doc/src/functions/email/email_mailer_config.md)
+[Full documentation](/doc/src/functions/email/mailer_config.md)
 
-<a name="Thorin_email_mailer_factory"></a>
-## Thorin::email_mailer_factory
+<a name="Thorin_mailer_factory"></a>
+## Thorin::mailer_factory
 Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer registered in the `email` config file
 ```php
-$mailer = Thorin::email_mailer_factory('gmail');
+$mailer = Thorin::mailer_factory('gmail');
 $mailer->addAddress('john.doe@ecample.com', 'John Doe');
 $mailer->isHTML(true);
 // etc...
@@ -45,13 +45,13 @@ if ($mailer->send()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/email/email_mailer_factory.md)
+[Full documentation](/doc/src/functions/email/mailer_factory.md)
 
-<a name="Thorin_email_mailer"></a>
-## Thorin::email_mailer
+<a name="Thorin_mailer"></a>
+## Thorin::mailer
 Return a mailer [PHPMailer](https://github.com/PHPMailer/PHPMailer) instance of the requested mailer registered in the `email` config file
 ```php
-$mailer = Thorin::email_mailer('gmail');
+$mailer = Thorin::mailer('gmail');
 $mailer->addAddress('john.doe@ecample.com', 'John Doe');
 $mailer->isHTML(true);
 // etc...
@@ -62,4 +62,4 @@ if ($mailer->send()) {
 }
 ```
 
-[Full documentation](/doc/src/functions/email/email_mailer.md)
+[Full documentation](/doc/src/functions/email/mailer.md)

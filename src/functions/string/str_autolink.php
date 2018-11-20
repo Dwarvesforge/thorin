@@ -17,7 +17,7 @@ use Asika\Autolink\Autolink;
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
 function str_autolink($text, $options = []) {
-	$options = \Thorin::col_extend([
+	$options = \Thorin::extend([
 		'strip_scheme' => false,
 		'text_limit' => false,
 		'auto_title' => false
