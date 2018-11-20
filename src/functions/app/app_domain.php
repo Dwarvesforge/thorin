@@ -3,15 +3,16 @@
 namespace thorin;
 
 /**
- * Return the domain
+ * Return the application domain
  * @return    {String}    The domain
  *
  * @example    php
- * $domain = Thorin::domain();
+ * $domain = Thorin::app_domain();
+ * // thorin.io
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function domain() {
+function app_domain() {
 	// return the protocol from the config
 	return \Thorin::config('app.domain');
 }
