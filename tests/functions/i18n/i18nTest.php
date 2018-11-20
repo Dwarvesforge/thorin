@@ -15,4 +15,10 @@ final class i18n extends TestCase
 	public function testLangComplexePath() {
 		$this->assertEquals(Thorin::i18n('default.metas.title'), 'metas hello world');
 	}
+	public function testLangSpecificLanguage() {
+		$this->assertEquals(Thorin::i18n('default.title', 'fr'), 'hello le monde');
+	}
+	public function testLangSpecificLanguageThatDidntExist() {
+		$this->assertEquals(Thorin::i18n('default.metas.title', 'fr'), 'metas hello world');
+	}
 }

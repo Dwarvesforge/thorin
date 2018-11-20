@@ -20,6 +20,8 @@ function i18n($path, $lang = null) {
 	if ($lang == null) {
 		$lang = \Thorin::i18n_language();
 	}
+	// get the default language
+	$defaultLanguage = \Thorin::i18n_default_language();
 	// split the path using the . as separator
 	$splits = explode('.', $path);
 	// file to load is the first value in the splits stack
@@ -33,8 +35,15 @@ function i18n($path, $lang = null) {
 	// load this file
 	$languages = require($langFilePath);
 	// transform the dot path to an array like one
-	$path = implode("']['", $splits);
-	$path = "['".$path."']";
-	// return the value from the languages stack
-	return eval('return $languages'.$path.';');
+	$arrayPath = implode("']['", $splits);
+	$arrayPath = "['".$arrayPath."']";
+	// get the value from the languages stack
+	$value = @eval('return $languages'.$arrayPath.';');
+	// if no value, and lang is not the default one, try to get the value
+	// from the default lang
+	if (!$value && $lang !== $defaultLanguage) {
+		$value = \Thorin::i18n($path, $defaultLanguage);
+	}
+	// return the value
+	return $value;
 }
