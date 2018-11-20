@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-final class t_current_url extends TestCase
+final class url_current extends TestCase
 {
-    public function testCurrentUrl() {
-		$url = Thorin::current_url();
+    public function testUrlCurrent() {
+		$url = Thorin::url_current();
 		$this->assertEquals($url, 'http://thorin.io/');
 	}
 }

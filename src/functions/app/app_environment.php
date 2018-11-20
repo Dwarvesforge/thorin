@@ -3,15 +3,16 @@
 namespace thorin;
 
 /**
- * Return the environment set in `app.ENVIRONMENT` config
+ * Return the application environment set in `app.environment` config
  * @return    {String}    The environment
  *
  * @example    php
- * $env = Thorin::environment();
+ * $env = Thorin::app_environment();
+ * // development
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function environment() {
+function app_environment() {
 	// return the environment from the config
 	return \Thorin::config('app.environment');
 }

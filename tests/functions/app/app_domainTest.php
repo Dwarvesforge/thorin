@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-final class t_domain extends TestCase
+final class app_domain extends TestCase
 {
-    public function testDomain() {
-		$domain = Thorin::domain();
+    public function testAppDomain() {
+		$domain = Thorin::app_domain();
 		$this->assertEquals($domain, 'thorin.io');
 	}
 }

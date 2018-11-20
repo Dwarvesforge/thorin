@@ -1,6 +1,7 @@
 # url
 
 - [Thorin::url_asset](#Thorin_url_asset)
+- [Thorin::url_current](#Thorin_url_current)
 - [Thorin::url_domain](#Thorin_url_domain)
 - [Thorin::url_extract_from_str](#Thorin_url_extract_from_str)
 - [Thorin::url_query_string](#Thorin_url_query_string)
@@ -22,6 +23,17 @@ Thorin::url_asset('my/cool/image.jpg', true);
 ```
 
 [Full documentation](/doc/src/functions/url/url_asset.md)
+
+<a name="Thorin_url_current"></a>
+## Thorin::url_current
+Return the current url
+
+```php
+Thorin::url_current();
+// https://thorin.io/hello/world?query=string
+```
+
+[Full documentation](/doc/src/functions/url/url_current.md)
 
 <a name="Thorin_url_domain"></a>
 ## Thorin::url_domain

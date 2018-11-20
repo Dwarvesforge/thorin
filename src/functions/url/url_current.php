@@ -4,13 +4,15 @@ namespace thorin;
 
 /**
  * Return the current url
+ *
  * @return    {String}    The current url
  *
  * @example    php
- * $current = Thorin::current_url();
+ * Thorin::url_current();
+ * // https://thorin.io/hello/world?query=string
  *
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function current_url() {
+function url_current() {
 	return \Thorin::url_root(@$_SERVER['REQUEST_URI'], true);
 }
