@@ -71,7 +71,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 <a id="readme-goals"></a>
 ## Goals
 
-The main goal of this toolkit is to **gives you some nice and powerful features through a simple API**.
+The main goal of this toolkit is to **give you some nice and powerful features through a simple API**.
 We will make this package grow every time we encounter and implement some nice functions/classes/helpers.
 
 <a id="readme-install"></a>
@@ -80,6 +80,8 @@ We will make this package grow every time we encounter and implement some nice f
 ```
 composer require dwarvesforge/thorin
 ```
+
+> You can install the [Thorin Visual Studio Code Snippets Extension](https://marketplace.visualstudio.com/items?itemName=Dwarvesforge.dwarvesforge-thorin-snippets) to help you using the package.
 
 <a id="readme-get-started"></a>
 ## Get Started
