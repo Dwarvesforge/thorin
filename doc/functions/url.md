@@ -8,6 +8,7 @@
 - [Thorin::url_root](#Thorin_url_root)
 - [Thorin::url_sanitize](#Thorin_url_sanitize)
 - [Thorin::url_segments](#Thorin_url_segments)
+- [Thorin::url_shorten](#Thorin_url_shorten)
 - [Thorin::url_subdomain](#Thorin_url_subdomain)
 - [Thorin::url_tld](#Thorin_url_tld)
 <a name="Thorin_url_asset"></a>
@@ -111,6 +112,17 @@ Thorin::url_segments('http://thorin.io/hello/world?query=value1');
 ```
 
 [Full documentation](/doc/src/functions/url/url_segments.md)
+
+<a name="Thorin_url_shorten"></a>
+## Thorin::url_shorten
+Shorten a url using the tinyurl service
+
+```php
+Thorin::url_shorten('https://thorin.io');
+// http://tinyurl.com/y9tcvddg
+```
+
+[Full documentation](/doc/src/functions/url/url_shorten.md)
 
 <a name="Thorin_url_subdomain"></a>
 ## Thorin::url_subdomain
