@@ -108,16 +108,16 @@ To do so, you'll need first:
 
 #### Specify where your config files are
 
-First choice, using the .env file at the root of your project
+First choice, using the `.env` file at the root of your project
 
 ```
-T_CONFIG_PATH=something/absolute/to/the/server/root/
+T_CONFIG_PATH=/something/absolute/to/the/server/root/
 ```
 
-Or by defining a constant like so:
+Or by defining a constant like so **BEFORE loading Thorin**:
 
 ```php
-define('T_CONFIG_PATH', 'something/absolute/to/the/server/root/');
+define('T_CONFIG_PATH', '/something/absolute/to/the/server/root/');
 ```
 
 The default value for this config is `app/config/`
@@ -126,18 +126,24 @@ The default value for this config is `app/config/`
 
 To do so, you'll need to create some config files to override the default configs that you can find here:
 
-- **Application config** : [`app/config/app.php`](doc/config/app.md)
-- **Cache config** : [`app/config/cache.php`](doc/config/cache.md)
-- **DB config** : [`app/config/db.php`](doc/config/db.md)
-- **Email config** : [`app/config/email.php`](doc/config/email.md)
-- **Filesystem config** : [`app/config/filesystem.php`](doc/config/filesystem.md)
-- **i18n config** : [`app/config/i18n.php`](doc/config/i18n.md)
-- **Image config** : [`app/config/image.php`](doc/config/image.md)
+- Application config : [`app/config/app.php`](doc/config/app.md)
+- Cache config : [`app/config/cache.php`](doc/config/cache.md)
+- DB config : [`app/config/db.php`](doc/config/db.md)
+- Email config : [`app/config/email.php`](doc/config/email.md)
+- Filesystem config : [`app/config/filesystem.php`](doc/config/filesystem.md)
+- i18n config : [`app/config/i18n.php`](doc/config/i18n.md)
+- Image config : [`app/config/image.php`](doc/config/image.md)
 - **Path config** : [`app/config/path.php`](doc/config/path.md)
-- **Recaptcha config** : [`app/config/recaptcha.php`](doc/config/recaptcha.md)
-- **Session config** : [`app/config/session.php`](doc/config/session.md)
+- Recaptcha config : [`app/config/recaptcha.php`](doc/config/recaptcha.md)
+- Session config : [`app/config/session.php`](doc/config/session.md)
 
 To override some config, simply create a file with the same name in your config folder and override it inside this file.
+
+## `.env` file
+
+The `.env` file can contains a set of environment variables. Here's the file that document them:
+
+- **Example** : [`.env.example`](doc/.env.example.md)
 
 <a id="readme-contribute"></a>
 ## Contribute
