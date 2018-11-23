@@ -38,7 +38,7 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 - [Collection](doc/functions/collection.md)
 - [Color](doc/functions/color.md)
 - [Config](doc/functions/config.md)
-- [Date](doc/functions/date.md)
+- [Datetime](doc/functions/datetime.md)
 - [DB](doc/functions/db.md)
 - [Email](doc/functions/email.md)
 - [Event](doc/functions/event.md)
