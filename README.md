@@ -31,6 +31,8 @@
 
 Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions in multiple areas like:
 
+#### Functions
+
 - [App](doc/functions/app.md)
 - [Array](doc/functions/array.md)
 - [Cache](doc/functions/cache.md)
@@ -59,6 +61,10 @@ Thorin is a pretty simple toolkit that gives you a lot of cool helpers functions
 - [Util](doc/functions/util.md)
 - [Vendor](doc/functions/vendor.md)
 - [View](doc/functions/view.md)
+
+#### Classes
+
+- [Singleton](doc/src/classes/util/Singleton.md)
 
 ## Table of content
 
