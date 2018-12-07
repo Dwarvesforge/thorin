@@ -13,3 +13,6 @@ function t_require_classes_folder($folder) {
 
 // core
 t_require_classes_folder('core');
+
+// util
+t_require_classes_folder('util');

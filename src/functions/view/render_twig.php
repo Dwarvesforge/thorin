@@ -29,7 +29,7 @@ function render_twig($slug, $data = []) {
 	if ( ! $t_twig) {
 		$loader = new \Twig_Loader_Filesystem(\Thorin::sanitize_path(\Thorin::config('path.views')));
 		$t_twig = new \Twig_Environment($loader, array(
-			'cache' => \Thorin::sanitize_path(\Thorin::config('path.views_cache')),
+			// 'cache' => \Thorin::sanitize_path(\Thorin::config('path.views_cache')),
 		));
 	}
 	// render view

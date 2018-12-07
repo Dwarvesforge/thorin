@@ -32,8 +32,8 @@ t_require_functions_folder('color');
 // config
 t_require_functions_folder('config');
 
-// date
-t_require_functions_folder('date');
+// datetime
+t_require_functions_folder('datetime');
 
 // db
 t_require_functions_folder('db');
