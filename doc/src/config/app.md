@@ -45,3 +45,12 @@ Specify the environment to return in function like `t_environment`, `t_is_enviro
 Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
 
 Default : **(getenv('ENVIRONMENT')) ? getenv('ENVIRONMENT') : 'production'**
+
+
+### build
+
+Specify the app build version for caching control and other use cases.
+
+Type : **{ [String](http://php.net/manual/en/language.types.string.php) }**
+
+Default : **null**

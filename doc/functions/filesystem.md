@@ -9,6 +9,7 @@
 - [Thorin::extract_files](#Thorin_extract_files)
 - [Thorin::file_ext](#Thorin_file_ext)
 - [Thorin::force_download](#Thorin_force_download)
+- [Thorin::hash_directory](#Thorin_hash_directory)
 - [Thorin::human_filesize](#Thorin_human_filesize)
 <a name="Thorin_archive_files"></a>
 ## Thorin::archive_files
@@ -112,6 +113,16 @@ Thorin::force_download('/path/to/my-file.zip', 'cool-file.zip');
 [Full documentation](/doc/src/functions/filesystem/force_download.md)
 
 [See more](https://www.jonasjohn.de/snippets/php/file-download.htm)
+
+<a name="Thorin_hash_directory"></a>
+## Thorin::hash_directory
+Return a md5 hash of the passed directory
+```php
+$ext = Thorin::hash_directory('my/cool/directory');
+// A92B0AB54ACC099B298B9DA94AFB4461
+```
+
+[Full documentation](/doc/src/functions/filesystem/hash_directory.md)
 
 <a name="Thorin_human_filesize"></a>
 ## Thorin::human_filesize

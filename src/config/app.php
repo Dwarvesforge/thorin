@@ -39,5 +39,13 @@ return [
 	 * @type  		{String}
 	 * @default 	(getenv('ENVIRONMENT')) ? getenv('ENVIRONMENT') : 'production'
 	 */
-	'environment' => Thorin::env('ENVIRONMENT', 'production')
+	'environment' => Thorin::env('ENVIRONMENT', 'production'),
+
+	/**
+	 * @name		build
+	 * Specify the app build version for caching control and other use cases.
+	 * @type		{String}
+	 * @default		null
+	 */
+	'build' => null
 ];
