@@ -28,7 +28,7 @@ function hash_directory($directory_path) {
         {
             if (is_dir($directory_path . '/' . $file))
             {
-                $files[] = Thorin::hash_directory($directory_path . '/' . $file);
+                $files[] = \Thorin::hash_directory($directory_path . '/' . $file);
             }
             else
             {
