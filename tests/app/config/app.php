@@ -2,5 +2,6 @@
 
 return [
 	'protocol' => 'http://',
-	'domain' => 'thorin.io'
+	'domain' => 'thorin.io',
+	'build' => 'plopworld'
 ];
