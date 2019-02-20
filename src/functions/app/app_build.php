@@ -25,7 +25,7 @@ function app_build($method = null) {
 	} else if ($method == 'txt' || ($method == null && is_file(\Thorin::base_path('build.txt')))) {
 		ob_start();
 		require(\Thorin::base_path('build.txt'));
-		return ob_get_clean();
+		return trim(ob_get_clean());
 	} else if ($method == 'hash' || $method == null) {
 		return \Thorin::hash_directory(\Thorin::asset_path('/'));
 	}
