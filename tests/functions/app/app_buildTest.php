@@ -8,8 +8,7 @@ final class app_build extends TestCase
 {
     public function testAppBuildTxt() {
 		$build = Thorin::app_build('txt');
-		$this->assertEquals($build, 'helloworld
-');
+		$this->assertEquals($build, 'helloworld');
 	}
 	public function testAppBuildConfig() {
 		$build = Thorin::app_build('config');
