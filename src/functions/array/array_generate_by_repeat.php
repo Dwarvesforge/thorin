@@ -3,21 +3,24 @@
 namespace thorin;
 
 /**
- * Generate an array using a function called n times
- * @param    {Callable}    $func    The function to call to generate each item
- * @param    {Integer}     $count    The number of times to call the function
- *
+ * Generate an array by repeating call to a function which return the array item to populate.
+ * 
+ * @param    {Function}    $fn    The function that return the array item to populate
+ * @param    {Integer}    $number    How many items wanted in the generated array
+ * @return    {Array}    The generated array
+ * 
  * @example    php
- * Thorin::array_generate_by_repeate(function() {
- * 	return rand(0, 20);
- * }, 5);
- *
+ * $array = Thorin::array_generate_by_repeat(function($i) {
+ *     return $i . '-item';
+ * }, 3);
+ * // ['0-item','1-item','2-item']
+ * 
  * @author    Olivier Bossel <olivier.bossel@gmail.com> (https://olivierbossel.com)
  */
-function array_generate_by_repeat(callable $func, $count) {
-	$return = [];
-	for ($i = 0; $i < $count; $i++) {
-		array_push($return, $func());
-	}
-	return $return;
+function array_generate_by_repeat($fn, $number) {
+  $ar = [];
+  for ($i = 0; $i < $number; $i++) {
+    array_push($ar, call_user_func($fn, $i));
+  }
+  return $ar;
 }
