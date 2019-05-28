@@ -1,6 +1,6 @@
 {
   "name": "dwarvesforge-thorin",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "description": "PHP toolkit that offers you some nice helpers, missing functions, advances capabilities through vendors, etc...",
   "homepage": "https://thorin.dwarvesforge.io",
   "repository": {
