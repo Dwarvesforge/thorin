@@ -58,7 +58,8 @@
     "asika/autolink": "^1.0",
     "ksubileau/color-thief-php": "^1.4",
     "jwage/purl": "^0.0.10",
-    "nojacko/email-validator": "^1.1"
+    "nojacko/email-validator": "^1.1",
+    "klein/klein": "^2.1"
   },
 	"require-dev": {
     "matthiasnoback/phpunit-asynchronicity": "^2.0",

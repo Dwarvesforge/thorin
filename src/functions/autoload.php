@@ -77,6 +77,9 @@ t_require_functions_folder('path');
 // recaptcha
 t_require_functions_folder('recaptcha');
 
+// routes
+t_require_functions_folder('routes');
+
 // security
 t_require_functions_folder('security');
 
